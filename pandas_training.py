@@ -4,10 +4,10 @@ import pandas
 def FilterDataframe(dataframe, column_to_filter, values_to_skip):
     """ This function is designed to filter dataframe. If "values_to_skip" exists in dataframe
     "column_to_filter" column, then it will be skipped. Function returns filtered dataframe.
-    :param dataframe: Dataframe pandas object
+    :param dataframe: [dataframe] Pandas input object
     :param column_to_filter: [str] Name of column with values to filter
     :param values_to_skip: [str] or list[str] Values to be skipped
-    :return:
+    :return: [dataframe] Filtered pandas output object
     """
     blank_cells = ['', 'nan', 'NaN']
     for value_to_skip in values_to_skip:
@@ -47,9 +47,11 @@ if __name__ == "__main__":
                          "Online Default",
                          "Applicable to Frame 5-6 Panel Mount Drives (PF755TR and PF755TL)?"]
 
-    crs_to_skip = ["CRx",
-                   "MV_CR1",
-                   "MV_CR2"]
+    crs_to_skip = ["CRx"]
+
+    names_to_skip = ["Reserved"]
+
+    applicable_values_to_skip = ['No', '']
     '''*******************************************'''
 
     # Create Pandas dataframe object
@@ -71,6 +73,11 @@ if __name__ == "__main__":
     Parameter number column needs to be displayed as int instead of real.
     '''
     for sheet_number in range(0, len(ports_dataframes)):
+
+
+        # # TODO: Duplications should be deleted by priority from CR
+        # ports_dataframes[sheet_number].drop_duplicates(subset="Name", keep="last", inplace=True)
+
         # Skip parameters with CRs which are not applicable to the drive
         ports_dataframes[sheet_number] = FilterDataframe(ports_dataframes[sheet_number], 'Commercial Release',
                                                          crs_to_skip)
@@ -79,23 +86,27 @@ if __name__ == "__main__":
         if tested_drive == "PF755TR":
             # Based on the drive type "applicable_to_column" variable should be rewritten from HPC Database document
             applicable_to_column_name = "Applicable to Frame 5-6 Panel Mount Drives (PF755TR and PF755TL)?"
-            applicable_values_to_skip = ['No', '']
             ports_dataframes[sheet_number] = FilterDataframe(ports_dataframes[sheet_number], applicable_to_column_name,
                                                              applicable_values_to_skip)
 
         # Skip parameters which are named as "Reserved"
-        ports_dataframes[sheet_number] = FilterDataframe(ports_dataframes[sheet_number], 'Name', 'Reserved')
+        ports_dataframes[sheet_number] = FilterDataframe(ports_dataframes[sheet_number], 'Name', names_to_skip)
 
         # Change displayed "New Parameter Number" value datatype from real to int
         ports_dataframes[sheet_number]['New Parameter Number'] = ports_dataframes[sheet_number][
             'New Parameter Number'].astype(int)
 
+        ports_dataframes[sheet_number].to_excel(sheets_to_parse[sheet_number] + '.xlsx', index=False)
+
+        '''RETRIEVING DUPLICATED VALUES'''
+        duplicated = ports_dataframes[sheet_number][ports_dataframes[sheet_number]['Name'].duplicated(keep=False) == True]
+        print duplicated[['Commercial Release', 'Name']]
+        print "------------"
     # Show 3 dataframe columns: 'Name', 'Commercial Release', 'New Parameter Number'
     print ports_dataframes[0][['Name', 'Commercial Release', 'New Parameter Number']]
 
-    # Example with how to access values
-    # print(port_dataframes[0]['Offline Minimum'].values)
-    # print "*" * 80
+    print "*" * 80
     print ports_dataframes[0]['Commercial Release'].values
     print "*" * 80
     print ports_dataframes[0]['Applicable to Frame 5-6 Panel Mount Drives (PF755TR and PF755TL)?'].values[0]
+

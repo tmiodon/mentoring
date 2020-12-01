@@ -19,9 +19,36 @@ def FilterDataframe(dataframe, column_to_filter, values_to_skip):
             # Return filtered data in dataframe
             dataframe = dataframe.loc[filtered_data_indexes]
         else:
+            # Remove rows with blank cell in column_to_filter columns
             dataframe.dropna(subset=[column_to_filter], inplace=True)
+
     return dataframe
 
+
+def SkipParamsLike(dataframe, column_name, like):
+    """ This function is designed to remove unwanted rows from dataframe regarding value in the specified column.
+    :param dataframe: [dataframe] Pandas input object
+    :param column_name: [str] Name of column with values to remove
+    :param like: [str] Value on which column will be removed
+    :return: [dataframe] Filtered pandas output object
+    """
+    filtered_data_indexes = dataframe.index[dataframe[column_name].str.contains(like, regex=True, na=False)]
+    # Return filtered data in dataframe
+    dataframe = dataframe.drop(filtered_data_indexes)
+
+    return dataframe
+
+
+def DataframeModifications(dataframe, sheet_name):
+
+    # Example of regex and removing unwanted rows
+    if sheet_name == "Port 12 PCCB Parameters":
+        dataframe = SkipParamsLike(dataframe, 'Name', 'U1|W1|V1|U2|W2|V2|U3|W3|V3|U4|W4|V4|U5|W5|V5|U6|W6|V6|U7|W7|V7|'
+                                                      'U8|W8|V8|U9|W9|V9')
+    if sheet_name == "Port 14 PIOB Parameters":
+        dataframe = SkipParamsLike(dataframe, 'New Parameter Number', 'TBD')
+
+    return dataframe
 
 def DeleteDuplicatedParams(dataframe, priorities_dictionary):
 
@@ -54,18 +81,75 @@ def DeleteDuplicatedParams(dataframe, priorities_dictionary):
     return dataframe
 
 
+def FilterByFirmwareRev(major_rev, minor_rev, family_text):
+    crs_to_skip_list = []
+    if major_rev == 1:
+
+        if family_text == "PF6000T":
+            crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10"]
+        else:
+            crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10", "CR1 R2", "CR1 R3",
+                                "CR2 R4", "Dev CR2 R4", "CR2 R5", "CR2 R6", "CR2 R6.003", "CR2 R6.004", "CR3", "CR3 LC",
+                                "Temp CR3 R10", "CR3 R10", "CR3 R11", "MV_CR1", "MV_CR2"]
+    elif major_rev == 2:
+        crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10", "CR1 R3", "CR2 R4",
+                            "Dev CR2 R4", "CR2 R5", "CR2 R6", "CR2 R6.003", "CR2 R6.004", "CR3", "CR3 LC",
+                            "Temp CR3 R10", "CR3 R10", "CR3 R11", "MV_CR1", "MV_CR2"]
+    elif major_rev == 3:
+        crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10", "CR2 R4", "Dev CR2 R4",
+                            "CR2 R5", "CR2 R6", "CR2 R6.003", "CR2 R6.004", "CR3", "CR3 LC", "Temp CR3 R10", "CR3 R10",
+                            "CR3 R11", "MV_CR1", "MV_CR2"]
+    elif major_rev == 4:
+        crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10", "CR2 R5", "CR2 R6",
+                            "CR2 R6.003","CR2 R6.004", "CR3", "CR3 LC", "Temp CR3 R10", "CR3 R10", "CR3 R11", "MV_CR1",
+                            "MV_CR2"]
+    elif major_rev == 5:
+        crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10", "CR2 R5", "CR2 R6",
+                            "CR2 R6.003", "CR2 R6.004", "CR3", "CR3 LC", "Temp CR3 R10", "CR3 R10", "CR3 R11", "MV_CR1",
+                            "MV_CR2"]
+    elif major_rev == 6:
+        if minor_rev == 3:
+            crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10", "CR2 R6.004",
+                                "CR3", "CR3 LC", "Temp CR3 R10", "CR3 R10", "CR3 R11", "MV_CR1", "MV_CR2"]
+        elif minor_rev == 4:
+            crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10", "CR3", "CR3 LC",
+                                "Temp CR3 R10", "CR3 R10", "CR3 R11", "MV_CR1", "MV_CR2"]
+    elif major_rev == 7:
+        if family_text == "PF6000T":
+            crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10"]
+        else:
+            crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10", "CR3 R10",
+                                "CR3 R11", "MV_CR1", "MV_CR2"]
+    elif major_rev == 8:
+        if family_text == "PF6000T":
+            crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10"]
+        else:
+            crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10", "CR3 R10",
+                                "CR3 R11", "MV_CR1", "MV_CR2"]
+    elif major_rev == 10:
+        if family_text == "PF6000T":
+            crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10"]
+        else:
+            crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10", "CR3 R11",
+                                "MV_CR1", "MV_CR2"]
+    elif major_rev == 11:
+        if family_text == "PF6000T":
+            crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10"]
+        else:
+            crs_to_skip_list = ["nan", "CRx", "Dev CR1", "Dev CR1 R2", "Dev CR2 R4", "Temp CR3 R10", "MV_CR1", "MV_CR2"]
+    return crs_to_skip_list
+
+
 if __name__ == "__main__":
 
     '''**************************************************'''
     '''EDIT SECTION - this variables can be edited ******'''
 
-    tested_drive = 'PF755TR'
-
     sheets_to_parse = ["Port 0 ICB Parameters",
                        "Port 9 Application Parameters",
                        "Port 13 Converter Control Param",
-                       "Port 12 Parameters",
-                       "Port 14 Parameters"]
+                       "Port 12 PCCB Parameters",
+                       "Port 14 PIOB Parameters"]
 
     columns_to_import = ["Name",
                          "New Parameter Number",
@@ -76,12 +160,7 @@ if __name__ == "__main__":
                          "Online Minimum",
                          "Online Maximum",
                          "Online Default",
-                         "Applicable to Frame 5-6 Panel Mount Drives (PF755TR and PF755TL)?"]
-
-    crs_to_skip = ["CRx",
-                   "MV_CR1",
-                   "MV_CR2",
-                   "nan"]
+                         "Applicable to PF6000T?"]
 
     names_to_skip = ["Reserved"]
 
@@ -89,7 +168,7 @@ if __name__ == "__main__":
     '''**************************************************'''
 
     '''**************************************************'''
-    '''MAINTENANCE SECTION - this variables needs to be  '''
+    '''MAINTENANCE SECTION - this variables need to be   '''
     '''maintained when changes in HPC Database Draft     '''
     '''will appear.                                      '''
 
@@ -116,6 +195,13 @@ if __name__ == "__main__":
         'MV_CR1': 2,
         'MV_CR2': 1
      }
+
+    tested_drive = 'PF6000T'
+    major_fw_rev = 1
+    minor_fw_rev = 1
+
+    # Based on firmware revision and family text define CRs which should be skipped
+    crs_to_skip = FilterByFirmwareRev(major_fw_rev, minor_fw_rev, tested_drive)
     '''**************************************************'''
 
     # Create Pandas dataframe object
@@ -133,29 +219,25 @@ if __name__ == "__main__":
 
     '''
     Parameters filtration for all read out workbook sheets.
-    In the table, there shouldn't be parameters assigned to "CRx", "MV_CR1", "MV_CR2" commercial releases.
+    In the table, there shouldn't be parameters assigned to "crs_to_skip" commercial releases.
     There shouldn't also be other parameters than this which are applicable to specified drive.
     Reserved parameters also shouldn't be visible.
     Parameter number column needs to be displayed as int instead of real.
     '''
-    for sheet_number in range(0, len(ports_dataframes)):
+    for sheet_number, sheet_name in enumerate(sheets_to_parse):
         # Skip parameters with CRs which are not applicable to the drive
         ports_dataframes[sheet_number] = FilterDataframe(ports_dataframes[sheet_number], 'Commercial Release',
                                                          crs_to_skip)
 
         # Skip parameters which are not applicable to the tested drive
-        if tested_drive == "PF755TR":
+        if tested_drive == "PF6000T":
             # Based on the drive type "applicable_to_column" variable should be rewritten from HPC Database document
-            applicable_to_column_name = "Applicable to Frame 5-6 Panel Mount Drives (PF755TR and PF755TL)?"
+            applicable_to_column_name = "Applicable to PF6000T?"
             ports_dataframes[sheet_number] = FilterDataframe(ports_dataframes[sheet_number], applicable_to_column_name,
                                                              applicable_values_to_skip)
 
         # Skip parameters which are named as "Reserved"
         ports_dataframes[sheet_number] = FilterDataframe(ports_dataframes[sheet_number], 'Name', names_to_skip)
-
-        # Change displayed "New Parameter Number" value datatype from real to int
-        ports_dataframes[sheet_number]['New Parameter Number'] = ports_dataframes[sheet_number][
-            'New Parameter Number'].astype(int)
 
         ''' THIS IS AUTOMATIC DISCOVERING UNIQUE CRs FROM DATAFRAME AND ASIGNING PRIORITIES TO THEM
             BUT PRIORITIES ARE WRONGLY ASSIGNED TO CRs - THIS NEEDS TO BE CORRECTED
@@ -172,24 +254,17 @@ if __name__ == "__main__":
         print "%" * 100
         '''
 
+        # Data modifications section
+        ports_dataframes[sheet_number] = DataframeModifications(ports_dataframes[sheet_number], sheet_name)
+
         # Delete duplicated parameters based on the priority of CR and overwrite dataframe
         ports_dataframes[sheet_number] = DeleteDuplicatedParams(ports_dataframes[sheet_number], crs_priorities_dict)
+
+        # Change displayed "New Parameter Number" value datatype from real to int
+        ports_dataframes[sheet_number]['New Parameter Number'] = ports_dataframes[sheet_number][
+            'New Parameter Number'].astype(int)
 
         # Print modified dataframes to excel
         ports_dataframes[sheet_number].to_excel(sheets_to_parse[sheet_number] + '.xlsx', index=False)
         print "File {}.xlsm saved successfully".format(sheets_to_parse[sheet_number])
         print "*" * 100
-
-        # '''RETRIEVING DUPLICATED VALUES'''
-        # duplicated.append(ports_dataframes[sheet_number][ports_dataframes[sheet_number]['Name'].duplicated(keep=False) == True])
-
-    # # Show 3 dataframe columns: 'Name', 'Commercial Release', 'New Parameter Number'
-    # print ports_dataframes[0][['Name', 'Commercial Release', 'New Parameter Number']]
-
-    # print "*" * 80
-    # print ports_dataframes[0]['Commercial Release'].values
-    # print "*" * 80
-    # print ports_dataframes[0]['Applicable to Frame 5-6 Panel Mount Drives (PF755TR and PF755TL)?'].values[0]
-
-    # print duplicated[0][['Commercial Release', 'Name']]
-    # print "------------"

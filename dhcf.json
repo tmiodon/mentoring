@@ -1,0 +1,537 @@
+{
+    "schema": "none",
+    "":[
+    {
+        "@Key": "Drive Frame Size",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 0
+        }
+    },
+    {
+        "@Key": "Drive Enclosure Type",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 0
+        }
+    },
+    {
+        "@Key": "Drive Rated Ambient Temperature",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 40.0
+        }
+    },
+    {
+        "@Key": "Drive Rated Altitude",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 1000
+        }
+    },
+    {
+        "@Key": "Nominal Load Voltage",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 460.0
+        }
+    },
+    {
+        "@Key": "Drive Current Rating",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 47.0
+        }
+    },
+    {
+        "@Key": "Nominal System Voltage",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 480.0
+        }
+    },
+    {
+        "@Key": "Rated Line Frequency",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 60
+        }
+    },
+    {
+        "@Key": "Drive OverLoad Rating",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 0
+        }
+    },
+    {
+        "@Key": "Power Cell Bypass Option",
+        "@Attributes": {
+            "@ValueType": "bool_t",
+            "@Value": true
+        }
+    },
+    {
+        "@Key": "PreCharge Option",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 1
+        }
+    },
+    {
+        "@Key": "Synchronous Bypass Option",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 0
+        }
+    },
+    {
+        "@Key": "Synchronous Bypass Line Reactor Option",
+        "@Attributes": {
+            "@ValueType": "bool_t",
+            "@Value": false
+        }
+    },
+    {
+        "@Key": "Output Filter Option",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 0
+        }
+    },
+    {
+        "@Key": "Redundant Fan Option",
+        "@Attributes": {
+            "@ValueType": "bool_t",
+            "@Value": false
+        }
+    },
+    {
+        "@Key": "UPS Option",
+        "@Attributes": {
+            "@ValueType": "bool_t",
+            "@Value": false
+        }
+    },
+    {
+        "@Key": "Redundant 24V Power Supply Option",
+        "@Attributes": {
+            "@ValueType": "bool_t",
+            "@Value": false
+        }
+    },
+    {
+        "@Key": "User Thermal Option",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 1
+        }
+    },
+    {
+        "@Key": "Power Config Point IO Option",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 3
+        }
+    },
+    {
+        "@Key": "Overload Current Percent",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 110.0
+        }
+    },
+    {
+        "@Key": "Number of Transformers",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 1
+        }
+    },
+    {
+        "@Key": "Rated Volts Primary",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 480.0
+        }
+    },
+    {
+        "@Key": "Rated Volts Secondary",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 315.0
+        }
+    },
+    {
+        "@Key": "Auxiliary Winding Rated Volts",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 460.0
+        }
+    },
+    {
+        "@Key": "Transformer 1 Rated KVA",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 35.0
+        }
+    },
+    {
+        "@Key": "Transformer 1 Auxiliary Winding rated KVA",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 100.0
+        }
+    },
+    {
+        "@Key": "Transformer 2 Rated KVA",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.0
+        }
+    },
+    {
+        "@Key": "Transformer 2 Auxiliary Winding Rated kVA",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.0
+        }
+    },
+    {
+        "@Key": "Power Cell Current Rating",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 250.0
+        }
+    },
+    {
+        "@Key": "Number Power Cell per Phase",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 1
+        }
+    },
+    {
+        "@Key": "Line VSB Ratio",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 319.5
+        }
+    },
+    {
+        "@Key": "Line CT ratio",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 400.0
+        }
+    },
+    {
+        "@Key": "Line CT Burden",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 18.75
+        }
+    },
+    {
+        "@Key": "PreCharge Circuit Duty Cycle",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 80.0
+        }
+    },
+    {
+        "@Key": "HECS Current Ratio",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 1000.0
+        }
+    },
+    {
+        "@Key": "HECS Burden",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 83.0
+        }
+    },
+    {
+        "@Key": "VSB Ratio Motor",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 319.5
+        }
+    },
+    {
+        "@Key": "VSB Ratio Sync Line",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.0
+        }
+    },
+    {
+        "@Key": "Sync Line Inductance",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.0
+        }
+    },
+    {
+        "@Key": "Output Filter Inductance",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.0
+        }
+    },
+    {
+        "@Key": "Output Filter Rated current",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.0
+        }
+    },
+    {
+        "@Key": "Output Filter Capacitance",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.0
+        }
+    },
+    {
+        "@Key": "Transformer Cabinet 1 Fans",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 0
+        }
+    },
+    {
+        "@Key": "Transformer Cabinet 2 Fans",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 0
+        }
+    },
+    {
+        "@Key": "Power Converter Cabinet Fans",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 0
+        }
+    },
+    {
+        "@Key": "Output Filter Cabinet Fans",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 0
+        }
+    },
+    {
+        "@Key": "VFD Cabinet Fans",
+        "@Attributes": {
+            "@ValueType": "uint16_t",
+            "@Value": 2
+        }
+    },
+    {
+        "@Key": "Drive PWM Nominal Frequency",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.6
+        }
+    },
+    {
+        "@Key": "Temperature Derating Factor",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.01
+        }
+    },
+    {
+        "@Key": "Altitude Derating Factor",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.01
+        }
+    },
+    {
+        "@Key": "Power System Configuration",
+        "@Attributes": {
+            "@ValueType": "uint32_t",
+            "@Value": 0
+        }
+    },
+    {
+        "@Key": "Power Cell Rated Ambient temperature",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 40.0
+        }
+    },
+    {
+        "@Key": "Power Cell Derating factor per 1C above 40C",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.01
+        }
+    },
+    {
+        "@Key": "Power Cell Rated Altitude",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 1000.0
+        }
+    },
+    {
+        "@Key": "Power Cell Derating factor per 100m above 1000m",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.01
+        }
+    },
+    {
+        "@Key": "Power Cell Overload Current Start Level",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 105.0
+        }
+    },
+    {
+        "@Key": "Power Cell Overload Current 10ms Level",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 130.0
+        }
+    },
+    {
+        "@Key": "Power Cell Overload Current Trip Level",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 135.0
+        }
+    },
+    {
+        "@Key": "Power Cell Overload Current 1 min Level",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 110.0
+        }
+    },
+    {
+        "@Key": "Power Cell Overload Time Calculation Ko",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 1.43725
+        }
+    },
+    {
+        "@Key": "Power Cell Overload Time Calculation Offset",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 26.235
+        }
+    },
+    {
+        "@Key": "Power Cell Low Speed Derating Level 1 Frequency",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 1.0
+        }
+    },
+    {
+        "@Key": "Power Cell Low Speed Derating Level 2 Frequency",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 5.0
+        }
+    },
+    {
+        "@Key": "Power Cell Low Speed Derating Level 3 Frequency",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 10.0
+        }
+    },
+    {
+        "@Key": "Power Cell Low Speed Derating Level 4 Frequency",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 15.0
+        }
+    },
+    {
+        "@Key": "Power Cell Low Speed Derating Level 5 Frequency",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 20.0
+        }
+    },
+    {
+        "@Key": "Power Cell Low Speed Derating Level 1 Factor",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.8
+        }
+    },
+    {
+        "@Key": "Power Cell Low Speed Derating Level 2 Factor",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.87
+        }
+    },
+    {
+        "@Key": "Power Cell Low Speed Derating Level 3 Factor",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.93
+        }
+    },
+    {
+        "@Key": "Power Cell Low Speed Derating Level 4 Factor",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.96
+        }
+    },
+    {
+        "@Key": "Power Cell Low Speed Derating Level 5 Factor",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 1.0
+        }
+    },
+    {
+        "@Key": "Power Cell PWM Nominal Frequency",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.6
+        }
+    },
+    {
+        "@Key": "Power Cell PWM Level 1 Frequency",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.9
+        }
+    },
+    {
+        "@Key": "Power Cell PWM Level 2 Frequency",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 1.2
+        }
+    },
+    {
+        "@Key": "Power Cell PWM Level 1 Frequency Derating Factor",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.885
+        }
+    },
+    {
+        "@Key": "Power Cell PWM Level 2 Frequency Derating Factor",
+        "@Attributes": {
+            "@ValueType": "float32_t",
+            "@Value": 0.815
+        }
+    }
+  ]
+}

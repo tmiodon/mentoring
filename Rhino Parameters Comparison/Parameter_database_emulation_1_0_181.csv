@@ -1,0 +1,2463 @@
+Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum,Parameter Max Value,Parameter Min Value,Parameter Default Value,Parameter Unit,Parameter Writable,Value Does Not Default
+0,1,Output Frequency,0.00,,650.00,-650.00,0.00,Hz  ,False,False
+0,2,Commanded SpdRef,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,3,Mtr Vel Fdbk,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,4,Commanded Trq,0.00,,800.00,-800.00,0.00,%   ,False,False
+0,5,Torque Cur Fdbk,0.00,,44.00,-44.00,0.00,Amps,False,False
+0,6,Flux Cur Fdbk,0.00,,44.00,-44.00,0.00,Amps,False,False
+0,7,Output Current,0.00,,44.00,0.00,0.00,Amps,False,False
+0,8,Output Voltage,0.00,,529.00,0.00,0.00,VAC ,False,False
+0,9,Output Power,0.00,,3000.00,0.00,0.00,kW  ,False,False
+0,10,Output Powr Fctr,0.00,,1.00,0.00,0.00,    ,False,False
+0,11,DC Bus Volts,674.80,,920.00,0.00,0.00,VDC ,False,False
+0,12,DC Bus Memory,674.84,,920.00,0.00,0.00,VDC ,False,False
+0,13,Elapsed MWH,0.000,,4294970000.000,0.000,0.000,MWh ,False,False
+0,14,Elapsed kWH,0.000,,4294970000.000,0.000,0.000,kWh ,False,False
+0,15,Elapsed Run Time,0.000,,61111.100,0.000,0.000,Hrs ,False,False
+0,16,Elpsd Mtr MWHrs,0.0,,220000000.0,0.0,0.0,MWh ,False,False
+0,17,Elpsd Rgn MWHrs,0.0,,220000000.0,0.0,0.0,MWh ,False,False
+0,18,Elpsd Mtr kWHrs,0.0000,,220000000.0000,0.0000,0.0000,kWh ,False,False
+0,19,Elpsd Rgn kWHrs,0.0000,,220000000.0000,0.0000,0.0000,kWh ,False,False
+0,20,Rated Volts,480.00,,690.00,0.00,0.00,VAC ,False,False
+0,21,Rated Amps,22.00,,6000.00,0.00,0.00,Amps,False,False
+0,22,Rated kW,11.00,,3500.00,0.00,0.00,kW  ,False,False
+0,23,Reserved,0,,0,0,0,    ,False,False
+0,24,Reserved,0,,0,0,0,    ,False,False
+0,25,Motor NP Volts,460.00,,529.00,0.10,460.00,VAC ,True,False
+0,26,Motor NP Amps,18.50,,220.00,0.01,18.50,Amps,True,False
+0,27,Motor NP Hertz,60.00,,650.00,2.00,60.00,Hz  ,True,False
+0,28,Motor NP RPM,1765.0,,40000.0,1.0,1765.0,RPM ,True,False
+0,29,Mtr NP Pwr Units,0,HP          ,1,0,0,    ,True,False
+0,30,Motor NP Power,15.00,,2000.00,0.01,15.00,HP  ,True,False
+0,31,Motor Poles,4,,200,2,4,Pole,True,False
+0,32,Reserved,0,,0,0,0,    ,False,False
+0,33,Reserved,0,,0,0,0,    ,False,False
+0,34,Reserved,0,,0,0,0,    ,False,False
+0,35,Motor Ctrl Mode,1,Induction SV,10,0,1,    ,True,False
+0,36,Maximum Voltage,460.00,,529.00,115.00,460.00,VAC ,True,False
+0,37,Maximum Freq,130.00,,650.00,0.01,130.00,Hz  ,True,False
+0,38,PWM Frequency,4.0,,12.0,2.0,4.0,kHz ,True,False
+0,39,Reserved,0,,0,0,0,    ,False,False
+0,40,Mtr Options Cfg,000098E7,,0000FFFF,00000000,000098E7,    ,True,False
+0,41,Common Mode Type,0,CMV         ,1,0,0,    ,True,False
+0,42,Bus Utilization,95.00,,100.00,85.00,95.00,%   ,True,False
+0,43,Flux Up Enable,1,Automatic   ,1,0,1,    ,True,False
+0,44,Flux Up Time,0.1368,,5.0000,0.0000,0.0000,Secs,True,False
+0,45,Flux Down Ki,0.20,,100.00,0.00,0.20,    ,True,False
+0,46,Flux Down Kp,150.0,,10000.0,0.0,150.0,    ,True,False
+0,47,Econ At Ref Ki,305.0,,100000.0,0.0,305.0,    ,True,False
+0,48,Econ AccDec Ki,200.0,,100000.0,0.0,200.0,    ,True,False
+0,49,Econ AccDec Kp,100.0,,1000000.0,0.0,100.0,V/A ,True,False
+0,50,Stability Filter,5162.22,,1000000.00,0.00,5162.22,Secs,True,False
+0,51,Stab Volt Gain,5322.22,,10000000.00,0.00,5322.22,    ,True,False
+0,52,Stab Angle Gain,790.43,,10000000.00,0.00,790.43,    ,True,False
+0,53,Reserved,0,,0,0,0,    ,False,False
+0,54,Reserved,0,,0,0,0,    ,False,False
+0,55,Reserved,0,,0,0,0,    ,False,False
+0,56,Reserved,0,,0,0,0,    ,False,False
+0,57,Reserved,0,,0,0,0,    ,False,False
+0,58,Reserved,0,,0,0,0,    ,False,False
+0,59,Reserved,0,,0,0,0,    ,False,False
+0,60,Start Acc Boost,8.50,,115.00,0.00,8.50,VAC ,True,False
+0,61,Run Boost,8.50,,115.00,0.00,8.50,VAC ,True,False
+0,62,Break Voltage,115.00,,690.00,0.00,115.00,VAC ,True,False
+0,63,Break Frequency,15.00,,60.00,0.00,15.00,Hz  ,True,False
+0,64,SVC Boost Filter,0.1000,,1000.0000,0.0001,0.1000,Secs,True,False
+0,65,VHz Curve,0,Custom V/Hz ,1,0,0,    ,True,False
+0,66,Reserved,0,,0,0,0,    ,False,False
+0,67,Reserved,0,,0,0,0,    ,False,False
+0,68,Reserved,0,,0,0,0,    ,False,False
+0,69,Reserved,0,,0,0,0,    ,False,False
+0,70,Autotune,1,Calculate   ,4,0,1,    ,True,False
+0,71,Autotune Torque,50.00,,200.00,0.00,50.00,%   ,True,False
+0,72,Reserved,0,,0,0,0,    ,False,False
+0,73,IR Voltage Drop,8.70,,115.00,0.00,8.50,Volt,True,False
+0,74,Ixo Voltage Drop,0.00,,460.00,0.00,115.00,VAC ,True,False
+0,75,Flux Current Ref,5.55,,21.89,0.00,7.70,Amps,True,False
+0,76,Total Inertia,2.00,,600.00,0.01,2.00,Secs,True,False
+0,77,Inertia Test Lmt,0.0,,65535.0,0.0,0.0,Revs,True,False
+0,78,Encdrlss AngComp,0.0000,,6.2831,-6.2831,0.0000,Rad ,True,False
+0,79,Encdrlss VltComp,8.70,,115.00,0.00,3.50,VAC ,True,False
+0,80,PM Cfg,0000,AutoOfstTest,03FF,0000,0000,    ,True,False
+0,81,PM PriEnc Offset,0,,1023,0,0,    ,True,False
+0,82,PM AltEnc Offset,0,,1023,0,0,    ,True,False
+0,83,PM OfstTst Cur,40.00,,200.00,0.00,40.00,%   ,True,False
+0,84,PM OfstTst CRamp,3.00,,100.00,0.00,3.00,Secs,True,False
+0,85,PM OfstTst FRamp,60.00,,1000.00,0.00,60.00,Secs,True,False
+0,86,PM CEMF Voltage,31.05,,690.00,0.00,31.05,Volt,True,False
+0,87,PM IR Voltage,8.70,,115.00,0.00,3.50,Volt,True,False
+0,88,PM IXq Voltage,20.01,,690.00,0.00,20.01,Volt,True,False
+0,89,PM IXd Voltage,20.01,,690.00,0.00,20.01,Volt,True,False
+0,90,Reserved,0,,0,0,0,    ,False,False
+0,91,PM Vqs Reg Kp,2.50,,1000.00,0.00,2.50,    ,True,False
+0,92,PM Vqs Reg Ki,0.50,,1000.00,0.00,0.50,    ,True,False
+0,93,PM Dir Test Cur,1.85,,18.50,0.00,1.85,Amps,True,False
+0,94,Reserved,0,,0,0,0,    ,False,False
+0,95,VCL Cur Reg BW,0.0,,9999.0,0.0,0.0,R/S ,True,False
+0,96,VCL Cur Reg Kp,1250.0,,50000.0,0.0,1250.0,    ,True,False
+0,97,VCL Cur Reg Ki,60.0,,50000.0,0.0,60.0,    ,True,False
+0,98,VEncdls FReg Kp,524.0,,100000.0,0.0,524.0,Hz/A,True,False
+0,99,VEncdls FReg Ki,9080.0,,100000.0,0.0,9080.0,Hz/A,True,False
+0,100,Slip Reg Enable,1,Enabled     ,1,0,1,    ,True,False
+0,101,Slip Reg Ki,10.00,,10000.00,0.00,10.00,    ,True,False
+0,102,Slip Reg Kp,0.50,,10000.00,0.00,0.50,    ,True,False
+0,103,Flux Reg Enable,1,Enabled     ,1,0,1,    ,True,False
+0,104,Flux Reg Ki,30.00,,10000.00,0.00,30.00,    ,True,False
+0,105,Flux Reg Kp,1.00,,10000.00,0.00,1.00,    ,True,False
+0,106,Trq Adapt Speed,10.00,,100.00,0.00,10.00,%   ,True,False
+0,107,Trq Adapt En,1,Enabled     ,1,0,1,    ,True,False
+0,108,Phase Delay Comp,0.00,,100.00,-100.00,0.00,    ,True,False
+0,109,Trq Comp Mode,1,Auto        ,1,0,1,    ,True,False
+0,110,Trq Comp Mtring,0.00,,50.00,-50.00,0.00,%   ,True,False
+0,111,Trq Comp Regen,0.00,,50.00,-50.00,0.00,%   ,True,False
+0,112,Slip Adapt Iqs,0.05,,1.00,0.00,0.05,    ,True,False
+0,113,SFAdapt SlewLmt,0.00,,60.00,0.00,0.00,Secs,True,False
+0,114,SFAdapt SlewRate,0.005000,,1.000000,0.000010,0.005000,    ,True,False
+0,115,SFAdapt CnvrgLvl,0.010000,,1.000000,0.000010,0.010000,    ,True,False
+0,116,SFAdapt CnvrgLmt,0.500,,5.000,0.000,0.500,    ,True,False
+0,117,Reserved,0,,0,0,0,    ,False,False
+0,118,Reserved,0,,0,0,0,    ,False,False
+0,119,Reserved,0,,0,0,0,    ,False,False
+0,120,PM IXqVoltage125,20.01,,690.00,0.00,20.01,Volt,True,False
+0,121,Reserved,0,,0,0,0,    ,False,False
+0,122,Reserved,0,,0,0,0,    ,False,False
+0,123,Reserved,0,,0,0,0,    ,False,False
+0,124,Reserved,0,,0,0,0,    ,False,False
+0,125,Pri Vel Fdbk Sel,137,,159999,1,137,    ,True,False
+0,126,Pri Vel FdbkFltr,3,50R/S Noise ,7,0,3,    ,True,False
+0,127,Pri Vel Feedback,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,128,Alt Vel Fdbk Sel,137,,159999,1,137,    ,True,False
+0,129,Alt Vel FdbkFltr,3,50R/S Noise ,7,0,3,    ,True,False
+0,130,Alt Vel Feedback,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,131,Active Vel Fdbk,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,132,Aux Vel Fdbk Sel,137,,159999,1,137,    ,True,False
+0,133,Aux Vel FdbkFltr,3,50R/S Noise ,7,0,3,    ,True,False
+0,134,Aux Vel Feedback,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,135,Psn Fdbk Sel,138,,159999,1,138,    ,True,False
+0,136,Load Psn FdbkSel,847,,159999,1,847,    ,True,False
+0,137,Open Loop Fdbk,0,,2147483647,-2147483648,0,    ,False,False
+0,138,Simulator Fdbk,0,,2147483647,-2147483648,0,    ,False,False
+0,139,Delayed Spd Ref,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,140,Virtual EncDelay,0,,2147483624,-2147483648,0,    ,False,False
+0,141,Virtual Enc EPR,4096,,67108864,10,4096,    ,True,False
+0,142,Virtual Enc Psn,0,,2147483647,-2147483648,0,    ,False,False
+0,143,Reserved,0,,0,0,0,    ,False,False
+0,144,Reserved,0,,0,0,0,    ,False,False
+0,145,Reserved,0,,0,0,0,    ,False,False
+0,146,Reserved,0,,0,0,0,    ,False,False
+0,147,Reserved,0,,0,0,0,    ,False,False
+0,148,Reserved,0,,0,0,0,    ,False,False
+0,149,Reserved,0,,0,0,0,    ,False,False
+0,150,Digital In Cfg,0,Run Edge    ,1,0,0,    ,True,False
+0,151,Reserved,0,,0,0,0,    ,False,False
+0,152,Reserved,0,,0,0,0,    ,False,False
+0,153,Reserved,0,,0,0,0,    ,False,False
+0,154,Reserved,0,,0,0,0,    ,False,False
+0,155,DI Enable,0.00,,159999.15,0.00,0.00,    ,True,False
+0,156,DI Clear Fault,0.00,,159999.15,0.00,0.00,    ,True,False
+0,157,DI Aux Fault,0.00,,159999.15,0.00,0.00,    ,True,False
+0,158,DI Stop,0.00,,159999.15,0.00,0.00,    ,True,False
+0,159,DI Cur Lmt Stop,0.00,,159999.15,0.00,0.00,    ,True,False
+0,160,DI Coast Stop,0.00,,159999.15,0.00,0.00,    ,True,False
+0,161,DI Start,0.00,,159999.15,0.00,0.00,    ,True,False
+0,162,DI Fwd Reverse,0.00,,159999.15,0.00,0.00,    ,True,False
+0,163,DI Run,0.00,,159999.15,0.00,0.00,    ,True,False
+0,164,DI Run Forward,0.00,,159999.15,0.00,0.00,    ,True,False
+0,165,DI Run Reverse,0.00,,159999.15,0.00,0.00,    ,True,False
+0,166,DI Jog 1,0.00,,159999.15,0.00,0.00,    ,True,False
+0,167,DI Jog 1 Forward,0.00,,159999.15,0.00,0.00,    ,True,False
+0,168,DI Jog 1 Reverse,0.00,,159999.15,0.00,0.00,    ,True,False
+0,169,DI Jog 2,0.00,,159999.15,0.00,0.00,    ,True,False
+0,170,DI Jog 2 Forward,0.00,,159999.15,0.00,0.00,    ,True,False
+0,171,DI Jog 2 Reverse,0.00,,159999.15,0.00,0.00,    ,True,False
+0,172,DI Manual Ctrl,0.00,,159999.15,0.00,0.00,    ,True,False
+0,173,DI Speed Sel 0,0.00,,159999.15,0.00,0.00,    ,True,False
+0,174,DI Speed Sel 1,0.00,,159999.15,0.00,0.00,    ,True,False
+0,175,DI Speed Sel 2,0.00,,159999.15,0.00,0.00,    ,True,False
+0,176,DI HOA Start,0.00,,159999.15,0.00,0.00,    ,True,False
+0,177,DI MOP Inc,0.00,,159999.15,0.00,0.00,    ,True,False
+0,178,DI MOP Dec,0.00,,159999.15,0.00,0.00,    ,True,False
+0,179,DI Accel 2,0.00,,159999.15,0.00,0.00,    ,True,False
+0,180,DI Decel 2,0.00,,159999.15,0.00,0.00,    ,True,False
+0,181,DI SpTqPs Sel 0,0.00,,159999.15,0.00,0.00,    ,True,False
+0,182,DI SpTqPs Sel 1,0.00,,159999.15,0.00,0.00,    ,True,False
+0,183,Reserved,0,,0,0,0,    ,False,False
+0,184,Reserved,0,,0,0,0,    ,False,False
+0,185,DI Stop Mode B,0.00,,159999.15,0.00,0.00,    ,True,False
+0,186,DI BusReg Mode B,0.00,,159999.15,0.00,0.00,    ,True,False
+0,187,DI PwrLoss ModeB,0.00,,159999.15,0.00,0.00,    ,True,False
+0,188,DI Pwr Loss,0.00,,159999.15,0.00,0.00,    ,True,False
+0,189,DI Precharge,0.00,,159999.15,0.00,0.00,    ,True,False
+0,190,DI Prchrg Seal,0.00,,159999.15,0.00,0.00,    ,True,False
+0,191,DI PID Enable,0.00,,159999.15,0.00,0.00,    ,True,False
+0,192,DI PID Hold,0.00,,159999.15,0.00,0.00,    ,True,False
+0,193,DI PID Reset,0.00,,159999.15,0.00,0.00,    ,True,False
+0,194,DI PID Invert,0.00,,159999.15,0.00,0.00,    ,True,False
+0,195,DI Torque StptA,0.00,,159999.15,0.00,0.00,    ,True,False
+0,196,DI Fwd End Limit,0.00,,159999.15,0.00,0.00,    ,True,False
+0,197,DI Fwd Dec Limit,0.00,,159999.15,0.00,0.00,    ,True,False
+0,198,DI Rev End Limit,0.00,,159999.15,0.00,0.00,    ,True,False
+0,199,DI Rev Dec Limit,0.00,,159999.15,0.00,0.00,    ,True,False
+0,200,DI PHdwr OvrTrvl,0.00,,159999.15,0.00,0.00,    ,True,False
+0,201,DI NHdwr OvrTrvl,0.00,,159999.15,0.00,0.00,    ,True,False
+0,202,Reserved,0,,0,0,0,    ,False,False
+0,203,Reserved,0,,0,0,0,    ,False,False
+0,204,Reserved,0,,0,0,0,    ,False,False
+0,205,Reserved,0,,0,0,0,    ,False,False
+0,206,Reserved,0,,0,0,0,    ,False,False
+0,207,Reserved,0,,0,0,0,    ,False,False
+0,208,Reserved,0,,0,0,0,    ,False,False
+0,209,Reserved,0,,0,0,0,    ,False,False
+0,210,Reserved,0,,0,0,0,    ,False,False
+0,211,Reserved,0,,0,0,0,    ,False,False
+0,212,Reserved,0,,0,0,0,    ,False,False
+0,213,Reserved,0,,0,0,0,    ,False,False
+0,214,Reserved,0,,0,0,0,    ,False,False
+0,215,Reserved,0,,0,0,0,    ,False,False
+0,216,Reserved,0,,0,0,0,    ,False,False
+0,217,Reserved,0,,0,0,0,    ,False,False
+0,218,Reserved,0,,0,0,0,    ,False,False
+0,219,Reserved,0,,0,0,0,    ,False,False
+0,220,Digital In Sts,0001,,0001,0000,0000,    ,False,False
+0,221,Reserved,0,,0,0,0,    ,False,False
+0,222,Reserved,0,,0,0,0,    ,False,False
+0,223,Reserved,0,,0,0,0,    ,False,False
+0,224,Reserved,0,,0,0,0,    ,False,False
+0,225,Reserved,0,,0,0,0,    ,False,False
+0,226,Reserved,0,,0,0,0,    ,False,False
+0,227,Reserved,0,,0,0,0,    ,False,False
+0,228,Reserved,0,,0,0,0,    ,False,False
+0,229,Reserved,0,,0,0,0,    ,False,False
+0,230,Reserved,0,,0,0,0,    ,False,False
+0,231,Reserved,0,,0,0,0,    ,False,False
+0,232,Reserved,0,,0,0,0,    ,False,False
+0,233,Reserved,0,,0,0,0,    ,False,False
+0,234,Reserved,0,,0,0,0,    ,False,False
+0,235,Reserved,0,,0,0,0,    ,False,False
+0,236,Reserved,0,,0,0,0,    ,False,False
+0,237,Reserved,0,,0,0,0,    ,False,False
+0,238,Reserved,0,,0,0,0,    ,False,False
+0,239,Reserved,0,,0,0,0,    ,False,False
+0,240,Reserved,0,,0,0,0,    ,False,False
+0,241,Reserved,0,,0,0,0,    ,False,False
+0,242,Reserved,0,,0,0,0,    ,False,False
+0,243,Reserved,0,,0,0,0,    ,False,False
+0,244,Reserved,0,,0,0,0,    ,False,False
+0,245,Reserved,0,,0,0,0,    ,False,False
+0,246,Reserved,0,,0,0,0,    ,False,False
+0,247,Reserved,0,,0,0,0,    ,False,False
+0,248,Reserved,0,,0,0,0,    ,False,False
+0,249,Reserved,0,,0,0,0,    ,False,False
+0,250,Reserved,0,,0,0,0,    ,False,False
+0,251,Reserved,0,,0,0,0,    ,False,False
+0,252,Reserved,0,,0,0,0,    ,False,False
+0,253,Reserved,0,,0,0,0,    ,False,False
+0,254,Reserved,0,,0,0,0,    ,False,False
+0,255,Reserved,0,,0,0,0,    ,False,False
+0,256,Reserved,0,,0,0,0,    ,False,False
+0,257,Reserved,0,,0,0,0,    ,False,False
+0,258,Reserved,0,,0,0,0,    ,False,False
+0,259,Reserved,0,,0,0,0,    ,False,False
+0,260,Reserved,0,,0,0,0,    ,False,False
+0,261,Reserved,0,,0,0,0,    ,False,False
+0,262,Reserved,0,,0,0,0,    ,False,False
+0,263,Reserved,0,,0,0,0,    ,False,False
+0,264,Reserved,0,,0,0,0,    ,False,False
+0,265,Reserved,0,,0,0,0,    ,False,False
+0,266,Reserved,0,,0,0,0,    ,False,False
+0,267,Reserved,0,,0,0,0,    ,False,False
+0,268,Reserved,0,,0,0,0,    ,False,False
+0,269,Reserved,0,,0,0,0,    ,False,False
+0,270,Reserved,0,,0,0,0,    ,False,False
+0,271,Reserved,0,,0,0,0,    ,False,False
+0,272,Reserved,0,,0,0,0,    ,False,False
+0,273,Reserved,0,,0,0,0,    ,False,False
+0,274,Reserved,0,,0,0,0,    ,False,False
+0,275,Reserved,0,,0,0,0,    ,False,False
+0,276,Reserved,0,,0,0,0,    ,False,False
+0,277,Reserved,0,,0,0,0,    ,False,False
+0,278,Reserved,0,,0,0,0,    ,False,False
+0,279,Reserved,0,,0,0,0,    ,False,False
+0,280,Reserved,0,,0,0,0,    ,False,False
+0,281,Reserved,0,,0,0,0,    ,False,False
+0,282,Reserved,0,,0,0,0,    ,False,False
+0,283,Reserved,0,,0,0,0,    ,False,False
+0,284,Reserved,0,,0,0,0,    ,False,False
+0,285,Reserved,0,,0,0,0,    ,False,False
+0,286,Reserved,0,,0,0,0,    ,False,False
+0,287,Reserved,0,,0,0,0,    ,False,False
+0,288,Reserved,0,,0,0,0,    ,False,False
+0,289,Reserved,0,,0,0,0,    ,False,False
+0,290,Reserved,0,,0,0,0,    ,False,False
+0,291,Reserved,0,,0,0,0,    ,False,False
+0,292,Reserved,0,,0,0,0,    ,False,False
+0,293,Reserved,0,,0,0,0,    ,False,False
+0,294,Reserved,0,,0,0,0,    ,False,False
+0,295,Reserved,0,,0,0,0,    ,False,False
+0,296,Reserved,0,,0,0,0,    ,False,False
+0,297,Reserved,0,,0,0,0,    ,False,False
+0,298,Reserved,0,,0,0,0,    ,False,False
+0,299,Reserved,0,,0,0,0,    ,False,False
+0,300,Speed Units,0,Hz          ,1,0,0,    ,True,True
+0,301,Access Level,2,Expert      ,2,0,2,    ,True,True
+0,302,Language,1,English     ,11,0,1,    ,True,True
+0,303,Fdbk Filter Cfg,0000,UnFltDcBus V,000F,0000,0000,    ,True,False
+0,304,Reserved,0,,0,0,0,    ,False,False
+0,305,Voltage Class,1,High Voltage,1,0,1,    ,True,True
+0,306,Duty Rating,0,Normal Duty ,1,0,0,    ,True,True
+0,307,Reserved,0,,0,0,0,    ,False,False
+0,308,Direction Mode,0,Unipolar    ,2,0,0,    ,True,False
+0,309,SpdTrqPsn Mode A,1,Speed Reg   ,11,0,1,    ,True,False
+0,310,SpdTrqPsn Mode B,1,Speed Reg   ,11,0,1,    ,True,False
+0,311,SpdTrqPsn Mode C,1,Speed Reg   ,11,0,1,    ,True,False
+0,312,SpdTrqPsn Mode D,1,Speed Reg   ,11,0,1,    ,True,False
+0,313,Actv SpTqPs Mode,1,Speed Reg   ,11,0,1,    ,False,False
+0,314,SLAT Err Stpt,0.00,,60.00,0.00,0.00,Hz  ,True,False
+0,315,SLAT Dwell Time,0.00,,2.00,0.00,0.00,Secs,True,False
+0,316,Reserved,0,,0,0,0,    ,False,False
+0,317,Reserved,0,,0,0,0,    ,False,False
+0,318,Reserved,0,,0,0,0,    ,False,False
+0,319,Reserved,0,,0,0,0,    ,False,False
+0,320,Reserved,0,,0,0,0,    ,False,False
+0,321,Prchrg Control,1,Enabled     ,1,0,1,    ,True,False
+0,322,Prchrg Delay,0.50,,30.00,0.10,0.50,Secs,True,False
+0,323,Prchrg Err Cfg,3,FltCoastStop,5,3,3,    ,True,False
+0,324,Logic Mask,63FF,,7FFF,0000,63FF,    ,True,False
+0,325,Auto Mask,607F,,7FFF,0000,607F,    ,True,False
+0,326,Manual Cmd Mask,607F,,7FFF,0000,607F,    ,True,False
+0,327,Manual Ref Mask,000F,,7FFF,0000,000F,    ,True,False
+0,328,Alt Man Ref Sel,0,,159999,0,0,    ,True,False
+0,329,Alt Man Ref AnHi,60.00,,60.00,-60.00,60.00,Hz  ,True,False
+0,330,Alt Man Ref AnLo,0.00,,60.00,-60.00,0.00,Hz  ,True,False
+0,331,Manual Preload,0000,Reserved    ,000F,0000,0000,    ,True,False
+0,332,Reserved,0,,0,0,0,    ,False,False
+0,333,Reserved,0,,0,0,0,    ,False,False
+0,334,Reserved,0,,0,0,0,    ,False,False
+0,335,Reserved,0,,0,0,0,    ,False,False
+0,336,Reset Meters,0,Ready       ,2,0,0,    ,True,False
+0,337,Reserved,0,,0,0,0,    ,False,False
+0,338,AutoClrFlt Tries,0,,9,0,0,    ,True,False
+0,339,AutoClrFlt Delay,30.0,,864000.0,0.5,30.0,Secs,True,False
+0,340,AutoClrCntrDelay,300.0,,864000.0,0.1,300.0,Secs,True,False
+0,341,Reserved,0,,0,0,0,    ,False,False
+0,342,Reserved,0,,0,0,0,    ,False,False
+0,343,Rstrt Cntr Delay,300.0,,864000.0,0.1,300.0,Secs,True,False
+0,344,Reserved,0,,0,0,0,    ,False,False
+0,345,Start At PowerUp,0,Disabled    ,1,0,0,    ,True,False
+0,346,PowerUp Delay,0.00,,10800.00,0.00,0.00,Secs,True,False
+0,347,Auto Retry Fault,0000,AttmpsExhstd,0003,0000,0000,    ,True,False
+0,348,Auto Rstrt Tries,0,,9,0,0,    ,True,False
+0,349,Auto Rstrt Delay,1.00,,30.00,0.50,1.00,Secs,True,False
+0,350,Sleep Wake Mode,0,Disabled    ,2,0,0,    ,True,False
+0,351,SleepWake RefSel,0,,159999,0,0,    ,True,False
+0,352,Sleep Level,5.00,,10.00,0.00,5.00,Volt,True,False
+0,353,Sleep Time,0.00,,64800.00,0.00,0.00,Secs,True,False
+0,354,Wake Level,6.00,,10.00,0.00,6.00,Volt,True,False
+0,355,Wake Time,0.00,,64800.00,0.00,0.00,Secs,True,False
+0,356,FlyingStart Mode,0,Disabled    ,3,0,0,    ,True,False
+0,357,FS Gain,1200.0,,10000.0,0.0,1200.0,    ,True,False
+0,358,FS Ki,60.0,,1000.0,0.0,60.0,    ,True,False
+0,359,FS Speed Reg Ki,100.0,,10000.0,0.0,100.0,    ,True,False
+0,360,FS Speed Reg Kp,75.0,,100000.0,0.0,75.0,    ,True,False
+0,361,FS Excitation Ki,60.0,,32767.0,0.0,60.0,    ,True,False
+0,362,FS Excitation Kp,1200.0,,32767.0,0.0,1200.0,    ,True,False
+0,363,FS Reconnect Dly,50.00,,10000.00,0.10,50.00,mS  ,True,False
+0,364,FS Msrmnt CurLvl,44.97,,4096.00,0.00,44.97,    ,True,False
+0,365,FS Brk Lvl,15.400,,33.000,0.220,15.400,Amps,True,False
+0,366,FS Brk Time,0.00,,1800.00,0.00,0.00,Secs,True,False
+0,367,FS ZSpd Thresh,200.0,,10000.0,0.0,200.0,    ,True,False
+0,368,Reserved,0,,0,0,0,    ,False,False
+0,369,Reserved,0,,0,0,0,    ,False,False
+0,370,Stop Mode A,1,Ramp        ,6,0,1,    ,True,False
+0,371,Stop Mode B,0,Coast       ,6,0,0,    ,True,False
+0,372,Bus Reg Mode A,1,Adjust Freq ,4,0,1,    ,True,False
+0,373,Bus Reg Mode B,4,Both Frq 1st,4,0,4,    ,True,False
+0,374,Bus Reg Lvl Cfg,0,Bus Memory  ,1,0,0,    ,True,False
+0,375,Bus Reg Level,750.076,,779.700,750.076,750.076,VDC ,True,False
+0,376,Bus Limit Kp,1170.0,,1000000.0,0.0,1170.0,A/V ,True,False
+0,377,Bus Limit Kd,152.0,,1000000.0,0.0,152.0,Secs,True,False
+0,378,Bus Limit ACR Ki,2045.0,,50000.0,0.0,2045.0,    ,True,False
+0,379,Bus Limit ACR Kp,524.0,,100000.0,0.0,524.0,Hz/A,True,False
+0,380,Bus Reg Ki,100.000,,65535.000,0.000,100.000,    ,True,False
+0,381,Bus Reg Kp,10.000,,65535.000,0.000,10.000,    ,True,False
+0,382,DB Resistor Type,0,Internal    ,1,0,0,    ,True,False
+0,383,DB Ext Ohms,22.20,,10000.00,22.20,22.20,Ohms,True,False
+0,384,DB Ext Watts,100.00,,500000.00,1.00,100.00,Watt,True,False
+0,385,DB ExtPulseWatts,2000.00,,100000000.00,1.00,2000.00,Watt,True,False
+0,386,Reserved,0,,0,0,0,    ,False,False
+0,387,Reserved,0,,0,0,0,    ,False,False
+0,388,Flux Braking En,0,Disabled    ,1,0,0,    ,True,False
+0,389,Flux Braking Lmt,125.00,,250.00,100.00,125.00,%   ,True,False
+0,390,Flux Braking Ki,10000.0,,1000000.0,0.0,10000.0,    ,True,False
+0,391,Flux Braking Kp,100.0,,1000000.0,0.0,100.0,V/A ,True,False
+0,392,Stop Dwell Time,0.0,,60.0,0.0,0.0,Secs,True,False
+0,393,DC Brake Lvl Sel,394,,159999,1,394,    ,True,False
+0,394,DC Brake Level,22.000,,33.000,0.220,22.000,Amps,True,False
+0,395,DC Brake Time,0.00,,90.00,0.00,0.00,Secs,True,False
+0,396,DC Brake Ki,10.0,,1000.0,0.0,10.0,    ,True,False
+0,397,DC Brake Kp,1000.0,,10000.0,0.0,1000.0,    ,True,False
+0,398,DC Brk Vq Fltr,250.0,,2000.0,50.0,250.0,    ,True,False
+0,399,DC Brk Vd Fltr,250.0,,2000.0,50.0,250.0,    ,True,False
+0,400,Fast Braking Ki,0.10,,10.00,0.00,0.10,    ,True,False
+0,401,Fast Braking Kp,0.0015,,10.0000,0.0000,0.0015,    ,True,False
+0,402,Brake Off Adj 1,1.00,,5.00,0.01,1.00,    ,True,False
+0,403,Brake Off Adj 2,1.00,,5.00,0.01,1.00,    ,True,False
+0,404,Reserved,0,,0,0,0,    ,False,False
+0,405,Reserved,0,,0,0,0,    ,False,False
+0,406,Reserved,0,,0,0,0,    ,False,False
+0,407,Reserved,0,,0,0,0,    ,False,False
+0,408,Reserved,0,,0,0,0,    ,False,False
+0,409,Dec Inhibit Actn,3,FltCoastStop,3,0,3,    ,True,False
+0,410,Motor OL Actn,3,FltCoastStop,5,0,3,    ,True,False
+0,411,Mtr OL at Pwr Up,0,Assume Cold ,2,0,0,    ,True,False
+0,412,Mtr OL Alarm Lvl,0.00,,100.00,0.00,0.00,%   ,True,False
+0,413,Mtr OL Factor,1.00,,2.00,0.20,1.00,    ,True,False
+0,414,Mtr OL Hertz,20.00,,4096.00,0.00,20.00,Hz  ,True,False
+0,415,Mtr OL Reset Lvl,0.00,,100.00,0.00,0.00,%   ,True,False
+0,416,MtrOL Reset Time,0.00,,99999.00,-99999.00,0.00,Secs,True,False
+0,417,Reserved,0,,0,0,0,    ,False,False
+0,418,Mtr OL Counts,0.00,,100.00,0.00,0.00,%   ,False,False
+0,419,Mtr OL Trip Time,99999,,99999,0,99999,Secs,False,False
+0,420,Drive OL Mode,3,Both PWM 1st,3,0,3,    ,True,False
+0,421,Current Lmt Sel,422,,159999,1,422,    ,True,False
+0,422,Current Limit 1,33.00,,33.00,0.00,33.00,Amps,True,False
+0,423,Current Limit 2,33.00,,33.00,0.00,33.00,Amps,True,False
+0,424,Active Cur Lmt,33.00,,176.00,-176.00,0.00,Amps,False,False
+0,425,Current Rate Lmt,400.00,,800.00,1.00,400.00,%   ,True,False
+0,426,Regen Power Lmt,-50.00,,0.00,-800.00,-50.00,%   ,True,False
+0,427,Motor Power Lmt,200.00,,800.00,0.00,200.00,%   ,True,False
+0,428,Current Limit Kd,760.0,,1000000.0,0.0,760.0,Secs,True,False
+0,429,Current Limit Ki,680.0,,10000.0,0.0,680.0,    ,True,False
+0,430,Current Limit Kp,290.0,,1000000.0,0.0,290.0,Hz/A,True,False
+0,431,Id Lo FreqCur Kp,50.0,,100000.0,0.0,50.0,V/A ,True,False
+0,432,Iq Lo FreqCur Kp,50.0,,100000.0,0.0,50.0,V/A ,True,False
+0,433,Jerk Gain,5200.0,,1000000000.0,0.0,5200.0,    ,True,False
+0,434,Shear Pin Cfg,0000,Shear1NoAcc ,0003,0000,0000,    ,True,False
+0,435,Shear Pin 1 Actn,0,Ignore      ,5,0,0,    ,True,False
+0,436,Shear Pin1 Level,22.00,,33.00,0.00,22.00,Amps,True,False
+0,437,Shear Pin 1 Time,0.00,,30.00,0.00,0.00,Secs,True,False
+0,438,Shear Pin 2 Actn,0,Ignore      ,5,0,0,    ,True,False
+0,439,Shear Pin2 Level,22.00,,33.00,0.00,22.00,Amps,True,False
+0,440,Shear Pin 2 Time,0.00,,30.00,0.00,0.00,Secs,True,False
+0,441,Load Loss Action,0,Ignore      ,5,0,0,    ,True,False
+0,442,Load Loss Level,200.00,,800.00,0.00,200.00,%   ,True,False
+0,443,Load Loss Time,0.00,,300.00,0.00,0.00,Secs,True,False
+0,444,OutPhaseLossActn,0,Ignore      ,5,0,0,    ,True,False
+0,445,Out PhaseLossLvl,200,,1000,0,200,    ,True,False
+0,446,Reserved,0,,0,0,0,    ,False,False
+0,447,Reserved,0,,0,0,0,    ,False,False
+0,448,Reserved,0,,0,0,0,    ,False,False
+0,449,Power Loss Actn,1,Alarm       ,3,0,1,    ,True,False
+0,450,Pwr Loss Mode A,0,Coast       ,2,0,0,    ,True,False
+0,451,Pwr Loss A Level,180.00,,650.54,0.00,180.00,VDC ,True,False
+0,452,Pwr Loss A Time,2.00,,60.00,0.00,2.00,Secs,True,False
+0,453,Pwr Loss Mode B,0,Coast       ,2,0,0,    ,True,False
+0,454,Pwr Loss B Level,180.00,,650.54,0.00,180.00,VDC ,True,False
+0,455,Pwr Loss B Time,2.00,,60.00,0.00,2.00,Secs,True,False
+0,456,PwrLoss RT BusKp,585.0,,1000000.0,0.0,585.0,A/V ,True,False
+0,457,PwrLoss RT BusKd,50.0,,1000000.0,0.0,50.0,Secs,True,False
+0,458,PwrLoss RT ACRKp,524.0,,100000.0,0.0,524.0,Hz/A,True,False
+0,459,PwrLoss RT ACRKi,2045.0,,50000.0,0.0,2045.0,Hz/A,True,False
+0,460,UnderVltg Action,3,FltCoastStop,5,0,3,    ,True,False
+0,461,UnderVltg Level,300.00,,460.00,0.00,300.00,VAC ,True,False
+0,462,InPhase LossActn,3,FltCoastStop,5,0,3,    ,True,False
+0,463,InPhase Loss Lvl,325,,32767,10,325,    ,True,False
+0,464,DC Bus Mem Reset,0,Disabled    ,1,0,0,    ,True,False
+0,465,Reserved,0,,0,0,0,    ,False,False
+0,466,Ground Warn Actn,0,Ignore      ,5,0,0,    ,True,False
+0,467,Ground Warn Lvl,4.00,,50.00,1.00,4.00,Amps,True,False
+0,468,Reserved,0,,0,0,0,    ,False,False
+0,469,PredMaint Sts,0000,Heatsink Fan,FFFF,0000,0000,    ,False,False
+0,470,PredMaintAmbTemp,50.00,,50.00,0.00,50.00,DegC,True,False
+0,471,PredMaint Rst En,0,Disable     ,1,0,0,    ,True,False
+0,472,PredMaint Reset,0,Ready       ,6,0,0,    ,True,False
+0,473,Reserved,0,,0,0,0,    ,False,False
+0,474,Reserved,0,,0,0,0,    ,False,False
+0,475,Reserved,0,,0,0,0,    ,False,False
+0,476,Reserved,0,,0,0,0,    ,False,False
+0,477,Reserved,0,,0,0,0,    ,False,False
+0,478,Reserved,0,,0,0,0,    ,False,False
+0,479,Reserved,0,,0,0,0,    ,False,False
+0,480,Reserved,0,,0,0,0,    ,False,False
+0,481,Reserved,0,,0,0,0,    ,False,False
+0,482,Reserved,0,,0,0,0,    ,False,False
+0,483,Reserved,0,,0,0,0,    ,False,False
+0,484,Reserved,0,,0,0,0,    ,False,False
+0,485,Reserved,0,,0,0,0,    ,False,False
+0,486,Reserved,0,,0,0,0,    ,False,False
+0,487,Reserved,0,,0,0,0,    ,False,False
+0,488,HSFan Derate,1.00,,1.00,0.01,1.00,    ,True,False
+0,489,HSFan TotalLife,46665.00,,21474836.47,0.00,0.00,Hrs ,False,False
+0,490,HSFan ElpsdLife,0.00,,21474836.47,0.00,0.00,Hrs ,False,False
+0,491,HSFan RemainLife,46665.00,,21474836.47,-21474836.48,0.00,Hrs ,False,False
+0,492,HSFan EventLevel,80.000,,100.000,0.000,80.000,%   ,True,False
+0,493,HSFan EventActn,0,Ignore      ,5,0,0,    ,True,False
+0,494,HSFan ResetLog,0,,255,0,0,    ,False,False
+0,495,InFan Derate,1.00,,1.00,0.01,1.00,    ,True,False
+0,496,InFan TotalLife,32844.00,,21474836.47,0.00,0.00,Hrs ,False,False
+0,497,InFan ElpsdLife,0.83,,21474836.47,0.00,0.00,Hrs ,False,False
+0,498,InFan RemainLife,32843.17,,21474836.47,-21474836.48,0.00,Hrs ,False,False
+0,499,InFan EventLevel,80.000,,100.000,0.000,80.000,%   ,True,False
+0,500,InFan EventActn,0,Ignore      ,5,0,0,    ,True,False
+0,501,InFan ResetLog,0,,255,0,0,    ,False,False
+0,502,MtrBrngTotalLife,0.00,,21474836.47,0.00,0.00,Hrs ,True,False
+0,503,MtrBrngElpsdLife,0.00,,21474836.47,0.00,0.00,Hrs ,False,False
+0,504,MtrBrngRemainLif,0.00,,21474836.47,-21474836.48,0.00,Hrs ,False,False
+0,505,MtrBrngEventLvl,80.000,,100.000,0.000,80.000,%   ,True,False
+0,506,MtrBrngEventActn,0,Ignore      ,5,0,0,    ,True,False
+0,507,MtrBrng ResetLog,0,,255,0,0,    ,False,False
+0,508,MtrLubeElpsdHrs,0.00,,21474836.47,0.00,0.00,Hrs ,False,False
+0,509,MtrLubeEventLvl,0.000,,220000000.000,0.000,0.000,Hrs ,True,False
+0,510,MtrLubeEventActn,0,Ignore      ,5,0,0,    ,True,False
+0,511,MchBrngTotalLife,0.00,,21474836.47,0.00,0.00,Hrs ,True,False
+0,512,MchBrngElpsdLife,0.00,,21474836.47,0.00,0.00,Hrs ,False,False
+0,513,MchBrngRemainLif,0.00,,21474836.47,-21474836.48,0.00,Hrs ,False,False
+0,514,MchBrngEventLvl,80.000,,100.000,0.000,80.000,%   ,True,False
+0,515,MchBrngEventActn,0,Ignore      ,5,0,0,    ,True,False
+0,516,MchBrngResetLog,0,,255,0,0,    ,False,False
+0,517,MchLubeElpsdHrs,0.00,,21474836.47,0.00,0.00,Hrs ,False,False
+0,518,MchLube EventLvl,0.000,,220000000.000,0.000,0.000,Hrs ,True,False
+0,519,MchLubeEventActn,0,Ignore      ,5,0,0,    ,True,False
+0,520,Max Fwd Speed,60.00,,650.00,3.00,60.00,Hz  ,True,False
+0,521,Max Rev Speed,-60.00,,0.00,-650.00,-60.00,Hz  ,True,False
+0,522,Min Fwd Speed,0.00,,650.00,0.00,0.00,Hz  ,True,False
+0,523,Min Rev Speed,0.00,,0.00,-650.00,0.00,Hz  ,True,False
+0,524,Overspeed Limit,10.00,,20.00,0.00,10.00,Hz  ,True,False
+0,525,Zero Speed Limit,0.06,,30.00,0.00,0.06,Hz  ,True,False
+0,526,Skip Speed 1,0.00,,60.00,-60.00,0.00,Hz  ,True,False
+0,527,Skip Speed 2,0.00,,60.00,-60.00,0.00,Hz  ,True,False
+0,528,Skip Speed 3,0.00,,60.00,-60.00,0.00,Hz  ,True,False
+0,529,Skip Speed Band,0.00,,30.00,0.00,0.00,Hz  ,True,False
+0,530,Reserved,0,,0,0,0,    ,False,False
+0,531,Reserved,0,,0,0,0,    ,False,False
+0,532,Reserved,0,,0,0,0,    ,False,False
+0,533,Reserved,0,,0,0,0,    ,False,False
+0,534,Reserved,0,,0,0,0,    ,False,False
+0,535,Accel Time 1,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,536,Accel Time 2,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,537,Decel Time 1,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,538,Decel Time 2,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,539,Jog Acc Dec Time,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,540,S Curve Accel,0.000,,100.000,0.000,0.000,%   ,True,False
+0,541,S Curve Decel,0.000,,100.000,0.000,0.000,%   ,True,False
+0,542,Reserved,0,,0,0,0,    ,False,False
+0,543,Reserved,0,,0,0,0,    ,False,False
+0,544,Reserved,0,,0,0,0,    ,False,False
+0,545,Spd Ref A Sel,877,,159999,0,871,    ,True,False
+0,546,Spd Ref A Stpt,0.0000,,480.0000,-480.0000,0.0000,Hz  ,True,False
+0,547,Spd Ref A AnlgHi,60.00,,60.00,-60.00,60.00,Hz  ,True,False
+0,548,Spd Ref A AnlgLo,0.00,,60.00,-60.00,0.00,Hz  ,True,False
+0,549,Spd Ref A Mult,1.00,,22000.00,-22000.00,1.00,    ,True,False
+0,550,Spd Ref B Sel,551,,159999,0,551,    ,True,False
+0,551,Spd Ref B Stpt,0.0000,,480.0000,-480.0000,0.0000,Hz  ,True,False
+0,552,Spd Ref B AnlgHi,60.00,,60.00,-60.00,60.00,Hz  ,True,False
+0,553,Spd Ref B AnlgLo,0.00,,60.00,-60.00,0.00,Hz  ,True,False
+0,554,Spd Ref B Mult,1.00,,22000.00,-22000.00,1.00,    ,True,False
+0,555,Spd Ref Scale,1.000,,1000.000,0.000,1.000,    ,True,False
+0,556,Jog Speed 1,10.00,,480.00,-480.00,10.00,Hz  ,True,False
+0,557,Jog Speed 2,10.00,,480.00,-480.00,10.00,Hz  ,True,False
+0,558,MOP Reference,0.00,,800.00,-800.00,0.00,%   ,False,False
+0,559,Save MOP Ref,0000,At Pwr Down ,0003,0000,0000,    ,True,False
+0,560,MOP Rate,1.0000,,100.0000,0.0100,1.0000,%/s ,True,False
+0,561,MOP High Limit,100.000,,800.000,0.000,100.000,%   ,True,False
+0,562,MOP Low Limit,-100.000,,0.000,-800.000,-100.000,%   ,True,False
+0,563,DI ManRef Sel,872,,159999,1,872,    ,True,False
+0,564,DI ManRef AnlgHi,60.000,,60.000,-60.000,60.000,Hz  ,True,False
+0,565,DI ManRef AnlgLo,0.000,,60.000,-60.000,0.000,Hz  ,True,False
+0,566,MOP Init Select,567,,159999,0,567,    ,True,False
+0,567,MOP Init Stpt,0.00,,8.00,-8.00,0.00,%   ,True,False
+0,568,Reserved,0,,0,0,0,    ,False,False
+0,569,Reserved,0,,0,0,0,    ,False,False
+0,570,Reserved,0,,0,0,0,    ,False,False
+0,571,Preset Speed 1,5.00,,60.00,-60.00,5.00,Hz  ,True,False
+0,572,Preset Speed 2,10.00,,60.00,-60.00,10.00,Hz  ,True,False
+0,573,Preset Speed 3,20.00,,60.00,-60.00,20.00,Hz  ,True,False
+0,574,Preset Speed 4,30.00,,60.00,-60.00,30.00,Hz  ,True,False
+0,575,Preset Speed 5,40.00,,60.00,-60.00,40.00,Hz  ,True,False
+0,576,Preset Speed 6,50.00,,60.00,-60.00,50.00,Hz  ,True,False
+0,577,Preset Speed 7,60.00,,60.00,-60.00,60.00,Hz  ,True,False
+0,578,Reserved,0,,0,0,0,    ,False,False
+0,579,Reserved,0,,0,0,0,    ,False,False
+0,580,Reserved,0,,0,0,0,    ,False,False
+0,581,Reserved,0,,0,0,0,    ,False,False
+0,582,Reserved,0,,0,0,0,    ,False,False
+0,583,Reserved,0,,0,0,0,    ,False,False
+0,584,Reserved,0,,0,0,0,    ,False,False
+0,585,Reserved,0,,0,0,0,    ,False,False
+0,586,Reserved,0,,0,0,0,    ,False,False
+0,587,Reserved,0,,0,0,0,    ,False,False
+0,588,Spd Ref Filter,0,Off         ,5,0,0,    ,True,False
+0,589,Spd Ref Fltr BW,0.00,,500.00,0.00,0.00,R/S ,True,False
+0,590,Spd Ref FltrGain,1.000,,5.000,-5.000,1.000,    ,True,False
+0,591,Spd Ref Sel Sts,00001001,,0000FFFF,00000000,00000000,    ,False,False
+0,592,Selected Spd Ref,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,593,Limited Spd Ref,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,594,Ramped Spd Ref,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,595,Filtered Spd Ref,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,596,Speed Rate Ref,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,597,Final Speed Ref,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,598,Reserved,0,,0,0,0,    ,False,False
+0,599,Reserved,0,,0,0,0,    ,False,False
+0,600,Trim Ref A Sel,601,,159999,0,601,    ,True,False
+0,601,Trim Ref A Stpt,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,602,Trim RefA AnlgHi,60.00,,60.00,-60.00,60.00,Hz  ,True,False
+0,603,Trim RefA AnlgLo,0.00,,60.00,-60.00,0.00,Hz  ,True,False
+0,604,Trim Ref B Sel,605,,159999,0,605,    ,True,False
+0,605,Trim Ref B Stpt,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,606,Trim RefB AnlgHi,60.00,,60.00,-60.00,60.00,Hz  ,True,False
+0,607,Trim RefB AnlgLo,0.00,,60.00,-60.00,0.00,Hz  ,True,False
+0,608,TrmPct RefA Sel,609,,159999,0,609,    ,True,False
+0,609,TrmPct RefA Stpt,0.000,,800.000,-800.000,0.000,%   ,True,False
+0,610,TrmPct RefA AnHi,100.00,,800.00,-800.00,100.00,%   ,True,False
+0,611,TrmPct RefA AnLo,0.00,,800.00,-800.00,0.00,%   ,True,False
+0,612,TrmPct RefB Sel,613,,159999,0,613,    ,True,False
+0,613,TrmPct RefB Stpt,0.000,,800.000,-800.000,0.000,%   ,True,False
+0,614,TrmPct RefB AnHi,100.00,,800.00,-800.00,100.00,%   ,True,False
+0,615,TrmPct RefB AnLo,0.00,,800.00,-800.00,0.00,%   ,True,False
+0,616,SpdTrimPrcRefSrc,609,,159999,0,0,    ,False,False
+0,617,Spd Trim Source,601,,159999,0,0,    ,False,False
+0,618,Reserved,0,,0,0,0,    ,False,False
+0,619,Reserved,0,,0,0,0,    ,False,False
+0,620,Droop RPM at FLA,0.00,,900.00,0.00,0.00,RPM ,True,False
+0,621,Slip RPM at FLA,35.00,,1200.00,0.00,35.00,RPM ,True,False
+0,622,Slip Comp BW,10.00,,50.00,1.00,10.00,R/S ,True,False
+0,623,VHzSV SpdTrimReg,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,624,Reserved,0,,0,0,0,    ,False,False
+0,625,Reserved,0,,0,0,0,    ,False,False
+0,626,Reserved,0,,0,0,0,    ,False,False
+0,627,Reserved,0,,0,0,0,    ,False,False
+0,628,Reserved,0,,0,0,0,    ,False,False
+0,629,Reserved,0,,0,0,0,    ,False,False
+0,630,Reserved,0,,0,0,0,    ,False,False
+0,631,Reserved,0,,0,0,0,    ,False,False
+0,632,Reserved,0,,0,0,0,    ,False,False
+0,633,Reserved,0,,0,0,0,    ,False,False
+0,634,Reserved,0,,0,0,0,    ,False,False
+0,635,Spd Options Ctrl,0000,Ramp Hold   ,03FF,0000,0000,    ,True,False
+0,636,Speed Reg BW,10.00,,100.00,0.00,10.00,R/S ,True,False
+0,637,SReg FB Fltr Sel,0,Off         ,5,0,0,    ,True,False
+0,638,SReg FB FltrGain,0.700,,20.000,-5.000,0.700,    ,True,False
+0,639,SReg FB Fltr BW,35.00,,3760.00,0.00,35.00,R/S ,True,False
+0,640,Filtered SpdFdbk,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,641,Speed Error,0.000,,480.000,-480.000,0.000,Hz  ,False,False
+0,642,Servo Lock Gain,0.000,,300.000,0.000,0.000,/Sec,True,False
+0,643,SpdReg AntiBckup,0.0000,,0.5000,0.0000,0.0000,    ,True,False
+0,644,Spd Err Fltr BW,50.00,,8000.00,0.00,50.00,R/S ,True,False
+0,645,Speed Reg Kp,20.00,,3000.00,0.00,20.00,    ,True,False
+0,646,Speed Reg Max Kp,3000.00,,3000.00,0.00,3000.00,    ,True,False
+0,647,Speed Reg Ki,50.00,,100000.00,0.00,50.00,/Sec,True,False
+0,648,Alt Speed Reg BW,10.00,,100.00,0.00,10.00,R/S ,True,False
+0,649,Alt Speed Reg Kp,20.00,,3000.00,0.00,20.00,    ,True,False
+0,650,Alt Speed Reg Ki,50.00,,100000.00,0.00,50.00,    ,True,False
+0,651,AltSpdErr FltrBW,50.00,,8000.00,0.00,50.00,R/S ,True,False
+0,652,SReg Trq Preset,0.00,,800.00,-800.00,0.00,%   ,True,False
+0,653,Spd Loop Damping,1.0000,,65.0000,0.5000,1.0000,    ,True,False
+0,654,Spd Reg Int Out,0.00,,800.00,-800.00,0.00,%   ,False,False
+0,655,Spd Reg Pos Lmt,300.00,,600.00,0.00,300.00,%   ,True,False
+0,656,Spd Reg Neg Lmt,-300.00,,0.00,-600.00,-300.00,%   ,True,False
+0,657,SReg OutFltr Sel,0,Off         ,5,0,0,    ,True,False
+0,658,SReg OutFltrGain,1.000,,5.000,-5.000,1.000,    ,True,False
+0,659,SReg OutFltr BW,35.00,,3760.00,0.00,35.00,R/S ,True,False
+0,660,SReg Output,0.00,,800.00,-800.00,0.00,%   ,False,False
+0,661,Reserved,0,,0,0,0,    ,False,False
+0,662,Reserved,0,,0,0,0,    ,False,False
+0,663,VHzSV Spd Reg Kp,20.00,,3000.00,0.00,20.00,    ,True,False
+0,664,VHzSV Spd Reg Ki,50.00,,100000.00,0.00,50.00,/Sec,True,False
+0,665,Speed Comp Sel,0,Disabled    ,2,0,0,    ,True,False
+0,666,Speed Comp Gain,-2.50,,32767.00,-32767.00,-2.50,    ,True,False
+0,667,Speed Comp Out,0.0000,,480.0000,-480.0000,0.0000,Hz  ,False,False
+0,668,Reserved,0,,0,0,0,    ,False,False
+0,669,Reserved,0,,0,0,0,    ,False,False
+0,670,Pos Torque Limit,200.00,,800.00,0.00,200.00,%   ,True,False
+0,671,Neg Torque Limit,-200.00,,0.00,-800.00,-200.00,%   ,True,False
+0,672,Reserved,0,,0,0,0,    ,False,False
+0,673,Reserved,0,,0,0,0,    ,False,False
+0,674,Reserved,0,,0,0,0,    ,False,False
+0,675,Trq Ref A Sel,676,,159999,0,676,    ,True,False
+0,676,Trq Ref A Stpt,0.00,,800.00,-800.00,0.00,%   ,True,False
+0,677,Trq Ref A AnlgHi,100.00,,800.00,-800.00,100.00,%   ,True,False
+0,678,Trq Ref A AnlgLo,0.00,,800.00,-800.00,0.00,%   ,True,False
+0,679,Trq Ref A Mult,1.000,,1000.000,-1000.000,1.000,    ,True,False
+0,680,Trq Ref B Sel,681,,159999,0,681,    ,True,False
+0,681,Trq Ref B Stpt,0.00,,800.00,-800.00,0.00,%   ,True,False
+0,682,Trq Ref B AnlgHi,100.00,,800.00,-800.00,100.00,%   ,True,False
+0,683,Trq Ref B AnlgLo,0.00,,800.00,-800.00,0.00,%   ,True,False
+0,684,Trq Ref B Mult,1.000,,1000.000,-1000.000,1.000,    ,True,False
+0,685,Selected Trq Ref,0.00,,800.00,-800.00,0.00,%   ,False,False
+0,686,Torque Step,0.00,,800.00,-800.00,0.00,%   ,True,False
+0,687,Notch Fltr Freq,0.00,,500.00,0.00,0.00,Hz  ,True,False
+0,688,Notch Fltr Atten,50.000,,10000.000,0.000,50.000,    ,True,False
+0,689,Filtered Trq Ref,0.00,,800.00,-800.00,0.00,%   ,False,False
+0,690,Limited Trq Ref,0.00,,800.00,-800.00,0.00,%   ,False,False
+0,691,Reserved,0,,0,0,0,    ,False,False
+0,692,Reserved,0,,0,0,0,    ,False,False
+0,693,Reserved,0,,0,0,0,    ,False,False
+0,694,Reserved,0,,0,0,0,    ,False,False
+0,695,Inertia CompMode,0,Disabled    ,3,0,0,    ,True,False
+0,696,Inertia Acc Gain,1.0000,,2.0000,0.0000,1.0000,    ,True,False
+0,697,Inertia Dec Gain,1.0000,,2.0000,0.0000,1.0000,    ,True,False
+0,698,Inert Comp LPFBW,35.00,,2000.00,0.00,35.00,R/S ,True,False
+0,699,Inertia Comp Out,0.00,,800.00,-800.00,0.00,%   ,False,False
+0,700,Ext Ramped Ref,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,701,Reserved,0,,0,0,0,    ,False,False
+0,702,Reserved,0,,0,0,0,    ,False,False
+0,703,Reserved,0,,0,0,0,    ,False,False
+0,704,InAdp LdObs Mode,0,Disabled    ,2,0,0,    ,True,False
+0,705,Inertia Adapt BW,10.00,,1000.00,1.00,10.00,R/S ,True,False
+0,706,InertiaAdaptGain,0.500,,1.000,0.300,0.500,    ,True,False
+0,707,Load Estimate,0.00,,800.00,-800.00,0.00,%   ,False,False
+0,708,InertiaTrqAdd,0.00,,800.00,-800.00,0.00,%   ,False,False
+0,709,IA LdObs Delay,3,50R/S Noise ,7,0,3,    ,True,False
+0,710,InertAdptFltrBW,50.00,,1000.00,0.00,50.00,R/S ,True,False
+0,711,Load Observer BW,40.00,,1000.00,1.00,40.00,R/S ,True,False
+0,712,Reserved,0,,0,0,0,    ,False,False
+0,713,Reserved,0,,0,0,0,    ,False,False
+0,714,Reserved,0,,0,0,0,    ,False,False
+0,715,Reserved,0,,0,0,0,    ,False,False
+0,716,Reserved,0,,0,0,0,    ,False,False
+0,717,Reserved,0,,0,0,0,    ,False,False
+0,718,Reserved,0,,0,0,0,    ,False,False
+0,719,Reserved,0,,0,0,0,    ,False,False
+0,720,PTP PsnRefStatus,0003,SpdFFRef En ,000F,0000,0000,    ,False,False
+0,721,Position Control,00000000,Reserved    ,000007FF,00000000,00000000,    ,True,False
+0,722,Psn Selected Ref,0,,2147483647,-2147483648,0,    ,False,False
+0,723,Psn Command,0,,2147483647,-2147483648,0,    ,False,False
+0,724,Psn Reg Status,00000800,,00000FFF,00000000,00000000,    ,False,False
+0,725,Zero Position,0,,2147483647,-2147483648,0,    ,True,False
+0,726,In Pos Psn Band,200,,2147483647,0,200,    ,True,False
+0,727,In Pos Psn Dwell,0.0040,,10.0000,0.0001,0.0040,    ,True,False
+0,728,Reserved,0,,0,0,0,    ,False,False
+0,729,Reserved,0,,0,0,0,    ,False,False
+0,730,Homing Status,0008,,000F,0000,0000,    ,False,False
+0,731,Homing Control,0020,,01FF,0000,0020,    ,True,False
+0,732,DI Find Home,0.00,,159999.15,0.00,0.00,    ,True,False
+0,733,DI Redefine Psn,0.00,,159999.15,0.00,0.00,    ,True,False
+0,734,DI OL Home Limit,0.00,,159999.15,0.00,0.00,    ,True,False
+0,735,Find Home Speed,6.00,,30.00,-30.00,6.00,Hz  ,True,False
+0,736,Find Home Ramp,10.00,,6554.00,0.01,10.00,Secs,True,False
+0,737,Actual Home Psn,0,,2147483647,-2147483648,0,    ,True,False
+0,738,User Home Psn,0,,2147483647,-2147483648,0,    ,True,False
+0,739,Home Trq Thresh,15.00,,100.00,0.00,15.00,%   ,True,False
+0,740,Home Trq Time,1.00,,10.00,0.00,1.00,Secs,True,False
+0,741,Home Trq Level,20.00,,100.00,0.00,20.00,%   ,True,False
+0,742,Home Trq Offset,0,,214783648,-214783648,0,    ,True,False
+0,743,Home Return Spd,0.60,,30.00,0.00,0.60,Hz  ,True,False
+0,744,Home Decel,10.00,,6554.00,0.01,10.00,Secs,True,False
+0,745,PsnWatch1 Select,847,,159999,1,847,    ,True,False
+0,746,PsnWatch1 DtctIn,0,,2147483647,-2147483648,0,    ,True,False
+0,747,PsnWatch1 Stpt,0,,2147483647,-2147483648,0,    ,True,False
+0,748,PsnWatch2 Select,847,,159999,1,847,    ,True,False
+0,749,PsnWatch2 DtctIn,0,,2147483647,-2147483648,0,    ,True,False
+0,750,PsnWatch2 Stpt,0,,2147483647,-2147483648,0,    ,True,False
+0,751,Reserved,0,,0,0,0,    ,False,False
+0,752,Reserved,0,,0,0,0,    ,False,False
+0,753,Reserved,0,,0,0,0,    ,False,False
+0,754,Reserved,0,,0,0,0,    ,False,False
+0,755,Interp Control,0,,2147483647,0,0,    ,True,False
+0,756,Interp Psn Input,0,,2147483647,-2147483648,0,    ,True,False
+0,757,Interp Vel Input,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,758,Interp Trq Input,0.00,,1000000.00,-1000000.00,0.00,    ,True,False
+0,759,Interp Psn Out,0,,2147483647,-2147483648,0,    ,True,False
+0,760,Interp Vel Out,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,761,Interp Trq Out,0.00,,1000000.00,-1000000.00,0.00,    ,True,False
+0,762,Reserved,0,,0,0,0,    ,False,False
+0,763,Reserved,0,,0,0,0,    ,False,False
+0,764,Reserved,0,,0,0,0,    ,False,False
+0,765,Psn Ref Select,766,,159999,1,766,    ,True,False
+0,766,Psn Direct Stpt,0,,2147483647,-2147483648,0,    ,True,False
+0,767,Psn Direct Ref,0,,2147483647,-2147483648,0,    ,False,False
+0,768,Reserved,0,,0,0,0,    ,False,False
+0,769,Reserved,0,,0,0,0,    ,False,False
+0,770,PTP Control,0000,Vel Override,007F,0000,0000,    ,True,False
+0,771,PTP Mode,0,Absolute    ,2,0,0,    ,True,False
+0,772,DI Indx Step,0.00,,159999.15,0.00,0.00,    ,True,False
+0,773,DI Indx StepRev,0.00,,159999.15,0.00,0.00,    ,True,False
+0,774,DI Indx StepPrst,0.00,,159999.15,0.00,0.00,    ,True,False
+0,775,PTP Ref Sel,780,,159999,1,780,    ,True,False
+0,776,PTP Reference,0,,2147483647,-2147483648,0,    ,False,False
+0,777,PTP Feedback,0,,2147483647,-2147483648,0,    ,False,False
+0,778,PTP Ref Scale,1.00,,220000000.00,-220000000.00,1.00,    ,True,False
+0,779,PTP Index Preset,0,,2147483647,-2147483648,0,    ,True,False
+0,780,PTP Setpoint,0,,2147483647,-2147483648,0,    ,True,False
+0,781,PTP Accel Time,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,782,PTP Decel Time,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,783,PTP Speed FwdRef,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,784,PTP Command,0,,2147483647,-2147483648,0,    ,False,False
+0,785,PTP Fwd Vel Lmt,30.00,,480.00,0.00,30.00,Hz  ,True,False
+0,786,PTP Rev Vel Lmt,-30.00,,0.00,-480.00,-30.00,Hz  ,True,False
+0,787,PTP S Curve,0.500,,4.000,0.000,0.500,Secs,True,False
+0,788,PTP Vel Override,1.00,,1.50,0.20,1.00,    ,True,False
+0,789,PTP EGR Mult,1,,2000000,-2000000,1,    ,True,False
+0,790,PTP EGR Div,1,,2000000,1,1,    ,True,False
+0,791,Reserved,0,,0,0,0,    ,False,False
+0,792,Reserved,0,,0,0,0,    ,False,False
+0,793,Reserved,0,,0,0,0,    ,False,False
+0,794,Reserved,0,,0,0,0,    ,False,False
+0,795,PLL Control,0000,PLL Enable  ,007F,0000,0000,    ,True,False
+0,796,PLL Ext Spd Sel,797,,159999,1,797,    ,True,False
+0,797,PLL Ext Spd Stpt,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,798,PLL Ext SpdScale,1.00,,220000000.00,-220000000.00,1.00,    ,True,False
+0,799,PLL Psn Ref Sel,800,,159999,1,800,    ,True,False
+0,800,PLL Psn Stpt,0,,2147483647,-2147483648,0,    ,True,False
+0,801,PLL BW,20.00,,8000.00,0.00,20.00,R/S ,True,False
+0,802,PLL LPFilter BW,50.00,,8000.00,0.00,50.00,R/S ,True,False
+0,803,PLL Virt Enc RPM,1750.00,,40000.00,1.00,1750.00,RPM ,True,False
+0,804,PLL EPR Input,1048576,,67108864,1,1048576,    ,True,False
+0,805,PLL Rvls Input,1,,1000000,1,1,    ,True,False
+0,806,PLL Psn Out Fltr,0.00,,220000000.00,-220000000.00,0.00,    ,False,False
+0,807,PLL Speed Out,0.00,,220000000.00,-220000000.00,0.00,    ,False,False
+0,808,PLL Speed OutAdv,0.00,,220000000.00,-220000000.00,0.00,    ,False,False
+0,809,PLL Enc Out,0,,2147483647,-2147483648,0,    ,False,False
+0,810,PLL Enc Out Adv,0,,2147483647,-2147483648,0,    ,False,False
+0,811,PLL EPR Output,1048576,,67108864,1,1048576,    ,True,False
+0,812,PLL Rvls Output,1,,2000000,1,1,    ,True,False
+0,813,Reserved,0,,0,0,0,    ,False,False
+0,814,Reserved,0,,0,0,0,    ,False,False
+0,815,Psn Ref EGR Out,0,,2147483647,-2147483648,0,    ,False,False
+0,816,Psn EGR Mult,1,,2000000,-2000000,1,    ,True,False
+0,817,Psn EGR Div,1,,2000000,1,1,    ,True,False
+0,818,Reserved,0,,0,0,0,    ,False,False
+0,819,Reserved,0,,0,0,0,    ,False,False
+0,820,Psn Offset 1 Sel,821,,159999,1,821,    ,True,False
+0,821,Psn Offset 1,0,,2147483647,-2147483648,0,    ,True,False
+0,822,Psn Offset 2 Sel,823,,159999,1,823,    ,True,False
+0,823,Psn Offset 2,0,,2147483647,-2147483648,0,    ,True,False
+0,824,Psn Offset Vel,0.30,,480.00,-480.00,0.30,Hz  ,True,False
+0,825,LdPsn Fdbk Mult,1,,1000000,-1000000,1,    ,True,False
+0,826,LdPsn Fdbk Div,1,,2000000,1,1,    ,True,False
+0,827,Reserved,0,,0,0,0,    ,False,False
+0,828,Reserved,0,,0,0,0,    ,False,False
+0,829,Reserved,0,,0,0,0,    ,False,False
+0,830,PsnNtchFltrFreq,0.00,,500.00,0.00,0.00,Hz  ,True,False
+0,831,PsnNtchFltrDepth,50.00,,500.00,0.00,50.00,    ,True,False
+0,832,Psn Out Fltr Sel,0,Off         ,1,0,0,    ,True,False
+0,833,Psn Out FltrGain,3.000,,5.000,-5.000,3.000,    ,True,False
+0,834,Psn Out Fltr BW,50.00,,500.00,0.00,50.00,R/S ,True,False
+0,835,Psn Error,0,,2147483647,-2147483648,0,    ,False,False
+0,836,Psn Actual,0,,2147483647,-2147483648,0,    ,False,False
+0,837,Psn Load Actual,0,,2147483647,-2147483648,0,    ,False,False
+0,838,Psn Reg Ki,4.00,,25000.00,0.00,4.00,    ,True,False
+0,839,Psn Reg Kp,4.00,,2000.00,0.00,4.00,R/S ,True,False
+0,840,PReg Pos Int Lmt,100.00,,800.00,0.00,100.00,%   ,True,False
+0,841,PReg Neg Int Lmt,-100.00,,0.00,-800.00,-100.00,%   ,True,False
+0,842,PsnReg IntgrlOut,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,843,PsnReg Spd Out,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,844,PReg Pos Spd Lmt,10.00,,800.00,0.00,10.00,%   ,True,False
+0,845,PReg Neg Spd Lmt,-10.00,,0.00,-800.00,-10.00,%   ,True,False
+0,846,Psn Reg Droop,0.00,,25.00,0.00,0.00,Secs,True,False
+0,847,Psn Fdbk,0,,2147483647,-2147483648,0,    ,False,False
+0,848,Psn Gear Ratio,1.0000,,9999.0000,0.0001,1.0000,    ,True,False
+0,849,Reserved,0,,0,0,0,    ,False,False
+0,850,Reserved,0,,0,0,0,    ,False,False
+0,851,Reserved,0,,0,0,0,    ,False,False
+0,852,Reserved,0,,0,0,0,    ,False,False
+0,853,Reserved,0,,0,0,0,    ,False,False
+0,854,Reserved,0,,0,0,0,    ,False,False
+0,855,Reserved,0,,0,0,0,    ,False,False
+0,856,Reserved,0,,0,0,0,    ,False,False
+0,857,Reserved,0,,0,0,0,    ,False,False
+0,858,Reserved,0,,0,0,0,    ,False,False
+0,859,Reserved,0,,0,0,0,    ,False,False
+0,860,Reserved,0,,0,0,0,    ,False,False
+0,861,Reserved,0,,0,0,0,    ,False,False
+0,862,Reserved,0,,0,0,0,    ,False,False
+0,863,Reserved,0,,0,0,0,    ,False,False
+0,864,Reserved,0,,0,0,0,    ,False,False
+0,865,DPI Pt1 Flt Actn,0,Fault       ,4,0,0,    ,True,False
+0,866,DPI Pt2 Flt Actn,0,Fault       ,4,0,0,    ,True,False
+0,867,DPI Pt3 Flt Actn,0,Fault       ,4,0,0,    ,True,False
+0,868,DPI Pt1 Flt Ref,0.000,,220000000.000,-220000000.000,0.000,    ,True,False
+0,869,DPI Pt2 Flt Ref,0.000,,220000000.000,-220000000.000,0.000,    ,True,False
+0,870,DPI Pt3 Flt Ref,0.000,,220000000.000,-220000000.000,0.000,    ,True,False
+0,871,Port 1 Reference,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,872,Port 2 Reference,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,873,Port 3 Reference,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,874,Port 4 Reference,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,875,Port 5 Reference,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,876,Port 6 Reference,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,877,Port13 Reference,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,878,Port14 Reference,0.00,,480.00,-480.00,0.00,Hz  ,False,False
+0,879,Drive Logic Rslt,00001010,,000FFFFF,00000000,00000000,    ,False,False
+0,880,DPI Ref Rslt,0.000,,2147483.624,-2147483.648,0.000,Hz  ,False,False
+0,881,DPI Ramp Rslt,0.000,,2147483.624,-2147483.648,0.000,Hz  ,False,False
+0,882,DPI Logic Rslt,10101010,,FFFFFFFF,00000000,00000000,    ,False,False
+0,883,Drive Ref Rslt,0.000,,2147480000.000,-2147480000.000,0.000,Hz  ,False,False
+0,884,Drive Ramp Rslt,0.000,,2147480000.000,-2147480000.000,0.000,Hz  ,False,False
+0,885,Port Mask Act,63FF,,FFFF,0000,0000,    ,False,False
+0,886,Logic Mask Act,607F,,FFFF,0000,0000,    ,False,False
+0,887,Write Mask Act,63FE,,FFFF,0000,007E,    ,False,False
+0,888,Write Mask Cfg,63FE,,7FFF,0000,63FE,    ,True,False
+0,889,Reserved,0,,0,0,0,    ,False,False
+0,890,Reserved,0,,0,0,0,    ,False,False
+0,891,Reserved,0,,0,0,0,    ,False,False
+0,892,Reserved,0,,0,0,0,    ,False,False
+0,893,Reserved,0,,0,0,0,    ,False,False
+0,894,Reserved,0,,0,0,0,    ,False,False
+0,895,Data In A1,0,,159999,0,0,    ,True,False
+0,896,Data In A2,0,,159999,0,0,    ,True,False
+0,897,Data In B1,0,,159999,0,0,    ,True,False
+0,898,Data In B2,0,,159999,0,0,    ,True,False
+0,899,Data In C1,0,,159999,0,0,    ,True,False
+0,900,Data In C2,0,,159999,0,0,    ,True,False
+0,901,Data In D1,0,,159999,0,0,    ,True,False
+0,902,Data In D2,0,,159999,0,0,    ,True,False
+0,903,Reserved,0,,0,0,0,    ,False,False
+0,904,Reserved,0,,0,0,0,    ,False,False
+0,905,Data Out A1,0,,159999,0,0,    ,True,False
+0,906,Data Out A2,0,,159999,0,0,    ,True,False
+0,907,Data Out B1,0,,159999,0,0,    ,True,False
+0,908,Data Out B2,0,,159999,0,0,    ,True,False
+0,909,Data Out C1,0,,159999,0,0,    ,True,False
+0,910,Data Out C2,0,,159999,0,0,    ,True,False
+0,911,Data Out D1,0,,159999,0,0,    ,True,False
+0,912,Data Out D2,0,,159999,0,0,    ,True,False
+0,913,Reserved,0,,0,0,0,    ,False,False
+0,914,Reserved,0,,0,0,0,    ,False,False
+0,915,Reserved,0,,0,0,0,    ,False,False
+0,916,Reserved,0,,0,0,0,    ,False,False
+0,917,Reserved,0,,0,0,0,    ,False,False
+0,918,Reserved,0,,0,0,0,    ,False,False
+0,919,Stop Owner,0000,Digital In  ,7FFF,0000,0000,    ,False,False
+0,920,Start Owner,0000,Digital In  ,7FFF,0000,0000,    ,False,False
+0,921,Jog Owner,0000,Digital In  ,7FFF,0000,0000,    ,False,False
+0,922,Dir Owner,2000,,7FFF,0000,0000,    ,False,False
+0,923,Clear Flt Owner,0000,Digital In  ,7FFF,0000,0000,    ,False,False
+0,924,Manual Owner,0000,Digital In  ,7FFF,0000,0000,    ,False,False
+0,925,Ref Select Owner,2000,,7FFF,0000,0000,    ,False,False
+0,926,Reserved,0,,0,0,0,    ,False,False
+0,927,Reserved,0,,0,0,0,    ,False,False
+0,928,Reserved,0,,0,0,0,    ,False,False
+0,929,Reserved,0,,0,0,0,    ,False,False
+0,930,Speed Ref Source,877,,159999,0,0,    ,False,False
+0,931,Last StartSource,0,Pwr Removed ,20,0,0,    ,False,False
+0,932,Last Stop Source,0,Pwr Removed ,20,0,0,    ,False,False
+0,933,Start Inhibits,00000002,Enable      ,000007FF,00000000,00000000,    ,False,False
+0,934,Last StrtInhibit,00000000,Faulted     ,000007FF,00000000,00000000,    ,False,False
+0,935,Drive Status 1,2300044C,,FFFFFFFF,00000000,00000000,    ,False,False
+0,936,Drive Status 2,00000100,,0000FFFF,00000000,00000000,    ,False,False
+0,937,Condition Sts 1,00000000,Power Loss  ,00007FFF,00000000,00000000,    ,False,False
+0,938,Reserved,0,,0,0,0,    ,False,False
+0,939,Reserved,0,,0,0,0,    ,False,False
+0,940,Drive OL Count,0.00,,200.00,0.00,0.00,%   ,False,False
+0,941,IGBT Temp Pct,27.07,,200.00,-200.00,0.00,%   ,False,False
+0,942,IGBT Temp C,40.60,,200.00,-200.00,0.00,DegC,False,False
+0,943,Drive Temp Pct,35.30,,200.00,-200.00,0.00,%   ,False,False
+0,944,Drive Temp C,40.60,,200.00,-200.00,0.00,DegC,False,False
+0,945,At Limit Status,00000000,Current Lmt ,FFFFFFFF,00000000,00000000,    ,False,False
+0,946,Safety Port Sts,0000,Reserved    ,01FF,0000,0000,    ,False,False
+0,947,Reserved,0,,0,0,0,    ,False,False
+0,948,Reserved,0,,0,0,0,    ,False,False
+0,949,Reserved,0,,0,0,0,    ,False,False
+0,950,Minor Flt Cfg,0000,Enable      ,0001,0000,0000,    ,True,False
+0,951,Last Fault Code,12,,424648720,0,0,    ,False,False
+0,952,Fault Status A,00000000,Power Loss  ,00003FFF,00000000,00000000,    ,False,False
+0,953,Fault Status B,00000000,Aux InputFlt,007FFFFF,00000000,00000000,    ,False,False
+0,954,Status1 at Fault,0600048D,,FFFFFFFF,00000000,00000000,    ,False,False
+0,955,Status2 at Fault,00000100,,00001FFF,00000000,00000000,    ,False,False
+0,956,Fault Frequency,0.00,,650.00,-650.00,0.00,Hz  ,False,False
+0,957,Fault Amps,0.00,,44.00,0.00,0.00,Amps,False,False
+0,958,Fault Bus Volts,674.81,,920.00,0.00,0.00,VDC ,False,False
+0,959,Alarm Status A,00000000,Power Loss  ,0000FFFF,00000000,00000000,    ,False,False
+0,960,Alarm Status B,00000000,IGBT OT     ,0000FFFF,00000000,00000000,    ,False,False
+0,961,Type 2 Alarms,00000000,Sleep Cfg   ,0007FFFF,00000000,00000000,    ,False,False
+0,962,AlarmA at Fault,00000000,Power Loss  ,0000FFFF,00000000,00000000,    ,False,False
+0,963,AlarmB at Fault,00000000,IGBT OT     ,0000FFFF,00000000,00000000,    ,False,False
+0,964,Reserved,0,,0,0,0,    ,False,False
+0,965,Reserved,0,,0,0,0,    ,False,False
+0,966,Reserved,0,,0,0,0,    ,False,False
+0,967,Reserved,0,,0,0,0,    ,False,False
+0,968,Reserved,0,,0,0,0,    ,False,False
+0,969,Reserved,0,,0,0,0,    ,False,False
+0,970,Testpoint Sel 1,0,,2147483647,-2147483648,0,    ,True,False
+0,971,Testpoint Fval 1,0.000000,,220000000.000000,-220000000.000000,0.000000,    ,True,False
+0,972,Testpoint Lval 1,0,,2147483647,-2147483648,0,    ,True,False
+0,973,Reserved,0,,0,0,0,    ,False,False
+0,974,Testpoint Sel 2,0,,2147483647,-2147483648,0,    ,True,False
+0,975,Testpoint Fval 2,0.000000,,220000000.000000,-220000000.000000,0.000000,    ,True,False
+0,976,Testpoint Lval 2,0,,2147483647,-2147483648,0,    ,True,False
+0,977,Reserved,0,,0,0,0,    ,False,False
+0,978,Testpoint Sel 3,0,,2147483647,-2147483648,0,    ,True,False
+0,979,Testpoint Fval 3,0.000000,,220000000.000000,-220000000.000000,0.000000,    ,True,False
+0,980,Testpoint Lval 3,0,,2147483647,-2147483648,0,    ,True,False
+0,981,Reserved,0,,0,0,0,    ,False,False
+0,982,Testpoint Sel 4,0,,2147483647,-2147483648,0,    ,True,False
+0,983,Testpoint Fval 4,0.000000,,220000000.000000,-220000000.000000,0.000000,    ,True,False
+0,984,Testpoint Lval 4,0,,2147483647,-2147483648,0,    ,True,False
+0,985,Reserved,0,,0,0,0,    ,False,False
+0,986,Reserved,0,,0,0,0,    ,False,False
+0,987,Reserved,0,,0,0,0,    ,False,False
+0,988,Reserved,0,,0,0,0,    ,False,False
+0,989,Reserved,0,,0,0,0,    ,False,False
+0,990,Reserved,0,,0,0,0,    ,False,False
+0,991,Reserved,0,,0,0,0,    ,False,False
+0,992,Reserved,0,,0,0,0,    ,False,False
+0,993,Reserved,0,,0,0,0,    ,False,False
+0,994,Reserved,0,,0,0,0,    ,False,False
+0,995,Reserved,0,,0,0,0,    ,False,False
+0,996,Reserved,0,,0,0,0,    ,False,False
+0,997,Reserved,0,,0,0,0,    ,False,False
+0,998,Reserved,0,,0,0,0,    ,False,False
+0,999,Reserved,0,,0,0,0,    ,False,False
+0,1000,Reserved,0,,0,0,0,    ,False,False
+0,1001,Reserved,0,,0,0,0,    ,False,False
+0,1002,Reserved,0,,0,0,0,    ,False,False
+0,1003,Reserved,0,,0,0,0,    ,False,False
+0,1004,Reserved,0,,0,0,0,    ,False,False
+0,1005,Reserved,0,,0,0,0,    ,False,False
+0,1006,Reserved,0,,0,0,0,    ,False,False
+0,1007,Reserved,0,,0,0,0,    ,False,False
+0,1008,Reserved,0,,0,0,0,    ,False,False
+0,1009,Reserved,0,,0,0,0,    ,False,False
+0,1010,Reserved,0,,0,0,0,    ,False,False
+0,1011,Reserved,0,,0,0,0,    ,False,False
+0,1012,Reserved,0,,0,0,0,    ,False,False
+0,1013,Reserved,0,,0,0,0,    ,False,False
+0,1014,Reserved,0,,0,0,0,    ,False,False
+0,1015,Reserved,0,,0,0,0,    ,False,False
+0,1016,Reserved,0,,0,0,0,    ,False,False
+0,1017,Reserved,0,,0,0,0,    ,False,False
+0,1018,Reserved,0,,0,0,0,    ,False,False
+0,1019,Reserved,0,,0,0,0,    ,False,False
+0,1020,Reserved,0,,0,0,0,    ,False,False
+0,1021,Reserved,0,,0,0,0,    ,False,False
+0,1022,Reserved,0,,0,0,0,    ,False,False
+0,1023,Reserved,0,,0,0,0,    ,False,False
+0,1024,Reserved,0,,0,0,0,    ,False,False
+0,1025,Reserved,0,,0,0,0,    ,False,False
+0,1026,Reserved,0,,0,0,0,    ,False,False
+0,1027,Reserved,0,,0,0,0,    ,False,False
+0,1028,Reserved,0,,0,0,0,    ,False,False
+0,1029,Reserved,0,,0,0,0,    ,False,False
+0,1030,Reserved,0,,0,0,0,    ,False,False
+0,1031,Reserved,0,,0,0,0,    ,False,False
+0,1032,Reserved,0,,0,0,0,    ,False,False
+0,1033,Reserved,0,,0,0,0,    ,False,False
+0,1034,Reserved,0,,0,0,0,    ,False,False
+0,1035,PkDtct Stpt Real,0.000000,,220000000.000000,-220000000.000000,0.000000,    ,True,False
+0,1036,PkDtct Stpt DInt,0,,2147483647,-2147483648,0,    ,True,False
+0,1037,PkDtct1 In Sel,1035,,159999,0,1035,    ,True,False
+0,1038,PkDtct1PresetSel,0,,159999,0,0,    ,True,False
+0,1039,Peak1 Cfg,0000,Peak1 Peak  ,0007,0000,0000,    ,True,False
+0,1040,Peak 1 Change,0000,Peak1Change ,0001,0000,0000,    ,False,False
+0,1041,PeakDetect1 Out,0.000000,,214748000.000000,-214748000.000000,0.000000,    ,False,False
+0,1042,PkDtct2 In Sel,1035,,159999,0,1035,    ,True,False
+0,1043,PkDtct2PresetSel,0,,159999,0,0,    ,True,False
+0,1044,Peak2 Cfg,0000,Peak2 Peak  ,0007,0000,0000,    ,True,False
+0,1045,Peak 2 Change,0000,Peak2Change ,0001,0000,0000,    ,False,False
+0,1046,PeakDetect2 Out,0.000000,,214748000.000000,-214748000.000000,0.000000,    ,False,False
+0,1047,Reserved,0,,0,0,0,    ,False,False
+0,1048,Reserved,0,,0,0,0,    ,False,False
+0,1049,Reserved,0,,0,0,0,    ,False,False
+0,1050,Reserved,0,,0,0,0,    ,False,False
+0,1051,Reserved,0,,0,0,0,    ,False,False
+0,1052,Reserved,0,,0,0,0,    ,False,False
+0,1053,Reserved,0,,0,0,0,    ,False,False
+0,1054,Reserved,0,,0,0,0,    ,False,False
+0,1055,Reserved,0,,0,0,0,    ,False,False
+0,1056,Reserved,0,,0,0,0,    ,False,False
+0,1057,Reserved,0,,0,0,0,    ,False,False
+0,1058,Reserved,0,,0,0,0,    ,False,False
+0,1059,Reserved,0,,0,0,0,    ,False,False
+0,1060,Reserved,0,,0,0,0,    ,False,False
+0,1061,Reserved,0,,0,0,0,    ,False,False
+0,1062,Reserved,0,,0,0,0,    ,False,False
+0,1063,Reserved,0,,0,0,0,    ,False,False
+0,1064,Reserved,0,,0,0,0,    ,False,False
+0,1065,PID Cfg,0000,Preload Int ,007F,0000,0000,    ,True,False
+0,1066,PID Control,0000,PID Enable  ,000F,0000,0000,    ,True,False
+0,1067,PID Ref Sel,1070,,159999,1,1070,    ,True,False
+0,1068,PID Ref AnlgHi,100.00,,100.00,-100.00,100.00,%   ,True,False
+0,1069,PID Ref AnlgLo,0.00,,100.00,-100.00,0.00,%   ,True,False
+0,1070,PID Setpoint,0.00,,100.00,-100.00,0.00,%   ,True,False
+0,1071,PID Ref Mult,100.00,,100.00,-100.00,100.00,%   ,True,False
+0,1072,PID Fdbk Sel,1077,,159999,1,1077,    ,True,False
+0,1073,PID Fdbk AnlgHi,100.00,,100.00,-100.00,100.00,%   ,True,False
+0,1074,PID Fdbk AnlgLo,0.00,,100.00,-100.00,0.00,%   ,True,False
+0,1075,PID FBLoss SpSel,546,,159999,0,546,    ,True,False
+0,1076,PID FBLoss TqSel,676,,159999,0,676,    ,True,False
+0,1077,PID Fdbk,0.00,,100.00,-100.00,0.00,%   ,True,False
+0,1078,PID Fdbk Mult,100.00,,100.00,-100.00,100.00,%   ,True,False
+0,1079,PID Output Sel,2,Speed Trim  ,6,0,2,    ,True,False
+0,1080,PID Output Mult,100.00000,,100.00000,-100.00000,100.00000,%   ,True,False
+0,1081,PID Upper Limit,100.00,,800.00,-800.00,100.00,%   ,True,False
+0,1082,PID Lower Limit,-100.00,,800.00,-800.00,-100.00,%   ,True,False
+0,1083,PID Deadband,0.00,,100.00,0.00,0.00,%   ,True,False
+0,1084,PID LP Filter BW,0.00,,100.00,0.00,0.00,R/S ,True,False
+0,1085,PID Preload,0.00,,100.00,-100.00,0.00,%   ,True,False
+0,1086,PID Prop Gain,1.00,,100.00,0.00,1.00,    ,True,False
+0,1087,PID Int Time,1.00,,100.00,0.00,1.00,Secs,True,False
+0,1088,PID Deriv Time,0.00,,100.00,0.00,0.00,Secs,True,False
+0,1089,PID Status,0000,PID Enabled ,000F,0000,0000,    ,False,False
+0,1090,PID Ref Meter,0.00,,100.00,-100.00,0.00,%   ,False,False
+0,1091,PID Fdbk Meter,0.00,,100.00,-100.00,0.00,%   ,False,False
+0,1092,PID Error Meter,0.00,,200.00,-200.00,0.00,%   ,False,False
+0,1093,PID Output Meter,0.00,,800.00,-800.00,0.00,%   ,False,False
+0,1094,Reserved,0,,0,0,0,    ,False,False
+0,1095,Reserved,0,,0,0,0,    ,False,False
+0,1096,Reserved,0,,0,0,0,    ,False,False
+0,1097,Reserved,0,,0,0,0,    ,False,False
+0,1098,Reserved,0,,0,0,0,    ,False,False
+0,1099,Reserved,0,,0,0,0,    ,False,False
+0,1100,Trq Prove Cfg,0000,TP Enable   ,07FF,0000,0000,    ,True,False
+0,1101,Trq Prove Setup,0000,Fast Stop   ,00FF,0000,0000,    ,True,False
+0,1102,DI FloatMicroPsn,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1103,Trq Prove Status,0010,,01FF,0000,0000,    ,False,False
+0,1104,Trq Lmt SlewRate,10.000,,300.000,0.500,10.000,Secs,True,False
+0,1105,Speed Dev Band,2.0040,,15.0000,0.0960,2.0040,Hz  ,True,False
+0,1106,SpdBand Intgrtr,0.060,,2.000,0.001,0.060,Secs,True,False
+0,1107,Brk Release Time,0.100,,10.000,0.000,0.100,Secs,True,False
+0,1108,Brk Set Time,0.100,,10.000,0.000,0.100,Secs,True,False
+0,1109,Brk Alarm Travel,1.00,,1000.00,0.00,1.00,    ,True,False
+0,1110,Brk Slip Count,250.00,,2147480000.00,0.00,250.00,    ,True,False
+0,1111,Float Tolerance,2.004,,15.000,0.060,2.004,Hz  ,True,False
+0,1112,MicroPsnScalePct,10.000,,100.000,0.100,10.000,%   ,True,False
+0,1113,ZeroSpdFloatTime,5.000,,500.000,0.100,5.000,Secs,True,False
+0,1114,Brake Test Torq,50.0,,150.0,-150.0,50.0,%   ,True,False
+0,1115,Reserved,0,,0,0,0,    ,False,False
+0,1116,Reserved,0,,0,0,0,    ,False,False
+0,1117,Reserved,0,,0,0,0,    ,False,False
+0,1118,Reserved,0,,0,0,0,    ,False,False
+0,1119,Reserved,0,,0,0,0,    ,False,False
+0,1120,Fiber Control,0000,Sync Enable ,0003,0000,0000,    ,True,False
+0,1121,Fiber Status,0000,Sync Hold   ,000F,0000,0000,    ,False,False
+0,1122,Sync Time,0.0,,3600.0,0.0,0.0,Secs,True,False
+0,1123,Traverse Inc,0.00,,30.00,0.00,0.00,Secs,True,False
+0,1124,Traverse Dec,0.00,,30.00,0.00,0.00,Secs,True,False
+0,1125,Max Traverse,0.00,,60.00,0.00,0.00,Hz  ,True,False
+0,1126,P Jump,0.00,,60.00,0.00,0.00,Hz  ,True,False
+0,1127,Reserved,0,,0,0,0,    ,False,False
+0,1128,Reserved,0,,0,0,0,    ,False,False
+0,1129,DI Fiber SyncEna,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1130,DI Fiber TravDis,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1131,Adj Vltg Config,0001,,0001,0000,0001,    ,True,False
+0,1132,Reserved,0,,0,0,0,    ,False,False
+0,1133,Adj Vltg Select,0,,159999,0,0,    ,True,False
+0,1134,Adj Vltg Ref Hi,0.0,,100.0,0.0,0.0,%   ,True,False
+0,1135,Adj Vltg Ref Lo,0.0,,100.0,0.0,0.0,%   ,True,False
+0,1136,Adj Vltg TrimSel,0,,159999,0,0,    ,True,False
+0,1137,Adj Vltg Trim Hi,0.0,,100.0,0.0,0.0,%   ,True,False
+0,1138,Adj Vltg Trim Lo,0.0,,100.0,0.0,0.0,%   ,True,False
+0,1139,Adj Vltg Command,0.00,,460.00,0.00,0.00,VAC ,False,False
+0,1140,Adj Vltg AccTime,0.0,,3600.0,0.0,0.0,Secs,True,False
+0,1141,Adj Vltg DecTime,0.0,,3600.0,0.0,0.0,Secs,True,False
+0,1142,Adj Vltg Preset1,0.0,,529.0,0.0,0.0,VAC ,True,False
+0,1143,Adj Vltg Preset2,0.0,,529.0,0.0,0.0,VAC ,True,False
+0,1144,Adj Vltg Preset3,0.0,,529.0,0.0,0.0,VAC ,True,False
+0,1145,Adj Vltg Preset4,0.0,,529.0,0.0,0.0,VAC ,True,False
+0,1146,Adj Vltg Preset5,0.0,,529.0,0.0,0.0,VAC ,True,False
+0,1147,Adj Vltg Preset6,0.0,,529.0,0.0,0.0,VAC ,True,False
+0,1148,Adj Vltg Preset7,0.0,,529.0,0.0,0.0,VAC ,True,False
+0,1149,Adj Vltg RefMult,0.0,,100.0,0.0,0.0,%   ,True,False
+0,1150,Adj Vltg Scurve,0.0,,100.0,0.0,0.0,%   ,True,False
+0,1151,Adj Vltg TrimPct,0.0,,100.0,-100.0,0.0,%   ,True,False
+0,1152,Min Adj Voltage,0.0,,460.0,0.0,0.0,VAC ,True,False
+0,1153,Dead Time Comp,100.00,,100.00,0.00,100.00,%   ,True,False
+0,1154,DC Offset Ctrl,0,Disable     ,1,0,0,    ,True,False
+0,1155,Reserved,0,,0,0,0,    ,False,False
+0,1156,Reserved,0,,0,0,0,    ,False,False
+0,1157,Reserved,0,,0,0,0,    ,False,False
+0,1158,Reserved,0,,0,0,0,    ,False,False
+0,1159,Reserved,0,,0,0,0,    ,False,False
+0,1160,Reserved,0,,0,0,0,    ,False,False
+0,1161,Reserved,0,,0,0,0,    ,False,False
+0,1162,Reserved,0,,0,0,0,    ,False,False
+0,1163,Reserved,0,,0,0,0,    ,False,False
+0,1164,Reserved,0,,0,0,0,    ,False,False
+0,1165,Rod Speed,0.00,,10000.00,0.00,0.00,RPM ,False,False
+0,1166,Rod Torque,0.00,,10000.00,0.00,0.00,FtLb,False,False
+0,1167,Rod Speed Cmd,0.00,,10000.00,0.00,0.00,RPM ,False,False
+0,1168,TorqAlarm Action,0,Ignore      ,1,0,0,    ,True,False
+0,1169,TorqAlarm Config,0000,Torque Level,0003,0000,0000,    ,True,False
+0,1170,TorqAlarm Dwell,0.0,,60.0,0.0,0.0,Secs,True,False
+0,1171,TorqAlarm Level,0.0,,5000.0,0.0,0.0,FtLb,True,False
+0,1172,TorqAlm Timeout,0.0,,600.0,0.0,0.0,Secs,True,False
+0,1173,TorqAlarm TOActn,0,Ignore      ,6,0,0,    ,True,False
+0,1174,Total Gear Ratio,0.0,,32000.0,0.0,0.0,    ,False,False
+0,1175,Max Rod Speed,300.0,,600.0,200.0,300.0,RPM ,True,False
+0,1176,Max Rod Torque,500.0,,3000.0,0.0,500.0,FtLb,True,False
+0,1177,Min Rod Speed,0.0,,199.0,0.0,0.0,RPM ,True,False
+0,1178,Motor Sheave,10.00,,25.00,0.25,10.00,Inch,True,False
+0,1179,OilWell Pump Cfg,0,Disable     ,2,0,0,    ,True,False
+0,1180,PCP Pump Sheave,20.00,,200.00,0.25,20.00,Inch,True,False
+0,1181,Gearbox Limit,100.0,,200.0,0.0,100.0,%   ,True,False
+0,1182,Gearbox Rating,640.0,,2560.0,16.0,640.0,Kin#,True,False
+0,1183,Gearbox Ratio,1.0,,40.0,1.0,1.0,    ,True,False
+0,1184,Gearbox Sheave,0.25,,100.00,0.25,0.25,Inch,True,False
+0,1185,TorqAlarm LoLvl,0.0,,5000.0,0.0,0.0,FtLb,True,False
+0,1186,Reserved,0,,0,0,0,    ,False,False
+0,1187,Pump Off Config,0,Automatic   ,2,0,0,    ,True,False
+0,1188,Pump Off Setup,0000,Pos Filter  ,001F,0000,0000,    ,True,False
+0,1189,Pump Off Action,0,Change Speed,3,0,0,    ,True,False
+0,1190,Pump Off Control,0,Disable     ,2,0,0,    ,True,False
+0,1191,Pump Off Status,0010,,007F,0000,0000,    ,False,False
+0,1192,Pump Cycle Store,0,Disable     ,1,0,0,    ,True,False
+0,1193,Set Top ofStroke,0,Disable     ,1,0,0,    ,True,False
+0,1194,Torque Setpoint,0.00,,100.00,0.00,0.00,%   ,True,False
+0,1195,Pump Off Level,5.00,,100.00,0.00,5.00,%   ,True,False
+0,1196,Pump Off Speed,20.00,,100.00,0.00,20.00,%   ,True,False
+0,1197,Pump Off Time,600.00,,60000.00,120.00,600.00,Secs,True,False
+0,1198,Pct Cycle Torque,0.00,,200.00,-100.00,0.00,%   ,False,False
+0,1199,Pct Lift Torque,0.00,,200.00,-100.00,0.00,%   ,False,False
+0,1200,Pct Drop Torque,0.00,,200.00,-100.00,0.00,%   ,False,False
+0,1201,Stroke Pos Count,0,,15000,0,0,    ,False,False
+0,1202,Stroke Per Min,0.00,,50.00,0.00,0.00,    ,False,False
+0,1203,Pump Off Count,0.00,,60000.00,0.00,0.00,    ,True,False
+0,1204,PumpOff SleepCnt,0.00,,60000.00,0.00,0.00,    ,True,False
+0,1205,Day Stroke Count,0.00,,65535.00,0.00,0.00,    ,False,False
+0,1206,DI PumpOff Disbl,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1207,Pump OffSleepLvl,0.00,,10.00,0.00,0.00,Volt,False,False
+0,1208,DI Pump Baseline,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1209,Reserved,0,,0,0,0,    ,False,False
+0,1210,Profile Status,00000000,Step Bit 0  ,000FFFFF,00000000,00000000,    ,False,False
+0,1211,Reserved,0,,0,0,0,    ,False,False
+0,1212,Units Traveled,0.00,,2200000000.00,-2200000000.00,0.00,Cnts,False,False
+0,1213,Profile Command,00001800,,00001FFF,00000000,00001800,    ,True,False
+0,1214,Reserved,0,,0,0,0,    ,False,False
+0,1215,Counts Per Unit,1,,2200000000,1,1,    ,True,False
+0,1216,ProfVel Override,100.00,,150.00,10.00,100.00,%   ,True,False
+0,1217,Prof DI Invert,00000000,Hold Step   ,01FFFFFF,00000000,00000000,    ,True,False
+0,1218,DI Hold Step,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1219,DI Abort Step,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1220,DI Abort Profile,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1221,DI Vel Override,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1222,DI StrtStep Sel0,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1223,DI StrtStep Sel1,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1224,DI StrtStep Sel2,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1225,DI StrtStep Sel3,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1226,DI StrtStep Sel4,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1227,Reserved,0,,0,0,0,    ,False,False
+0,1228,Reserved,0,,0,0,0,    ,False,False
+0,1229,Reserved,0,,0,0,0,    ,False,False
+0,1230,Step 1 Type,0,Speed       ,2,0,0,    ,True,False
+0,1231,Step 1 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1232,Step 1 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1233,Step 1 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1234,Step 1 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1235,Step 1 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1236,Step 1 Batch,1,,65535,0,1,    ,True,False
+0,1237,Step 1 Next,2,,16,1,2,    ,True,False
+0,1238,Step 1 Action,1,Step to Next,6,0,1,    ,True,False
+0,1239,Step 1 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1240,Step 2 Type,0,Speed       ,2,0,0,    ,True,False
+0,1241,Step 2 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1242,Step 2 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1243,Step 2 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1244,Step 2 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1245,Step 2 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1246,Step 2 Batch,1,,65535,0,1,    ,True,False
+0,1247,Step 2 Next,3,,16,1,3,    ,True,False
+0,1248,Step 2 Action,1,Step to Next,6,0,1,    ,True,False
+0,1249,Step 2 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1250,Step 3 Type,0,Speed       ,2,0,0,    ,True,False
+0,1251,Step 3 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1252,Step 3 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1253,Step 3 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1254,Step 3 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1255,Step 3 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1256,Step 3 Batch,1,,65535,0,1,    ,True,False
+0,1257,Step 3 Next,4,,16,1,4,    ,True,False
+0,1258,Step 3 Action,1,Step to Next,6,0,1,    ,True,False
+0,1259,Step 3 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1260,Step 4 Type,0,Speed       ,2,0,0,    ,True,False
+0,1261,Step 4 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1262,Step 4 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1263,Step 4 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1264,Step 4 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1265,Step 4 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1266,Step 4 Batch,1,,65535,0,1,    ,True,False
+0,1267,Step 4 Next,5,,16,1,5,    ,True,False
+0,1268,Step 4 Action,1,Step to Next,6,0,1,    ,True,False
+0,1269,Step 4 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1270,Step 5 Type,0,Speed       ,2,0,0,    ,True,False
+0,1271,Step 5 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1272,Step 5 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1273,Step 5 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1274,Step 5 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1275,Step 5 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1276,Step 5 Batch,1,,65535,0,1,    ,True,False
+0,1277,Step 5 Next,6,,16,1,6,    ,True,False
+0,1278,Step 5 Action,1,Step to Next,6,0,1,    ,True,False
+0,1279,Step 5 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1280,Step 6 Type,0,Speed       ,2,0,0,    ,True,False
+0,1281,Step 6 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1282,Step 6 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1283,Step 6 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1284,Step 6 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1285,Step 6 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1286,Step 6 Batch,1,,65535,0,1,    ,True,False
+0,1287,Step 6 Next,7,,16,1,7,    ,True,False
+0,1288,Step 6 Action,1,Step to Next,6,0,1,    ,True,False
+0,1289,Step 6 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1290,Step 7 Type,0,Speed       ,2,0,0,    ,True,False
+0,1291,Step 7 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1292,Step 7 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1293,Step 7 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1294,Step 7 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1295,Step 7 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1296,Step 7 Batch,1,,65535,0,1,    ,True,False
+0,1297,Step 7 Next,8,,16,1,8,    ,True,False
+0,1298,Step 7 Action,1,Step to Next,6,0,1,    ,True,False
+0,1299,Step 7 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1300,Step 8 Type,0,Speed       ,2,0,0,    ,True,False
+0,1301,Step 8 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1302,Step 8 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1303,Step 8 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1304,Step 8 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1305,Step 8 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1306,Step 8 Batch,1,,65535,0,1,    ,True,False
+0,1307,Step 8 Next,9,,16,1,9,    ,True,False
+0,1308,Step 8 Action,1,Step to Next,6,0,1,    ,True,False
+0,1309,Step 8 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1310,Step 9 Type,0,Speed       ,2,0,0,    ,True,False
+0,1311,Step 9 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1312,Step 9 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1313,Step 9 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1314,Step 9 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1315,Step 9 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1316,Step 9 Batch,1,,65535,0,1,    ,True,False
+0,1317,Step 9 Next,10,,16,1,10,    ,True,False
+0,1318,Step 9 Action,1,Step to Next,6,0,1,    ,True,False
+0,1319,Step 9 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1320,Step 10 Type,0,Speed       ,2,0,0,    ,True,False
+0,1321,Step 10 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1322,Step 10 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1323,Step 10 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1324,Step 10 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1325,Step 10 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1326,Step 10 Batch,1,,65535,0,1,    ,True,False
+0,1327,Step 10 Next,11,,16,1,11,    ,True,False
+0,1328,Step 10 Action,1,Step to Next,6,0,1,    ,True,False
+0,1329,Step 10 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1330,Step 11 Type,0,Speed       ,2,0,0,    ,True,False
+0,1331,Step 11 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1332,Step 11 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1333,Step 11 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1334,Step 11 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1335,Step 11 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1336,Step 11 Batch,1,,65535,0,1,    ,True,False
+0,1337,Step 11 Next,12,,16,1,12,    ,True,False
+0,1338,Step 11 Action,1,Step to Next,6,0,1,    ,True,False
+0,1339,Step 11 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1340,Step 12 Type,0,Speed       ,2,0,0,    ,True,False
+0,1341,Step 12 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1342,Step 12 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1343,Step 12 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1344,Step 12 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1345,Step 12 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1346,Step 12 Batch,1,,65535,0,1,    ,True,False
+0,1347,Step 12 Next,13,,16,1,13,    ,True,False
+0,1348,Step 12 Action,1,Step to Next,6,0,1,    ,True,False
+0,1349,Step 12 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1350,Step 13 Type,0,Speed       ,2,0,0,    ,True,False
+0,1351,Step 13 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1352,Step 13 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1353,Step 13 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1354,Step 13 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1355,Step 13 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1356,Step 13 Batch,1,,65535,0,1,    ,True,False
+0,1357,Step 13 Next,14,,16,1,14,    ,True,False
+0,1358,Step 13 Action,1,Step to Next,6,0,1,    ,True,False
+0,1359,Step 13 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1360,Step 14 Type,0,Speed       ,2,0,0,    ,True,False
+0,1361,Step 14 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1362,Step 14 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1363,Step 14 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1364,Step 14 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1365,Step 14 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1366,Step 14 Batch,1,,65535,0,1,    ,True,False
+0,1367,Step 14 Next,15,,16,1,15,    ,True,False
+0,1368,Step 14 Action,1,Step to Next,6,0,1,    ,True,False
+0,1369,Step 14 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1370,Step 15 Type,0,Speed       ,2,0,0,    ,True,False
+0,1371,Step 15 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1372,Step 15 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1373,Step 15 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1374,Step 15 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1375,Step 15 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1376,Step 15 Batch,1,,65535,0,1,    ,True,False
+0,1377,Step 15 Next,16,,16,1,16,    ,True,False
+0,1378,Step 15 Action,1,Step to Next,6,0,1,    ,True,False
+0,1379,Step 15 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1380,Step 16 Type,0,Speed       ,2,0,0,    ,True,False
+0,1381,Step 16 Velocity,0.00,,480.00,-480.00,0.00,Hz  ,True,False
+0,1382,Step 16 Accel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1383,Step 16 Decel,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1384,Step 16 Value,0,,2147483647,-2147483648,0,    ,True,False
+0,1385,Step 16 Dwell,0.00,,3600.00,-1.00,0.00,Secs,True,False
+0,1386,Step 16 Batch,1,,65535,0,1,    ,True,False
+0,1387,Step 16 Next,16,,16,1,16,    ,True,False
+0,1388,Step 16 Action,1,Step to Next,6,0,1,    ,True,False
+0,1389,Step 16 Dig In,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1390,PCAM Control,0000,Start       ,01FF,0000,0000,    ,True,False
+0,1391,PCAM Mode,0,Off         ,3,0,0,    ,True,False
+0,1392,PCAM Psn Select,1393,,159999,1,1393,    ,True,False
+0,1393,PCAM Psn Stpt,0,,2147483647,-2147483648,0,    ,True,False
+0,1394,PCAM Psn Ofst,0,,2147483647,-2147483648,0,    ,True,False
+0,1395,PCAM PsnOfst Eps,2000,,2147483647,0,2000,    ,True,False
+0,1396,PCAM Span X,8192,,2147483647,0,8192,    ,True,False
+0,1397,PCAM Scale X,1.00,,214748000.00,0.01,1.00,    ,True,False
+0,1398,PCAM Span Y,8192,,2147483647,0,8192,    ,True,False
+0,1399,PCAM ScaleY Sel,1400,,159999,1,1400,    ,True,False
+0,1400,PCAM ScaleYSetPt,1.00,,214748000.00,0.00,1.00,    ,True,False
+0,1401,PCAM VelScaleSel,1402,,159999,1,1402,    ,True,False
+0,1402,PCAM VelScaleSP,0.000100,,8.000000,0.000000,0.000100,MPE ,True,False
+0,1403,PCAM Slope Begin,0.00,,214748000.00,-214748000.00,0.00,    ,True,False
+0,1404,PCAM Slope End,0.00,,214748000.00,-214748000.00,0.00,    ,True,False
+0,1405,PCAM Main EndPnt,0,,15,0,0,    ,True,False
+0,1406,PCAM Main Types,00000000,CubicCurve0 ,0000FFFF,00000000,00000000,    ,True,False
+0,1407,PCAM Main Pt X 0,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1408,PCAM Main Pt Y 0,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1409,PCAM Main Pt X 1,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1410,PCAM Main Pt Y 1,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1411,PCAM Main Pt X 2,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1412,PCAM Main Pt Y 2,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1413,PCAM Main Pt X 3,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1414,PCAM Main Pt Y 3,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1415,PCAM Main Pt X 4,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1416,PCAM Main Pt Y 4,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1417,PCAM Main Pt X 5,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1418,PCAM Main Pt Y 5,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1419,PCAM Main Pt X 6,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1420,PCAM Main Pt Y 6,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1421,PCAM Main Pt X 7,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1422,PCAM Main Pt Y 7,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1423,PCAM Main Pt X 8,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1424,PCAM Main Pt Y 8,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1425,PCAM Main Pt X 9,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1426,PCAM Main Pt Y 9,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1427,PCAM Main PtX 10,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1428,PCAM Main PtY 10,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1429,PCAM Main PtX 11,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1430,PCAM Main PtY 11,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1431,PCAM Main PtX 12,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1432,PCAM Main PtY 12,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1433,PCAM Main PtX 13,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1434,PCAM Main PtY 13,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1435,PCAM Main PtX 14,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1436,PCAM Main PtY 14,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1437,PCAM Main PtX 15,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1438,PCAM Main PtY 15,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1439,PCAM Aux EndPnt,1,,15,1,1,    ,True,False
+0,1440,PCAM Aux Types,00000000,Reserved    ,0000FFFF,00000000,00000000,    ,True,False
+0,1441,PCAM Aux Pt X 1,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1442,PCAM Aux Pt Y 1,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1443,PCAM Aux Pt X 2,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1444,PCAM Aux Pt Y 2,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1445,PCAM Aux Pt X 3,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1446,PCAM Aux Pt Y 3,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1447,PCAM Aux Pt X 4,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1448,PCAM Aux Pt Y 4,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1449,PCAM Aux Pt X 5,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1450,PCAM Aux Pt Y 5,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1451,PCAM Aux Pt X 6,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1452,PCAM Aux Pt Y 6,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1453,PCAM Aux Pt X 7,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1454,PCAM Aux Pt Y 7,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1455,PCAM Aux Pt X 8,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1456,PCAM Aux Pt Y 8,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1457,PCAM Aux Pt X 9,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1458,PCAM Aux Pt Y 9,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1459,PCAM Aux PtX 10,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1460,PCAM Aux PtY 10,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1461,PCAM Aux PtX 11,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1462,PCAM Aux PtY 11,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1463,PCAM Aux PtX 12,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1464,PCAM Aux PtY 12,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1465,PCAM Aux PtX 13,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1466,PCAM Aux PtY 13,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1467,PCAM Aux PtX 14,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1468,PCAM Aux PtY 14,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1469,PCAM Aux PtX 15,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1470,PCAM Aux PtY 15,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+0,1471,PCAM Status,00000000,Single Mode ,00001FFF,00000000,00000000,    ,False,False
+0,1472,PCAM Vel Out,0.00,,480.00,0.00,0.00,Hz  ,False,False
+0,1473,PCAM Psn Out,0,,220000000,-220000000,0,    ,False,False
+0,1474,DI PCAM Start,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1475,Reserved,0,,0,0,0,    ,False,False
+0,1476,Reserved,0,,0,0,0,    ,False,False
+0,1477,Reserved,0,,0,0,0,    ,False,False
+0,1478,Reserved,0,,0,0,0,    ,False,False
+0,1479,Reserved,0,,0,0,0,    ,False,False
+0,1480,Reserved,0,,0,0,0,    ,False,False
+0,1481,Reserved,0,,0,0,0,    ,False,False
+0,1482,Reserved,0,,0,0,0,    ,False,False
+0,1483,Reserved,0,,0,0,0,    ,False,False
+0,1484,Reserved,0,,0,0,0,    ,False,False
+0,1485,Reserved,0,,0,0,0,    ,False,False
+0,1486,Reserved,0,,0,0,0,    ,False,False
+0,1487,Reserved,0,,0,0,0,    ,False,False
+0,1488,Reserved,0,,0,0,0,    ,False,False
+0,1489,Reserved,0,,0,0,0,    ,False,False
+0,1490,Reserved,0,,0,0,0,    ,False,False
+0,1491,Reserved,0,,0,0,0,    ,False,False
+0,1492,Reserved,0,,0,0,0,    ,False,False
+0,1493,Reserved,0,,0,0,0,    ,False,False
+0,1494,Reserved,0,,0,0,0,    ,False,False
+0,1495,Reserved,0,,0,0,0,    ,False,False
+0,1496,Reserved,0,,0,0,0,    ,False,False
+0,1497,Reserved,0,,0,0,0,    ,False,False
+0,1498,Reserved,0,,0,0,0,    ,False,False
+0,1499,Reserved,0,,0,0,0,    ,False,False
+0,1500,Roll Psn Config,0000,Enable      ,000F,0000,0000,    ,True,False
+0,1501,Roll Psn Status,0000,Enable      ,0003,0000,0000,    ,False,False
+0,1502,RP Psn Fdbk Stpt,0,,2147483647,-2147483648,0,    ,True,False
+0,1503,RP Psn Fdbk Sel,1502,,159999,0,1502,    ,True,False
+0,1504,Roll Psn Preset,0,,2147483647,-2147483648,0,    ,True,False
+0,1505,Roll Psn Offset,0,,2147483647,-2147483648,0,    ,True,False
+0,1506,RP EPR Input,4096,,67108864,1,4096,    ,True,False
+0,1507,RP Rvls Input,1,,1000000,-1000000,1,    ,True,False
+0,1508,RP Rvls Output,1,,2000000,1,1,    ,True,False
+0,1509,RP Unwind,4194304,,536870912,1024,4194304,    ,True,False
+0,1510,RP Unit Scale,1.00000,,220000000.00000,-220000000.00000,1.00000,    ,True,False
+0,1511,RP Psn Output,0,,4294967295,0,0,    ,False,False
+0,1512,RP Unit Out,0.00,,220000000.00,-220000000.00,0.00,    ,False,False
+0,1513,Reserved,0,,0,0,0,    ,False,False
+0,1514,Reserved,0,,0,0,0,    ,False,False
+0,1515,PsnTrqBst Ctrl,0000,Boost Enable,0001,0000,0000,    ,True,False
+0,1516,PsnTrqBst Sts,0000,Enabled     ,0003,0000,0000,    ,False,False
+0,1517,PsnTrqBst RefSel,1511,,159999,0,1511,    ,True,False
+0,1518,PsnTrqBstPsnOfst,0,,2147483647,-2147483648,0,    ,True,False
+0,1519,PsnTrqBst UNWCnt,4194304,,2147483647,1024,4194304,    ,True,False
+0,1520,PsnTrqBst Ps X1,0,,2147483647,0,0,    ,True,False
+0,1521,PsnTrqBst Ps X2,0,,2147483647,0,0,    ,True,False
+0,1522,PsnTrqBst Ps X3,0,,2147483647,0,0,    ,True,False
+0,1523,PsnTrqBst Ps X4,0,,2147483647,0,0,    ,True,False
+0,1524,PsnTrqBst Ps X5,0,,2147483647,0,0,    ,True,False
+0,1525,PsnTrqBst Trq Y2,0.00,,2.00,-2.00,0.00,    ,True,False
+0,1526,PsnTrqBst Trq Y3,0.00,,2.00,-2.00,0.00,    ,True,False
+0,1527,PsnTrqBst Trq Y4,0.00,,2.00,-2.00,0.00,    ,True,False
+0,1528,PsnTrqBst TrqOut,0.00,,2.00,-2.00,0.00,    ,False,False
+0,1529,Reserved,0,,0,0,0,    ,False,False
+0,1530,Reserved,0,,0,0,0,    ,False,False
+0,1531,Reserved,0,,0,0,0,    ,False,False
+0,1532,Reserved,0,,0,0,0,    ,False,False
+0,1533,Reserved,0,,0,0,0,    ,False,False
+0,1534,Reserved,0,,0,0,0,    ,False,False
+0,1535,VB Config,0000,VB Enable   ,001F,0000,0000,    ,True,False
+0,1536,VB Status,0000,VB Enabled  ,00FF,0000,0000,    ,False,False
+0,1537,VB Voltage,0.0,,460.0,0.0,0.0,VAC ,False,False
+0,1538,VB Time,1.0,,100.0,0.0,1.0,Secs,True,False
+0,1539,VB Minimum,2.0,,10.0,0.0,2.0,VAC ,True,False
+0,1540,VB Maximum,10.0,,115.0,0.0,10.0,VAC ,True,False
+0,1541,VB Accel Rate,0.75,,327.67,0.01,0.75,V/s ,True,False
+0,1542,VB Decel Rate,6.00,,327.67,0.01,6.00,V/s ,True,False
+0,1543,VB Frequency,0.8,,10.0,0.5,0.8,Hz  ,True,False
+0,1544,VB Min Freq,0.5,,10.0,0.1,0.5,Hz  ,True,False
+0,1545,VB Flux Thresh,11.0,,22.0,0.0,11.0,Amps,True,False
+0,1546,VB Flux Lag Freq,0.60,,100.00,0.01,0.60,R/S ,True,False
+0,1547,VB Filt Flux Cur,0.0,,44.0,0.0,0.0,Amps,False,False
+0,1548,VB Current Rate,0.0,,1000.0,-1000.0,0.0,A/s ,False,False
+0,1549,VB Current Hyst,0.0,,100.0,-100.0,0.0,    ,True,False
+0,1550,VB Cur Thresh,-25.0,,1000.0,-1000.0,-25.0,    ,True,False
+0,1551,VB Rate Lag Freq,2.60,,100.00,0.01,2.60,R/S ,True,False
+0,1552,Reserved,0,,0,0,0,    ,False,False
+0,1553,Reserved,0,,0,0,0,    ,False,False
+0,1554,Reserved,0,,0,0,0,    ,False,False
+0,1555,Reserved,0,,0,0,0,    ,False,False
+0,1556,Reserved,0,,0,0,0,    ,False,False
+0,1557,Reserved,0,,0,0,0,    ,False,False
+0,1558,Reserved,0,,0,0,0,    ,False,False
+0,1559,Reserved,0,,0,0,0,    ,False,False
+0,1560,FrctnComp Mode,0,Disabled    ,3,0,0,    ,True,False
+0,1561,FrctnComp Trig,0.15,,0.27,0.00,0.15,Hz  ,True,False
+0,1562,FrctnComp Hyst,0.06,,0.27,0.00,0.06,Hz  ,True,False
+0,1563,FrctnComp Time,6,,18,0,6,mSec,True,False
+0,1564,FrctnComp Stick,15.00,,800.00,0.00,15.00,%   ,True,False
+0,1565,FrctnComp Slip,10.00,,800.00,0.00,10.00,%   ,True,False
+0,1566,FrctnComp Rated,20.00,,800.00,0.00,20.00,%   ,True,False
+0,1567,FrctnComp Out,0.00,,800.00,-800.00,0.00,%   ,False,False
+0,1568,Reserved,0,,0,0,0,    ,False,False
+0,1569,Reserved,0,,0,0,0,    ,False,False
+0,1570,Reserved,0,,0,0,0,    ,False,False
+0,1571,Reserved,0,,0,0,0,    ,False,False
+0,1572,Reserved,0,,0,0,0,    ,False,False
+0,1573,Reserved,0,,0,0,0,    ,False,False
+0,1574,Reserved,0,,0,0,0,    ,False,False
+0,1575,Reserved,0,,0,0,0,    ,False,False
+0,1576,Reserved,0,,0,0,0,    ,False,False
+0,1577,Reserved,0,,0,0,0,    ,False,False
+0,1578,Reserved,0,,0,0,0,    ,False,False
+0,1579,Reserved,0,,0,0,0,    ,False,False
+0,1580,SO Config,0000,Home DI     ,001F,0000,0000,    ,True,False
+0,1581,SO Status,0000,At SO Speed ,0007,0000,0000,    ,False,False
+0,1582,SO Setpoint,0.00,,536871000.00,0.00,0.00,    ,True,False
+0,1583,SO Offset,0,,536870912,-536870912,0,    ,True,False
+0,1584,SO EPR Input,4096,,67108864,1,4096,    ,True,False
+0,1585,SO Rvls Input,1.00,,1000000.00,-1000000.00,1.00,    ,True,False
+0,1586,SO Rvls Output,1.00,,2000000.00,1.00,1.00,    ,True,False
+0,1587,SO Cnts per Rvls,4096,,536870912,1024,4096,    ,True,False
+0,1588,SO Unit Scale,1.00000,,220000000.00000,-220000000.00000,1.00000,    ,True,False
+0,1589,SO Position Out,0,,4294967295,0,0,    ,False,False
+0,1590,SO Unit Out,0.00,,220000000.00,-220000000.00,0.00,    ,False,False
+0,1591,SO Accel Time,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1592,SO Decel Time,10.00,,3600.00,0.00,10.00,Secs,True,False
+0,1593,SO Fwd Vel Lmt,30.00,,480.00,0.00,30.00,Hz  ,True,False
+0,1594,SO Rev Vel Lmt,-30.00,,0.00,-480.00,-30.00,Hz  ,True,False
+0,1595,Reserved,0,,0,0,0,    ,False,False
+0,1596,Reserved,0,,0,0,0,    ,False,False
+0,1597,Reserved,0,,0,0,0,    ,False,False
+0,1598,Reserved,0,,0,0,0,    ,False,False
+0,1599,Reserved,0,,0,0,0,    ,False,False
+0,1600,Id Comp Enbl,0,Disable     ,1,0,0,    ,True,False
+0,1601,Id Comp Mtrng 1,0.0000,,1.0000,-1.0000,0.0000,    ,True,False
+0,1602,IdCompMtrng 1 Iq,0.2500,,5.0000,0.0000,0.2500,    ,True,False
+0,1603,Id Comp Mtrng 2,0.0000,,1.0000,-1.0000,0.0000,    ,True,False
+0,1604,IdCompMtrng 2 Iq,0.5000,,5.0000,0.0000,0.5000,    ,True,False
+0,1605,Id Comp Mtrng 3,0.0000,,1.0000,-1.0000,0.0000,    ,True,False
+0,1606,IdCompMtrng 3 Iq,0.7500,,5.0000,0.0000,0.7500,    ,True,False
+0,1607,Id Comp Mtrng 4,0.0000,,1.0000,-1.0000,0.0000,    ,True,False
+0,1608,IdCompMtrng 4 Iq,1.0000,,5.0000,0.0000,1.0000,    ,True,False
+0,1609,Id Comp Mtrng 5,0.0000,,1.0000,-1.0000,0.0000,    ,True,False
+0,1610,IdCompMtrng 5 Iq,1.2500,,5.0000,0.0000,1.2500,    ,True,False
+0,1611,Id Comp Mtrng 6,0.0000,,1.0000,-1.0000,0.0000,    ,True,False
+0,1612,IdCompMtrng 6 Iq,1.5000,,5.0000,0.0000,1.5000,    ,True,False
+0,1613,Id Comp Regen 1,0.0000,,1.0000,-1.0000,0.0000,    ,True,False
+0,1614,IdCompRegen 1 Iq,0.2500,,5.0000,0.0000,0.2500,    ,True,False
+0,1615,Id Comp Regen 2,0.0000,,1.0000,-1.0000,0.0000,    ,True,False
+0,1616,IdCompRegen 2 Iq,0.5000,,5.0000,0.0000,0.5000,    ,True,False
+0,1617,Id Comp Regen 3,0.0000,,1.0000,-1.0000,0.0000,    ,True,False
+0,1618,IdCompRegen 3 Iq,0.7500,,5.0000,0.0000,0.7500,    ,True,False
+0,1619,Id Comp Regen 4,0.0000,,1.0000,-1.0000,0.0000,    ,True,False
+0,1620,IdCompRegen 4 Iq,1.0000,,5.0000,0.0000,1.0000,    ,True,False
+0,1621,Id Comp Regen 5,0.0000,,1.0000,-1.0000,0.0000,    ,True,False
+0,1622,IdCompRegen 5 Iq,1.2500,,5.0000,0.0000,1.2500,    ,True,False
+0,1623,Id Comp Regen 6,0.0000,,1.0000,-1.0000,0.0000,    ,True,False
+0,1624,IdCompRegen 6 Iq,1.5000,,5.0000,0.0000,1.5000,    ,True,False
+0,1625,Reserved,0,,0,0,0,    ,False,False
+0,1626,Reserved,0,,0,0,0,    ,False,False
+0,1627,Reserved,0,,0,0,0,    ,False,False
+0,1628,Reserved,0,,0,0,0,    ,False,False
+0,1629,IPM Bus Prot,60.00,,650.00,0.00,60.00,Hz  ,True,False
+0,1630,IPM_Lq_25_pct,0.00,,999990.00,0.00,0.00,mH  ,True,False
+0,1631,IPM_Lq_50_pct,0.00,,999990.00,0.00,0.00,mH  ,True,False
+0,1632,IPM_Lq_75_pct,0.00,,999990.00,0.00,0.00,mH  ,True,False
+0,1633,IPM_Lq_100_pct,0.00,,999990.00,0.00,0.00,mH  ,True,False
+0,1634,IPM_Lq_125_pct,0.00,,999990.00,0.00,0.00,mH  ,True,False
+0,1635,IPM_Ld_0_pct,0.00,,999990.00,0.00,0.00,mH  ,True,False
+0,1636,IPM_Ld_100_pct,0.00,,999990.00,0.00,0.00,mH  ,True,False
+0,1637,IPMVqFFwdCemf,100.0,,100.0,0.0,100.0,%   ,True,False
+0,1638,IPMVqFFwdLdIdWe,100.0,,100.0,0.0,100.0,%   ,True,False
+0,1639,IPMVdFFwdLqIqWe,100.0,,100.0,0.0,100.0,%   ,True,False
+0,1640,IPM Max Cur,200.0,,400.0,0.0,200.0,%   ,True,False
+0,1641,IPM Max Spd,60.00,,60.00,0.00,60.00,Hz  ,True,False
+0,1642,IPM TrqTrim Kp,0.10,,100.00,0.00,0.10,    ,True,False
+0,1643,IPM TrqTrim Ki,1.00,,100.00,0.00,1.00,    ,True,False
+0,1644,IPM TrqTrim HLim,0.20,,2.00,0.00,0.20,    ,True,False
+0,1645,IPM TrqTrim LLim,-0.20,,0.00,-2.00,-0.20,    ,True,False
+0,1646,IPM PriOffstComp,0,,512,0,0,    ,True,False
+0,1647,IPM AltOffstComp,0,,512,0,0,    ,True,False
+0,1648,IPM V FB HP Filt,15.0,,50.0,1.0,15.0,    ,True,False
+0,1649,IPM SpdEst Filt,1000.0,,9999.9,1.0,1000.0,R/S ,True,False
+0,1650,IPM SpdEst Kp,30.0,,1000.0,0.0,30.0,    ,True,False
+0,1651,IPM SpdEst Ki,2500.0,,25000.0,0.0,2500.0,    ,True,False
+0,1652,IPM SpdEst KiAdj,75.0,,500.0,0.0,75.0,    ,True,False
+0,1653,IPM Tran PWM,8.0,,200.0,3.0,8.0,Hz  ,True,False
+0,1654,IPMTran PWM Hyst,2.0,,50.0,0.0,2.0,Hz  ,True,False
+0,1655,IPM Tran Mode,4.0,,200.0,0.5,4.0,Hz  ,True,False
+0,1656,IPM TranMod Hyst,3.0,,50.0,0.0,3.0,Hz  ,True,False
+0,1657,IPM Tran Filt Lo,35.0,,9999.0,1.0,35.0,R/S ,True,False
+0,1658,IPM Tran Filt Hi,1000.0,,9999.0,1.0,1000.0,R/S ,True,False
+0,1659,IPM Tran Angle,100.0,,500.0,5.0,100.0,Cnts,True,False
+0,1660,IPM Stc OfsTst K,1.00,,9.00,0.10,1.00,    ,True,False
+0,1661,IPM Lq Cmd BW,10.0,,999.9,1.0,10.0,R/S ,True,False
+0,1662,IPM SpdEst Kp Hi,30.0,,5000.0,0.0,30.0,    ,True,False
+0,1663,Reserved,0,,0,0,0,    ,False,False
+0,1664,Reserved,0,,0,0,0,    ,False,False
+0,1665,Reserved,0,,0,0,0,    ,False,False
+0,1666,Reserved,0,,0,0,0,    ,False,False
+0,1667,Reserved,0,,0,0,0,    ,False,False
+0,1668,Reserved,0,,0,0,0,    ,False,False
+0,1669,Reserved,0,,0,0,0,    ,False,False
+0,1670,Reserved,0,,0,0,0,    ,False,False
+0,1671,Reserved,0,,0,0,0,    ,False,False
+0,1672,Reserved,0,,0,0,0,    ,False,False
+0,1673,Reserved,0,,0,0,0,    ,False,False
+0,1674,Reserved,0,,0,0,0,    ,False,False
+0,1675,Reserved,0,,0,0,0,    ,False,False
+0,1676,Reserved,0,,0,0,0,    ,False,False
+0,1677,Reserved,0,,0,0,0,    ,False,False
+0,1678,Reserved,0,,0,0,0,    ,False,False
+0,1679,Reserved,0,,0,0,0,    ,False,False
+0,1680,DI EmergencyOVRD,0.00,,159999.15,0.00,0.00,    ,True,False
+0,1681,Emerg OVRD Mode,0,Disabled    ,2,0,0,    ,True,False
+0,1682,Purge Frequency,5.00,,60.00,-60.00,5.00,Hz  ,True,False
+0,1683,Emerg Prot OVRD,00000000,Load Faults ,001FFFFF,00000000,00000000,    ,True,False
+0,1684,EmergMode Status,0000,Emergency   ,0001,0000,0000,    ,False,False
+0,1685,Reserved,0,,0,0,0,    ,False,False
+0,1686,Reserved,0,,0,0,0,    ,False,False
+0,1687,Reserved,0,,0,0,0,    ,False,False
+0,1688,Reserved,0,,0,0,0,    ,False,False
+0,1689,Reserved,0,,0,0,0,    ,False,False
+0,1690,Reserved,0,,0,0,0,    ,False,False
+0,1691,Reserved,0,,0,0,0,    ,False,False
+0,1692,Reserved,0,,0,0,0,    ,False,False
+0,1693,Reserved,0,,0,0,0,    ,False,False
+0,1694,Reserved,0,,0,0,0,    ,False,False
+0,1695,Reserved,0,,0,0,0,    ,False,False
+0,1696,Reserved,0,,0,0,0,    ,False,False
+0,1697,Reserved,0,,0,0,0,    ,False,False
+0,1698,Reserved,0,,0,0,0,    ,False,False
+0,1699,Reserved,0,,0,0,0,    ,False,False
+0,1700,UserData Int 00,0,,2147483647,-2147483647,0,    ,True,False
+0,1701,UserData Int 01,0,,2147483647,-2147483647,0,    ,True,False
+0,1702,UserData Int 02,0,,2147483647,-2147483647,0,    ,True,False
+0,1703,UserData Int 03,0,,2147483647,-2147483647,0,    ,True,False
+0,1704,UserData Int 04,0,,2147483647,-2147483647,0,    ,True,False
+0,1705,UserData Int 05,0,,2147483647,-2147483647,0,    ,True,False
+0,1706,UserData Int 06,0,,2147483647,-2147483647,0,    ,True,False
+0,1707,UserData Int 07,0,,2147483647,-2147483647,0,    ,True,False
+0,1708,UserData Int 08,0,,2147483647,-2147483647,0,    ,True,False
+0,1709,UserData Int 09,0,,2147483647,-2147483647,0,    ,True,False
+0,1710,UserData Int 10,0,,2147483647,-2147483647,0,    ,True,False
+0,1711,UserData Int 11,0,,2147483647,-2147483647,0,    ,True,False
+0,1712,UserData Int 12,0,,2147483647,-2147483647,0,    ,True,False
+0,1713,UserData Int 13,0,,2147483647,-2147483647,0,    ,True,False
+0,1714,UserData Int 14,0,,2147483647,-2147483647,0,    ,True,False
+0,1715,UserData Int 15,0,,2147483647,-2147483647,0,    ,True,False
+0,1716,UserData Int 16,0,,2147483647,-2147483647,0,    ,True,False
+0,1717,UserData Int 17,0,,2147483647,-2147483647,0,    ,True,False
+0,1718,UserData Int 18,0,,2147483647,-2147483647,0,    ,True,False
+0,1719,UserData Int 19,0,,2147483647,-2147483647,0,    ,True,False
+0,1720,UserData Int 20,0,,2147483647,-2147483647,0,    ,True,False
+0,1721,UserData Int 21,0,,2147483647,-2147483647,0,    ,True,False
+0,1722,UserData Int 22,0,,2147483647,-2147483647,0,    ,True,False
+0,1723,UserData Int 23,0,,2147483647,-2147483647,0,    ,True,False
+0,1724,UserData Int 24,0,,2147483647,-2147483647,0,    ,True,False
+0,1725,UserData Int 25,0,,2147483647,-2147483647,0,    ,True,False
+0,1726,UserData Int 26,0,,2147483647,-2147483647,0,    ,True,False
+0,1727,UserData Int 27,0,,2147483647,-2147483647,0,    ,True,False
+0,1728,UserData Int 28,0,,2147483647,-2147483647,0,    ,True,False
+0,1729,UserData Int 29,0,,2147483647,-2147483647,0,    ,True,False
+0,1730,UserData Int 30,0,,2147483647,-2147483647,0,    ,True,False
+0,1731,UserData Int 31,0,,2147483647,-2147483647,0,    ,True,False
+0,1732,Reserved,0,,0,0,0,    ,False,False
+0,1733,Reserved,0,,0,0,0,    ,False,False
+0,1734,Reserved,0,,0,0,0,    ,False,False
+0,1735,Reserved,0,,0,0,0,    ,False,False
+0,1736,Reserved,0,,0,0,0,    ,False,False
+0,1737,Reserved,0,,0,0,0,    ,False,False
+0,1738,Reserved,0,,0,0,0,    ,False,False
+0,1739,Reserved,0,,0,0,0,    ,False,False
+0,1740,Reserved,0,,0,0,0,    ,False,False
+0,1741,Reserved,0,,0,0,0,    ,False,False
+0,1742,Reserved,0,,0,0,0,    ,False,False
+0,1743,Reserved,0,,0,0,0,    ,False,False
+0,1744,Reserved,0,,0,0,0,    ,False,False
+0,1745,Reserved,0,,0,0,0,    ,False,False
+0,1746,Reserved,0,,0,0,0,    ,False,False
+0,1747,Reserved,0,,0,0,0,    ,False,False
+0,1748,Reserved,0,,0,0,0,    ,False,False
+0,1749,Reserved,0,,0,0,0,    ,False,False
+0,1750,Reserved,0,,0,0,0,    ,False,False
+0,1751,Reserved,0,,0,0,0,    ,False,False
+0,1752,Reserved,0,,0,0,0,    ,False,False
+0,1753,Reserved,0,,0,0,0,    ,False,False
+0,1754,Reserved,0,,0,0,0,    ,False,False
+0,1755,Reserved,0,,0,0,0,    ,False,False
+0,1756,Reserved,0,,0,0,0,    ,False,False
+0,1757,Reserved,0,,0,0,0,    ,False,False
+0,1758,Reserved,0,,0,0,0,    ,False,False
+0,1759,Reserved,0,,0,0,0,    ,False,False
+0,1760,Reserved,0,,0,0,0,    ,False,False
+0,1761,Reserved,0,,0,0,0,    ,False,False
+0,1762,Reserved,0,,0,0,0,    ,False,False
+0,1763,Reserved,0,,0,0,0,    ,False,False
+0,1764,Reserved,0,,0,0,0,    ,False,False
+0,1765,Reserved,0,,0,0,0,    ,False,False
+0,1766,Reserved,0,,0,0,0,    ,False,False
+0,1767,Reserved,0,,0,0,0,    ,False,False
+0,1768,Reserved,0,,0,0,0,    ,False,False
+0,1769,Reserved,0,,0,0,0,    ,False,False
+0,1770,Reserved,0,,0,0,0,    ,False,False
+0,1771,Reserved,0,,0,0,0,    ,False,False
+0,1772,Reserved,0,,0,0,0,    ,False,False
+0,1773,Reserved,0,,0,0,0,    ,False,False
+0,1774,Reserved,0,,0,0,0,    ,False,False
+0,1775,Reserved,0,,0,0,0,    ,False,False
+0,1776,Reserved,0,,0,0,0,    ,False,False
+0,1777,Reserved,0,,0,0,0,    ,False,False
+0,1778,Reserved,0,,0,0,0,    ,False,False
+0,1779,Reserved,0,,0,0,0,    ,False,False
+0,1780,Reserved,0,,0,0,0,    ,False,False
+0,1781,Reserved,0,,0,0,0,    ,False,False
+0,1782,Reserved,0,,0,0,0,    ,False,False
+0,1783,Reserved,0,,0,0,0,    ,False,False
+0,1784,Reserved,0,,0,0,0,    ,False,False
+0,1785,Reserved,0,,0,0,0,    ,False,False
+0,1786,Reserved,0,,0,0,0,    ,False,False
+0,1787,Reserved,0,,0,0,0,    ,False,False
+0,1788,Reserved,0,,0,0,0,    ,False,False
+0,1789,Reserved,0,,0,0,0,    ,False,False
+0,1790,Reserved,0,,0,0,0,    ,False,False
+0,1791,Reserved,0,,0,0,0,    ,False,False
+0,1792,Reserved,0,,0,0,0,    ,False,False
+0,1793,Reserved,0,,0,0,0,    ,False,False
+0,1794,Reserved,0,,0,0,0,    ,False,False
+0,1795,Reserved,0,,0,0,0,    ,False,False
+0,1796,Reserved,0,,0,0,0,    ,False,False
+0,1797,Reserved,0,,0,0,0,    ,False,False
+0,1798,Reserved,0,,0,0,0,    ,False,False
+0,1799,Reserved,0,,0,0,0,    ,False,False
+0,1800,UserData Real 00,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1801,UserData Real 01,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1802,UserData Real 02,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1803,UserData Real 03,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1804,UserData Real 04,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1805,UserData Real 05,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1806,UserData Real 06,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1807,UserData Real 07,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1808,UserData Real 08,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1809,UserData Real 09,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1810,UserData Real 10,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1811,UserData Real 11,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1812,UserData Real 12,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1813,UserData Real 13,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1814,UserData Real 14,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1815,UserData Real 15,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1816,UserData Real 16,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1817,UserData Real 17,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1818,UserData Real 18,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1819,UserData Real 19,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1820,UserData Real 20,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1821,UserData Real 21,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1822,UserData Real 22,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1823,UserData Real 23,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1824,UserData Real 24,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1825,UserData Real 25,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1826,UserData Real 26,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1827,UserData Real 27,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1828,UserData Real 28,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1829,UserData Real 29,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1830,UserData Real 30,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1831,UserData Real 31,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,True,False
+0,1832,Reserved,0,,0,0,0,    ,False,False
+0,1833,Reserved,0,,0,0,0,    ,False,False
+0,1834,Reserved,0,,0,0,0,    ,False,False
+0,1835,Reserved,0,,0,0,0,    ,False,False
+0,1836,Reserved,0,,0,0,0,    ,False,False
+0,1837,Reserved,0,,0,0,0,    ,False,False
+0,1838,Reserved,0,,0,0,0,    ,False,False
+0,1839,Reserved,0,,0,0,0,    ,False,False
+0,1840,Reserved,0,,0,0,0,    ,False,False
+0,1841,Reserved,0,,0,0,0,    ,False,False
+0,1842,Reserved,0,,0,0,0,    ,False,False
+0,1843,Reserved,0,,0,0,0,    ,False,False
+0,1844,Reserved,0,,0,0,0,    ,False,False
+0,1845,Reserved,0,,0,0,0,    ,False,False
+0,1846,Reserved,0,,0,0,0,    ,False,False
+0,1847,Reserved,0,,0,0,0,    ,False,False
+0,1848,Reserved,0,,0,0,0,    ,False,False
+0,1849,Reserved,0,,0,0,0,    ,False,False
+0,1850,Reserved,0,,0,0,0,    ,False,False
+0,1851,Reserved,0,,0,0,0,    ,False,False
+0,1852,Reserved,0,,0,0,0,    ,False,False
+0,1853,Reserved,0,,0,0,0,    ,False,False
+0,1854,Reserved,0,,0,0,0,    ,False,False
+0,1855,Reserved,0,,0,0,0,    ,False,False
+0,1856,Reserved,0,,0,0,0,    ,False,False
+0,1857,Reserved,0,,0,0,0,    ,False,False
+0,1858,Reserved,0,,0,0,0,    ,False,False
+0,1859,Reserved,0,,0,0,0,    ,False,False
+0,1860,Reserved,0,,0,0,0,    ,False,False
+0,1861,Reserved,0,,0,0,0,    ,False,False
+0,1862,Reserved,0,,0,0,0,    ,False,False
+0,1863,Reserved,0,,0,0,0,    ,False,False
+0,1864,Reserved,0,,0,0,0,    ,False,False
+0,1865,Reserved,0,,0,0,0,    ,False,False
+0,1866,Reserved,0,,0,0,0,    ,False,False
+0,1867,Reserved,0,,0,0,0,    ,False,False
+0,1868,Reserved,0,,0,0,0,    ,False,False
+0,1869,Reserved,0,,0,0,0,    ,False,False
+0,1870,Reserved,0,,0,0,0,    ,False,False
+0,1871,Reserved,0,,0,0,0,    ,False,False
+0,1872,Reserved,0,,0,0,0,    ,False,False
+0,1873,Reserved,0,,0,0,0,    ,False,False
+0,1874,Reserved,0,,0,0,0,    ,False,False
+0,1875,Reserved,0,,0,0,0,    ,False,False
+0,1876,Reserved,0,,0,0,0,    ,False,False
+0,1877,Reserved,0,,0,0,0,    ,False,False
+0,1878,Reserved,0,,0,0,0,    ,False,False
+0,1879,Reserved,0,,0,0,0,    ,False,False
+0,1880,Reserved,0,,0,0,0,    ,False,False
+0,1881,Reserved,0,,0,0,0,    ,False,False
+0,1882,Reserved,0,,0,0,0,    ,False,False
+0,1883,Reserved,0,,0,0,0,    ,False,False
+0,1884,Reserved,0,,0,0,0,    ,False,False
+0,1885,Reserved,0,,0,0,0,    ,False,False
+0,1886,Reserved,0,,0,0,0,    ,False,False
+0,1887,Reserved,0,,0,0,0,    ,False,False
+0,1888,Reserved,0,,0,0,0,    ,False,False
+0,1889,Reserved,0,,0,0,0,    ,False,False
+0,1890,Reserved,0,,0,0,0,    ,False,False
+0,1891,Reserved,0,,0,0,0,    ,False,False
+0,1892,Reserved,0,,0,0,0,    ,False,False
+0,1893,Reserved,0,,0,0,0,    ,False,False
+0,1894,Reserved,0,,0,0,0,    ,False,False
+0,1895,Reserved,0,,0,0,0,    ,False,False
+0,1896,Reserved,0,,0,0,0,    ,False,False
+0,1897,Reserved,0,,0,0,0,    ,False,False
+0,1898,Reserved,0,,0,0,0,    ,False,False
+0,1899,Reserved,0,,0,0,0,    ,False,False
+0,1900,ScaleBlk Sel 00,0,,159999,0,0,    ,True,False
+0,1901,ScaleBlk Scal 00,1.0000,,2147480000.0000,-2147480000.0000,1.0000,    ,True,False
+0,1902,ScaleBlk Int 00,0,,2147483647,-2147483647,0,    ,False,False
+0,1903,ScaleBlk Real 00,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,False,False
+0,1904,ScaleBlk Sel 01,0,,159999,0,0,    ,True,False
+0,1905,ScaleBlk Scal 01,1.0000,,2147480000.0000,-2147480000.0000,1.0000,    ,True,False
+0,1906,ScaleBlk Int 01,0,,2147483647,-2147483647,0,    ,False,False
+0,1907,ScaleBlk Real 01,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,False,False
+0,1908,ScaleBlk Sel 02,0,,159999,0,0,    ,True,False
+0,1909,ScaleBlk Scal 02,1.0000,,2147480000.0000,-2147480000.0000,1.0000,    ,True,False
+0,1910,ScaleBlk Int 02,0,,2147483647,-2147483647,0,    ,False,False
+0,1911,ScaleBlk Real 02,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,False,False
+0,1912,ScaleBlk Sel 03,0,,159999,0,0,    ,True,False
+0,1913,ScaleBlk Scal 03,1.0000,,2147480000.0000,-2147480000.0000,1.0000,    ,True,False
+0,1914,ScaleBlk Int 03,0,,2147483647,-2147483647,0,    ,False,False
+0,1915,ScaleBlk Real 03,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,False,False
+0,1916,ScaleBlk Sel 04,0,,159999,0,0,    ,True,False
+0,1917,ScaleBlk Scal 04,1.0000,,2147480000.0000,-2147480000.0000,1.0000,    ,True,False
+0,1918,ScaleBlk Int 04,0,,2147483647,-2147483647,0,    ,False,False
+0,1919,ScaleBlk Real 04,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,False,False
+0,1920,ScaleBlk Sel 05,0,,159999,0,0,    ,True,False
+0,1921,ScaleBlk Scal 05,1.0000,,2147480000.0000,-2147480000.0000,1.0000,    ,True,False
+0,1922,ScaleBlk Int 05,0,,2147483647,-2147483647,0,    ,False,False
+0,1923,ScaleBlk Real 05,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,False,False
+0,1924,ScaleBlk Sel 06,0,,159999,0,0,    ,True,False
+0,1925,ScaleBlk Scal 06,1.0000,,2147480000.0000,-2147480000.0000,1.0000,    ,True,False
+0,1926,ScaleBlk Int 06,0,,2147483647,-2147483647,0,    ,False,False
+0,1927,ScaleBlk Real 06,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,False,False
+0,1928,ScaleBlk Sel 07,0,,159999,0,0,    ,True,False
+0,1929,ScaleBlk Scal 07,1.0000,,2147480000.0000,-2147480000.0000,1.0000,    ,True,False
+0,1930,ScaleBlk Int 07,0,,2147483647,-2147483647,0,    ,False,False
+0,1931,ScaleBlk Real 07,0.0000,,2147480000.0000,-2147480000.0000,0.0000,    ,False,False
+5,1,Module Sts,80000000,,FFFFFFFF,00000000,00000000,    ,False,False
+5,2,Module Err Reset,0,Ready       ,3,0,0,    ,True,False
+5,3,Reserved,0,,0,0,0,    ,False,False
+5,4,Reserved,0,,0,0,0,    ,False,False
+5,5,FB0 Position,0,,2147483647,-2147483648,0,    ,False,False
+5,6,FB0 Device Sel,0,None        ,19,0,0,    ,True,False
+5,7,FB0 Identify,00000000,Rotary      ,00007FFF,00000000,00000000,    ,False,False
+5,8,FB0 Cfg,00000000,Direction   ,0000000F,00000000,00000000,    ,True,False
+5,9,FB0 Loss Cfg,3,FltCoastStop,3,0,3,    ,True,False
+5,10,FB0 Sts,00000000,Encoder Err ,00001FFF,00000000,00000000,    ,False,False
+5,11,Reserved,0,,0,0,0,    ,False,False
+5,12,Reserved,0,,0,0,0,    ,False,False
+5,13,Reserved,0,,0,0,0,    ,False,False
+5,14,Reserved,0,,0,0,0,    ,False,False
+5,15,FB0 IncAndSC PPR,1024,,100000,1,1024,PPR ,True,False
+5,16,FB0 Inc Cfg,0004,Single Ended,001F,0000,0004,    ,True,False
+5,17,FB0 Inc Sts,0000,Z Chan Enbl ,00FF,0000,0000,    ,False,False
+5,18,Reserved,0,,0,0,0,    ,False,False
+5,19,Reserved,0,,0,0,0,    ,False,False
+5,20,FB0 SSI Cfg,00000014,,0000001F,00000000,00000014,    ,True,False
+5,21,FB0 SSI Resol,13,,32,8,13,Bits,True,False
+5,22,FB0 SSI Turns,12,,16,0,12,Bits,True,False
+5,23,Reserved,0,,0,0,0,    ,False,False
+5,24,Reserved,0,,0,0,0,    ,False,False
+5,25,FB0 Lin CPR,0,,4294967295,0,0,    ,True,False
+5,26,FB0 Lin Upd Rate,2,1.5 ms      ,3,0,2,    ,True,False
+5,27,FB0 LinStahl Sts,00000000,Optics Alarm,00007FFF,00000000,00000000,    ,False,False
+5,28,Reserved,0,,0,0,0,    ,False,False
+5,29,Reserved,0,,0,0,0,    ,False,False
+5,30,Reserved,0,,0,0,0,    ,False,False
+5,31,Reserved,0,,0,0,0,    ,False,False
+5,32,Reserved,0,,0,0,0,    ,False,False
+5,33,Reserved,0,,0,0,0,    ,False,False
+5,34,Reserved,0,,0,0,0,    ,False,False
+5,35,FB1 Position,0,,2147483647,-2147483648,0,    ,False,False
+5,36,FB1 Device Sel,0,None        ,19,0,0,    ,True,False
+5,37,FB1 Identify,00000000,Rotary      ,00007FFF,00000000,00000000,    ,False,False
+5,38,FB1 Cfg,00000000,Direction   ,0000000F,00000000,00000000,    ,True,False
+5,39,FB1 Loss Cfg,3,FltCoastStop,3,0,3,    ,True,False
+5,40,FB1 Sts,00000000,Encoder Err ,00001FFF,00000000,00000000,    ,False,False
+5,41,Reserved,0,,0,0,0,    ,False,False
+5,42,Reserved,0,,0,0,0,    ,False,False
+5,43,Reserved,0,,0,0,0,    ,False,False
+5,44,Reserved,0,,0,0,0,    ,False,False
+5,45,FB1 IncAndSC PPR,1024,,100000,1,1024,PPR ,True,False
+5,46,FB1 Inc Cfg,0004,Single Ended,001F,0000,0004,    ,True,False
+5,47,FB1 Inc Sts,0000,Z Chan Enbl ,00FF,0000,0000,    ,False,False
+5,48,Reserved,0,,0,0,0,    ,False,False
+5,49,Reserved,0,,0,0,0,    ,False,False
+5,50,FB1 SSI Cfg,00000014,,0000001F,00000000,00000014,    ,True,False
+5,51,FB1 SSI Resol,13,,32,8,13,Bits,True,False
+5,52,FB1 SSI Turns,12,,16,0,12,Bits,True,False
+5,53,Reserved,0,,0,0,0,    ,False,False
+5,54,Reserved,0,,0,0,0,    ,False,False
+5,55,FB1 Lin CPR,0,,4294967295,0,0,    ,True,False
+5,56,FB1 Lin Upd Rate,2,1.5 ms      ,3,0,2,    ,True,False
+5,57,FB1 LinStahl Sts,00000000,Optics Alarm,00007FFF,00000000,00000000,    ,False,False
+5,58,Reserved,0,,0,0,0,    ,False,False
+5,59,Reserved,0,,0,0,0,    ,False,False
+5,60,Reserved,0,,0,0,0,    ,False,False
+5,61,Reserved,0,,0,0,0,    ,False,False
+5,62,Reserved,0,,0,0,0,    ,False,False
+5,63,Reserved,0,,0,0,0,    ,False,False
+5,64,Reserved,0,,0,0,0,    ,False,False
+5,65,Reserved,0,,0,0,0,    ,False,False
+5,66,Reserved,0,,0,0,0,    ,False,False
+5,67,Reserved,0,,0,0,0,    ,False,False
+5,68,Reserved,0,,0,0,0,    ,False,False
+5,69,Reserved,0,,0,0,0,    ,False,False
+5,70,Reserved,0,,0,0,0,    ,False,False
+5,71,Reserved,0,,0,0,0,    ,False,False
+5,72,Reserved,0,,0,0,0,    ,False,False
+5,73,Reserved,0,,0,0,0,    ,False,False
+5,74,Reserved,0,,0,0,0,    ,False,False
+5,75,Reserved,0,,0,0,0,    ,False,False
+5,76,Reserved,0,,0,0,0,    ,False,False
+5,77,Reserved,0,,0,0,0,    ,False,False
+5,78,Reserved,0,,0,0,0,    ,False,False
+5,79,Reserved,0,,0,0,0,    ,False,False
+5,80,Enc Out Sel,0,None        ,4,0,0,    ,True,False
+5,81,Enc Out Mode,0,A Quad B    ,1,0,0,    ,True,False
+5,82,Enc Out FD PPR,1,1024 PPR    ,3,0,1,    ,True,False
+5,83,Enc Out Z Offset,0,,100000,0,0,PPR ,True,False
+5,84,Enc Out Z PPR,0,1 Z-Pulse   ,5,0,0,    ,True,False
+5,85,Reserved,0,,0,0,0,    ,False,False
+5,86,Reserved,0,,0,0,0,    ,False,False
+5,87,Reserved,0,,0,0,0,    ,False,False
+5,88,Reserved,0,,0,0,0,    ,False,False
+5,89,Reserved,0,,0,0,0,    ,False,False
+5,90,Rgsn Arm,00000000,Arm Latch1  ,000003FF,00000000,00000000,    ,True,False
+5,91,Rgsn In 0 Filter,0,0 ns        ,15,0,0,    ,True,False
+5,92,Rgsn In 1 Filter,0,0 ns        ,15,0,0,    ,True,False
+5,93,Rgsn HmIn Filter,0,0 ns        ,15,0,0,    ,True,False
+5,94,Rgsn Sts,00000000,Latch1 Armed,FFFFFFFF,00000000,00000000,    ,False,False
+5,95,Reserved,0,,0,0,0,    ,False,False
+5,96,Reserved,0,,0,0,0,    ,False,False
+5,97,Reserved,0,,0,0,0,    ,False,False
+5,98,Reserved,0,,0,0,0,    ,False,False
+5,99,Reserved,0,,0,0,0,    ,False,False
+5,100,Rgsn Latch1 Cfg,00000000,Channel Sel ,00007FFF,00000000,00000000,    ,True,False
+5,101,Rgsn Latch1 Psn,0,,2147483647,-2147483648,0,    ,False,False
+5,102,Rgsn Latch1 Time,0,,4294967295,0,0,Cnt ,False,False
+5,103,Rgsn Latch2 Cfg,00000000,Channel Sel ,00007FFF,00000000,00000000,    ,True,False
+5,104,Rgsn Latch2 Psn,0,,2147483647,-2147483648,0,    ,False,False
+5,105,Rgsn Latch2 Time,0,,4294967295,0,0,Cnt ,False,False
+5,106,Rgsn Latch3 Cfg,00000000,Channel Sel ,00007FFF,00000000,00000000,    ,True,False
+5,107,Rgsn Latch3 Psn,0,,2147483647,-2147483648,0,    ,False,False
+5,108,Rgsn Latch3 Time,0,,4294967295,0,0,Cnt ,False,False
+5,109,Rgsn Latch4 Cfg,00000000,Channel Sel ,00007FFF,00000000,00000000,    ,True,False
+5,110,Rgsn Latch4 Psn,0,,2147483647,-2147483648,0,    ,False,False
+5,111,Rgsn Latch4 Time,0,,4294967295,0,0,Cnt ,False,False
+5,112,Rgsn Latch5 Cfg,00000000,Channel Sel ,00007FFF,00000000,00000000,    ,True,False
+5,113,Rgsn Latch5 Psn,0,,2147483647,-2147483648,0,    ,False,False
+5,114,Rgsn Latch5 Time,0,,4294967295,0,0,Cnt ,False,False
+5,115,Rgsn Latch6 Cfg,00000000,Channel Sel ,00007FFF,00000000,00000000,    ,True,False
+5,116,Rgsn Latch6 Psn,0,,2147483647,-2147483648,0,    ,False,False
+5,117,Rgsn Latch6 Time,0,,4294967295,0,0,Cnt ,False,False
+5,118,Rgsn Latch7 Cfg,00000000,Channel Sel ,00007FFF,00000000,00000000,    ,True,False
+5,119,Rgsn Latch7 Psn,0,,2147483647,-2147483648,0,    ,False,False
+5,120,Rgsn Latch7 Time,0,,4294967295,0,0,Cnt ,False,False
+5,121,Rgsn Latch8 Cfg,00000000,Channel Sel ,00007FFF,00000000,00000000,    ,True,False
+5,122,Rgsn Latch8 Psn,0,,2147483647,-2147483648,0,    ,False,False
+5,123,Rgsn Latch8 Time,0,,4294967295,0,0,Cnt ,False,False
+5,124,Rgsn Latch9 Cfg,00000000,Channel Sel ,00007FFF,00000000,00000000,    ,True,False
+5,125,Rgsn Latch9 Psn,0,,2147483647,-2147483648,0,    ,False,False
+5,126,Rgsn Latch9 Time,0,,4294967295,0,0,Cnt ,False,False
+5,127,RgsnLatch10 Cfg,00000000,Channel Sel ,00007FFF,00000000,00000000,    ,True,False
+5,128,RgsnLatch10 Psn,0,,2147483647,-2147483648,0,    ,False,False
+5,129,RgsnLatch10 Time,0,,4294967295,0,0,Cnt ,False,False
+7,1,Dig In Sts,0000,Input 0     ,003F,0000,0000,    ,False,False
+7,2,Dig In Filt Mask,003F,,003F,0000,003F,    ,True,False
+7,3,Dig In Filt,4,,10,2,4,mS  ,True,False
+7,4,Reserved,0,,0,0,0,    ,False,False
+7,5,Dig Out Sts,0000,Relay Out 0 ,0007,0000,0000,    ,False,False
+7,6,Dig Out Invert,0000,Relay Out 0 ,0007,0000,0000,    ,True,False
+7,7,Dig Out Setpoint,0000,Relay Out 0 ,0007,0000,0000,    ,True,False
+7,8,Reserved,0,,0,0,0,    ,False,False
+7,9,Reserved,0,,0,0,0,    ,False,False
+7,10,RO0 Sel,0.00,,159999.15,0.00,0.00,    ,True,False
+7,11,RO0 Level Sel,0,,159999,0,0,    ,True,False
+7,12,RO0 Level,0.0,,1000000.0,-1000000.0,0.0,    ,True,False
+7,13,RO0 Level CmpSts,0000,Less Than   ,000F,0000,0000,    ,False,False
+7,14,RO0 On Time,0.0,,600.0,0.0,0.0,Secs,True,False
+7,15,RO0 Off Time,0.0,,600.0,0.0,0.0,Secs,True,False
+7,16,Reserved,0,,0,0,0,    ,False,False
+7,17,Reserved,0,,0,0,0,    ,False,False
+7,18,Reserved,0,,0,0,0,    ,False,False
+7,19,Reserved,0,,0,0,0,    ,False,False
+7,20,TO0 Sel,0.00,,159999.15,0.00,0.00,    ,True,False
+7,21,TO0 Level Sel,0,,159999,0,0,    ,True,False
+7,22,TO0 Level,0.0,,1000000.0,-1000000.0,0.0,    ,True,False
+7,23,TO0 Level CmpSts,0000,Less Than   ,000F,0000,0000,    ,False,False
+7,24,TO0 On Time,0.0,,600.0,0.0,0.0,Secs,True,False
+7,25,TO0 Off Time,0.0,,600.0,0.0,0.0,Secs,True,False
+7,26,Reserved,0,,0,0,0,    ,False,False
+7,27,Reserved,0,,0,0,0,    ,False,False
+7,28,Reserved,0,,0,0,0,    ,False,False
+7,29,Reserved,0,,0,0,0,    ,False,False
+7,30,TO1 Sel,0.00,,159999.15,0.00,0.00,    ,True,False
+7,31,TO1 Level Sel,0,,159999,0,0,    ,True,False
+7,32,TO1 Level,0.0,,1000000.0,-1000000.0,0.0,    ,True,False
+7,33,TO1 Level CmpSts,0000,Less Than   ,000F,0000,0000,    ,False,False
+7,34,TO1 On Time,0.0,,600.0,0.0,0.0,Secs,True,False
+7,35,TO1 Off Time,0.0,,600.0,0.0,0.0,Secs,True,False
+7,36,Reserved,0,,0,0,0,    ,False,False
+7,37,Reserved,0,,0,0,0,    ,False,False
+7,38,Reserved,0,,0,0,0,    ,False,False
+7,39,Reserved,0,,0,0,0,    ,False,False
+7,40,PTC Cfg,0,Ignore      ,5,0,0,    ,True,False
+7,41,PTC Sts,0004,,0007,0000,0000,    ,False,False
+7,42,PTC Raw Value,5.00,,10.00,0.00,0.00,Volt,False,False
+7,43,Reserved,0,,0,0,0,    ,False,False
+7,44,Reserved,0,,0,0,0,    ,False,False
+7,45,Anlg In Type,0000,Analog In 0 ,0003,0000,0000,    ,False,False
+7,46,Anlg In Sqrt,0000,Analog In 0 ,0003,0000,0000,    ,True,False
+7,47,Anlg In Loss Sts,0007,,0007,0000,0000,    ,False,False
+7,48,Reserved,0,,0,0,0,    ,False,False
+7,49,Reserved,0,,0,0,0,    ,False,False
+7,50,Anlg In0 Value,-0.011,,10.000,-10.000,0.000,Volt,False,False
+7,51,Anlg In0 Hi,10.000,,10.000,-10.000,10.000,Volt,True,False
+7,52,Anlg In0 Lo,0.000,,10.000,-10.000,0.000,Volt,True,False
+7,53,Anlg In0 LssActn,0,Ignore      ,8,0,0,    ,True,False
+7,54,Anlg In0 Raw Val,-0.011,,10.000,-10.000,0.000,Volt,False,False
+7,55,Anlg In0 Filt Gn,1.00,,5.00,-5.00,1.00,    ,True,False
+7,56,Anlg In0 Filt BW,0.0,,500.0,0.0,0.0,    ,True,False
+7,57,Reserved,0,,0,0,0,    ,False,False
+7,58,Reserved,0,,0,0,0,    ,False,False
+7,59,Reserved,0,,0,0,0,    ,False,False
+7,60,Anlg In1 Value,0.002,,10.000,-10.000,0.000,Volt,False,False
+7,61,Anlg In1 Hi,10.000,,10.000,-10.000,10.000,Volt,True,False
+7,62,Anlg In1 Lo,0.000,,10.000,-10.000,0.000,Volt,True,False
+7,63,Anlg In1 LssActn,0,Ignore      ,8,0,0,    ,True,False
+7,64,Anlg In1 Raw Val,0.000,,10.000,-10.000,0.000,Volt,False,False
+7,65,Anlg In1 Filt Gn,1.00,,5.00,-5.00,1.00,    ,True,False
+7,66,Anlg In1 Filt BW,0.0,,500.0,0.0,0.0,    ,True,False
+7,67,Reserved,0,,0,0,0,    ,False,False
+7,68,Reserved,0,,0,0,0,    ,False,False
+7,69,Reserved,0,,0,0,0,    ,False,False
+7,70,Anlg Out Type,0000,Analog Out 0,0003,0000,0000,    ,True,False
+7,71,Anlg Out Abs,0003,,0003,0000,0003,    ,True,False
+7,72,Reserved,0,,0,0,0,    ,False,False
+7,73,Reserved,0,,0,0,0,    ,False,False
+7,74,Reserved,0,,0,0,0,    ,False,False
+7,75,Anlg Out0 Sel,3,,159999,0,3,    ,True,False
+7,76,Anlg Out0 Stpt,0.000,,10.000,0.000,0.000,Volt,True,False
+7,77,Anlg Out0 Data,0.000,,480.000,-480.000,0.000,Hz  ,False,False
+7,78,Anlg Out0 DataHi,60.000,,480.000,-480.000,60.000,Hz  ,True,False
+7,79,Anlg Out0 DataLo,0.000,,480.000,-480.000,0.000,Hz  ,True,False
+7,80,Anlg Out0 Hi,10.000,,10.000,0.000,10.000,Volt,True,False
+7,81,Anlg Out0 Lo,0.000,,10.000,0.000,0.000,Volt,True,False
+7,82,Anlg Out0 Val,0.000,,10.000,0.000,0.000,Volt,False,False
+7,83,Reserved,0,,0,0,0,    ,False,False
+7,84,Reserved,0,,0,0,0,    ,False,False
+7,85,Anlg Out1 Sel,7,,159999,0,7,    ,True,False
+7,86,Anlg Out1 Stpt,0.000,,10.000,0.000,0.000,Volt,True,False
+7,87,Anlg Out1 Data,0.000,,44.000,0.000,0.000,Amps,False,False
+7,88,Anlg Out1 DataHi,22.000,,44.000,0.000,22.000,Amps,True,False
+7,89,Anlg Out1 DataLo,0.000,,44.000,0.000,0.000,Amps,True,False
+7,90,Anlg Out1 Hi,10.000,,10.000,0.000,10.000,Volt,True,False
+7,91,Anlg Out1 Lo,0.000,,10.000,0.000,0.000,Volt,True,False
+7,92,Anlg Out1 Val,0.000,,10.000,0.000,0.000,Volt,False,False
+7,93,Reserved,0,,0,0,0,    ,False,False
+7,94,Reserved,0,,0,0,0,    ,False,False
+7,95,Reserved,0,,0,0,0,    ,False,False
+7,96,Reserved,0,,0,0,0,    ,False,False
+7,97,Reserved,0,,0,0,0,    ,False,False
+7,98,Reserved,0,,0,0,0,    ,False,False
+7,99,PredMaint Sts,0000,Relay Out 0 ,FFFF,0000,0000,    ,False,False
+7,100,RO0 Load Type,1,DC Inductive,3,0,1,    ,True,False
+7,101,RO0 Load Amps,2.000,,2.000,0.000,2.000,Amps,True,False
+7,102,RO0 TotalLife,10000,,2147483647,0,0,Cycl,False,False
+7,103,RO0 ElapsedLife,4301,,2147483647,0,0,Cycl,False,False
+7,104,RO0 RemainLife,5699,,2147483647,-2147483648,0,Cycl,False,False
+7,105,RO0 LifeEvntLvl,80.000,,100.000,0.000,80.000,%   ,True,False
+7,106,RO0 LifeEvntActn,1,Alarm       ,5,0,1,    ,True,False
+13,1,DL From Net 01,0,,159999,0,0,    ,True,False
+13,2,DL From Net 02,0,,159999,0,0,    ,True,False
+13,3,DL From Net 03,0,,159999,0,0,    ,True,False
+13,4,DL From Net 04,0,,159999,0,0,    ,True,False
+13,5,DL From Net 05,0,,159999,0,0,    ,True,False
+13,6,DL From Net 06,0,,159999,0,0,    ,True,False
+13,7,DL From Net 07,0,,159999,0,0,    ,True,False
+13,8,DL From Net 08,0,,159999,0,0,    ,True,False
+13,9,DL From Net 09,0,,159999,0,0,    ,True,False
+13,10,DL From Net 10,0,,159999,0,0,    ,True,False
+13,11,DL From Net 11,0,,159999,0,0,    ,True,False
+13,12,DL From Net 12,0,,159999,0,0,    ,True,False
+13,13,DL From Net 13,0,,159999,0,0,    ,True,False
+13,14,DL From Net 14,0,,159999,0,0,    ,True,False
+13,15,DL From Net 15,0,,159999,0,0,    ,True,False
+13,16,DL From Net 16,0,,159999,0,0,    ,True,False
+13,17,DL To Net 01,0,,159999,0,0,    ,True,False
+13,18,DL To Net 02,0,,159999,0,0,    ,True,False
+13,19,DL To Net 03,0,,159999,0,0,    ,True,False
+13,20,DL To Net 04,0,,159999,0,0,    ,True,False
+13,21,DL To Net 05,0,,159999,0,0,    ,True,False
+13,22,DL To Net 06,0,,159999,0,0,    ,True,False
+13,23,DL To Net 07,0,,159999,0,0,    ,True,False
+13,24,DL To Net 08,0,,159999,0,0,    ,True,False
+13,25,DL To Net 09,0,,159999,0,0,    ,True,False
+13,26,DL To Net 10,0,,159999,0,0,    ,True,False
+13,27,DL To Net 11,0,,159999,0,0,    ,True,False
+13,28,DL To Net 12,0,,159999,0,0,    ,True,False
+13,29,DL To Net 13,0,,159999,0,0,    ,True,False
+13,30,DL To Net 14,0,,159999,0,0,    ,True,False
+13,31,DL To Net 15,0,,159999,0,0,    ,True,False
+13,32,DL To Net 16,0,,159999,0,0,    ,True,False
+13,33,Port Number,13,,15,0,13,    ,False,False
+13,34,DLs From Net Act,0,,16,0,0,    ,False,False
+13,35,DLs To Net Act,0,,16,0,0,    ,False,False
+13,36,BOOTP,1,Enabled     ,1,0,1,    ,True,True
+13,37,Net Addr Src,0,Switches    ,2,0,0,    ,False,False
+13,38,IP Addr Cfg 1,0,,255,0,0,    ,True,True
+13,39,IP Addr Cfg 2,0,,255,0,0,    ,True,True
+13,40,IP Addr Cfg 3,0,,255,0,0,    ,True,True
+13,41,IP Addr Cfg 4,0,,255,0,0,    ,True,True
+13,42,Subnet Cfg 1,0,,255,0,0,    ,True,True
+13,43,Subnet Cfg 2,0,,255,0,0,    ,True,True
+13,44,Subnet Cfg 3,0,,255,0,0,    ,True,True
+13,45,Subnet Cfg 4,0,,255,0,0,    ,True,True
+13,46,Gateway Cfg 1,0,,255,0,0,    ,True,True
+13,47,Gateway Cfg 2,0,,255,0,0,    ,True,True
+13,48,Gateway Cfg 3,0,,255,0,0,    ,True,True
+13,49,Gateway Cfg 4,0,,255,0,0,    ,True,True
+13,50,Net Rate Cfg,0,Autodetect  ,4,0,0,    ,True,True
+13,51,Net Rate Act,0,No Link     ,5,0,0,    ,False,False
+13,52,Web Enable,0,Disabled    ,1,0,0,    ,True,False
+13,53,Web Features,0001,,0001,0000,0001,    ,True,False
+13,54,Comm Flt Action,0,Fault       ,4,0,0,    ,True,False
+13,55,Idle Flt Action,0,Fault       ,4,0,0,    ,True,False
+13,56,Peer Flt Action,0,Fault       ,4,0,0,    ,True,False
+13,57,Msg Flt Action,0,Fault       ,4,0,0,    ,True,False
+13,58,Flt Cfg Logic,00000000,Stop        ,000FFFFF,00000000,00000000,    ,True,False
+13,59,Flt Cfg Ref,0.000,,220000000.000,-220000000.000,0.000,    ,True,False
+13,60,Flt Cfg DL 01,0,,4294967295,0,0,    ,True,False
+13,61,Flt Cfg DL 02,0,,4294967295,0,0,    ,True,False
+13,62,Flt Cfg DL 03,0,,4294967295,0,0,    ,True,False
+13,63,Flt Cfg DL 04,0,,4294967295,0,0,    ,True,False
+13,64,Flt Cfg DL 05,0,,4294967295,0,0,    ,True,False
+13,65,Flt Cfg DL 06,0,,4294967295,0,0,    ,True,False
+13,66,Flt Cfg DL 07,0,,4294967295,0,0,    ,True,False
+13,67,Flt Cfg DL 08,0,,4294967295,0,0,    ,True,False
+13,68,Flt Cfg DL 09,0,,4294967295,0,0,    ,True,False
+13,69,Flt Cfg DL 10,0,,4294967295,0,0,    ,True,False
+13,70,Flt Cfg DL 11,0,,4294967295,0,0,    ,True,False
+13,71,Flt Cfg DL 12,0,,4294967295,0,0,    ,True,False
+13,72,Flt Cfg DL 13,0,,4294967295,0,0,    ,True,False
+13,73,Flt Cfg DL 14,0,,4294967295,0,0,    ,True,False
+13,74,Flt Cfg DL 15,0,,4294967295,0,0,    ,True,False
+13,75,Flt Cfg DL 16,0,,4294967295,0,0,    ,True,False
+13,76,DLs Fr Peer Cfg,0,,16,0,0,    ,True,False
+13,77,DLs Fr Peer Act,0,,16,0,0,    ,False,False
+13,78,Logic Src Cfg,0,,16,0,0,    ,True,False
+13,79,Ref Src Cfg,0,,16,0,0,    ,True,False
+13,80,Fr Peer Timeout,10.00,,200.00,0.01,10.00,Secs,True,False
+13,81,Fr Peer Addr 1,0,,255,0,0,    ,True,False
+13,82,Fr Peer Addr 2,0,,255,0,0,    ,True,False
+13,83,Fr Peer Addr 3,0,,255,0,0,    ,True,False
+13,84,Fr Peer Addr 4,0,,255,0,0,    ,True,False
+13,85,Fr Peer Enable,0,Off         ,2,0,0,    ,True,False
+13,86,Fr Peer Status,0,Off         ,3,0,0,    ,False,False
+13,87,DLs To Peer Cfg,0,,16,0,0,    ,True,False
+13,88,DLs To Peer Act,0,,16,0,0,    ,False,False
+13,89,To Peer Period,10.00,,10.00,0.01,10.00,Secs,True,False
+13,90,To Peer Skip,1,,16,1,1,    ,True,False
+13,91,To Peer Enable,0,Off         ,2,0,0,    ,True,False
+14,1,DLX Out 01,0,,159999,0,0,    ,True,False
+14,2,DLX Out 02,0,,159999,0,0,    ,True,False
+14,3,DLX Out 03,0,,159999,0,0,    ,True,False
+14,4,DLX Out 04,0,,159999,0,0,    ,True,False
+14,5,DLX Out 05,0,,159999,0,0,    ,True,False
+14,6,DLX Out 06,0,,159999,0,0,    ,True,False
+14,7,DLX Out 07,0,,159999,0,0,    ,True,False
+14,8,DLX Out 08,0,,159999,0,0,    ,True,False
+14,9,DLX Out 09,0,,159999,0,0,    ,True,False
+14,10,DLX Out 10,0,,159999,0,0,    ,True,False
+14,11,DLX Out 11,0,,159999,0,0,    ,True,False
+14,12,DLX Out 12,0,,159999,0,0,    ,True,False
+14,13,DLX Out 13,0,,159999,0,0,    ,True,False
+14,14,DLX Out 14,0,,159999,0,0,    ,True,False
+14,15,DLX Out 15,0,,159999,0,0,    ,True,False
+14,16,DLX Out 16,0,,159999,0,0,    ,True,False
+14,17,DLX In 01,0,,159999,0,0,    ,True,False
+14,18,DLX In 02,0,,159999,0,0,    ,True,False
+14,19,DLX In 03,0,,159999,0,0,    ,True,False
+14,20,DLX In 04,0,,159999,0,0,    ,True,False
+14,21,DLX In 05,0,,159999,0,0,    ,True,False
+14,22,DLX In 06,0,,159999,0,0,    ,True,False
+14,23,DLX In 07,0,,159999,0,0,    ,True,False
+14,24,DLX In 08,0,,159999,0,0,    ,True,False
+14,25,DLX In 09,0,,159999,0,0,    ,True,False
+14,26,DLX In 10,0,,159999,0,0,    ,True,False
+14,27,DLX In 11,0,,159999,0,0,    ,True,False
+14,28,DLX In 12,0,,159999,0,0,    ,True,False
+14,29,DLX In 13,0,,159999,0,0,    ,True,False
+14,30,DLX In 14,0,,159999,0,0,    ,True,False
+14,31,DLX In 15,0,,159999,0,0,    ,True,False
+14,32,DLX In 16,0,,159999,0,0,    ,True,False
+14,33,DLX DIP 1,0.00,,159999.15,0.00,0.00,    ,True,False
+14,34,DLX DIP 2,0.00,,159999.15,0.00,0.00,    ,True,False
+14,35,DLX DIP 3,0.00,,159999.15,0.00,0.00,    ,True,False
+14,36,DLX DIP 4,0.00,,159999.15,0.00,0.00,    ,True,False
+14,37,DLX DIP 5,0.00,,159999.15,0.00,0.00,    ,True,False
+14,38,DLX DIP 6,0.00,,159999.15,0.00,0.00,    ,True,False
+14,39,DLX DIP 7,0.00,,159999.15,0.00,0.00,    ,True,False
+14,40,DLX DIP 8,0.00,,159999.15,0.00,0.00,    ,True,False
+14,41,DLX DIP 9,0.00,,159999.15,0.00,0.00,    ,True,False
+14,42,DLX DIP 10,0.00,,159999.15,0.00,0.00,    ,True,False
+14,43,DLX DIP 11,0.00,,159999.15,0.00,0.00,    ,True,False
+14,44,DLX DIP 12,0.00,,159999.15,0.00,0.00,    ,True,False
+14,45,DLX DIP 13,0.00,,159999.15,0.00,0.00,    ,True,False
+14,46,DLX DIP 14,0.00,,159999.15,0.00,0.00,    ,True,False
+14,47,DLX DIP 15,0.00,,159999.15,0.00,0.00,    ,True,False
+14,48,DLX DIP 16,0.00,,159999.15,0.00,0.00,    ,True,False
+14,49,DLX DigIn Sts,0000,DLX DIPVal1 ,FFFF,0000,0000,    ,False,False
+14,50,DLX DigOut Sts,00000000,DLX CmdSts1 ,0000FFFF,00000000,00000000,    ,False,False
+14,51,DLX DigOut Sts2,00000000,DLX DOPSts1 ,0000FFFF,00000000,00000000,    ,False,False
+14,52,DLX Prog Cond,0,Fault       ,3,0,0,    ,True,False
+14,53,DLX Operation,5,LogicDisabld,6,0,5,    ,True,False
+14,54,DLX Real SP1,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,55,DLX Real SP2,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,56,DLX Real SP3,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,57,DLX Real SP4,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,58,DLX Real SP5,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,59,DLX Real SP6,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,60,DLX Real SP7,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,61,DLX Real SP8,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,62,DLX Real SP9,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,63,DLX Real SP10,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,64,DLX Real SP11,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,65,DLX Real SP12,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,66,DLX Real SP13,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,67,DLX Real SP14,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,68,DLX Real SP15,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,69,DLX Real SP16,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,70,DLX DINT SP1,0,,2147483647,-2147483648,0,    ,True,False
+14,71,DLX DINT SP2,0,,2147483647,-2147483648,0,    ,True,False
+14,72,DLX DINT SP3,0,,2147483647,-2147483648,0,    ,True,False
+14,73,DLX DINT SP4,0,,2147483647,-2147483648,0,    ,True,False
+14,74,DLX DINT SP5,0,,2147483647,-2147483648,0,    ,True,False
+14,75,DLX DINT SP6,0,,2147483647,-2147483648,0,    ,True,False
+14,76,DLX DINT SP7,0,,2147483647,-2147483648,0,    ,True,False
+14,77,DLX DINT SP8,0,,2147483647,-2147483648,0,    ,True,False
+14,78,DLX Bool SP1,00000000,Bit 0       ,FFFFFFFF,00000000,00000000,    ,True,False
+14,79,DLX Bool SP2,00000000,Bit 0       ,FFFFFFFF,00000000,00000000,    ,True,False
+14,80,DLX Bool SP3,00000000,Bit 0       ,FFFFFFFF,00000000,00000000,    ,True,False
+14,81,DLX Bool SP4,00000000,Bit 0       ,FFFFFFFF,00000000,00000000,    ,True,False
+14,82,DLX Real In SP1,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,83,DLX Real In SP2,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,84,DLX Real In SP3,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,85,DLX Real In SP4,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,86,DLX Real In SP5,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,87,DLX Real In SP6,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,88,DLX Real In SP7,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,89,DLX Real In SP8,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,90,DLX Real Out SP1,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,91,DLX Real Out SP2,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,92,DLX Real Out SP3,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,93,DLX Real Out SP4,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,94,DLX Real Out SP5,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,95,DLX Real Out SP6,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,96,DLX Real Out SP7,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,97,DLX Real Out SP8,0.00,,220000000.00,-220000000.00,0.00,    ,True,False
+14,98,DLX DINT In SP1,0,,2147483647,-2147483648,0,    ,True,False
+14,99,DLX DINT In SP2,0,,2147483647,-2147483648,0,    ,True,False
+14,100,DLX DINT In SP3,0,,2147483647,-2147483648,0,    ,True,False
+14,101,DLX DINT In SP4,0,,2147483647,-2147483648,0,    ,True,False
+14,102,DLX DINT Out SP1,0,,2147483647,-2147483648,0,    ,True,False
+14,103,DLX DINT Out SP2,0,,2147483647,-2147483648,0,    ,True,False
+14,104,DLX DINT Out SP3,0,,2147483647,-2147483648,0,    ,True,False
+14,105,DLX DINT Out SP4,0,,2147483647,-2147483648,0,    ,True,False
+0,1,MCB Pwrup Time,3074.35,,220000000.00,0.00,0.00,Secs,False,False
+0,2,PBLT Pwrup Time,3074.35,,220000000.00,0.00,0.00,Secs,False,False
+0,3,PBLT GatesOnTime,0.00,,220000000.00,0.00,0.00,Secs,False,False
+0,4,PBLT Mtr MW Hrs,0.0,,220000000.0,0.0,0.0,    ,False,False
+0,5,PBLT Rgn MW Hrs,0.0,,220000000.0,0.0,0.0,    ,False,False
+0,6,DAC Update Sel,0000,Reserved    ,01FF,0000,0000,    ,True,False
+0,7,Spd Ref Command,1,Ref A Auto  ,32,0,0,    ,False,False
+0,8,Theta Adjust 1,0.0,,1023.0,0.0,0.0,    ,True,False
+0,9,Theta Adjust 2,0.0,,1.0,0.0,0.0,    ,True,False
+0,10,IqsCmd DC Tests,0.0,,2.0,-2.0,0.0,    ,True,False
+0,11,IdsCmd DC Tests,0.0,,2.0,-2.0,0.0,    ,True,False
+0,12,Pwr Device Drop,0.0,,1.0,0.0,0.0,    ,True,False
+0,13,Pwr Device Dynam,0.0,,1.0,0.0,0.0,    ,True,False
+0,14,Active PWM Freq,4.0,,16.0,1.0,1.0,kHz ,False,False
+0,15,SRegCfg InfoSel,1,Ultimate BW ,20,0,1,    ,True,False
+0,16,SRegCfg InfoSrc,20,MaxPriSrlsBW,28,0,0,    ,False,False
+0,17,SRegCfg InfoData,100.000,,65535.000,-65535.000,0.000,    ,False,False
+0,18,FV Control Sts,0000,Field Weak  ,1FFF,0000,0000,    ,False,False
+0,19,Serial Number,0,,4294967295,0,0,    ,True,False
+0,20,CEP Port4 Errors,0,,32,0,0,    ,False,False
+0,21,SEP Port4 Errors,0,,32,0,0,    ,False,False
+0,22,CEP Port5 Errors,0,,32,0,0,    ,False,False
+0,23,SEP Port5 Errors,0,,32,0,0,    ,False,False
+0,24,CEP Port6 Errors,0,,32,0,0,    ,False,False
+0,25,SEP Port6 Errors,0,,32,0,0,    ,False,False
+0,26,CEP Port7 Errors,0,,32,0,0,    ,False,False
+0,27,SEP Port7 Errors,0,,32,0,0,    ,False,False
+0,28,CEP Port8 Errors,0,,32,0,0,    ,False,False
+0,29,SEP Port8 Errors,0,,32,0,0,    ,False,False
+0,30,Reserved,0,,0,0,0,    ,False,False
+0,31,Reserved,0,,0,0,0,    ,False,False
+0,32,AT Speed Reg Kp,6.30,,100000.00,0.00,6.30,    ,True,False
+0,33,AT Speed Reg Ki,7.80,,100000.00,0.00,7.80,/Sec,True,False
+0,34,Ctrl Board Temp,0.00,,200.00,-200.00,0.00,DegC,False,False
+0,35,Reserved,0,,0,0,0,    ,False,False
+0,36,Reserved,0,,0,0,0,    ,False,False
+0,37,Reserved,0,,0,0,0,    ,False,False
+0,38,Reserved,0,,0,0,0,    ,False,False
+0,39,Reserved,0,,0,0,0,    ,False,False
+0,40,Reserved,0,,0,0,0,    ,False,False
+0,41,Reserved,0,,0,0,0,    ,False,False
+0,42,Reserved,0,,0,0,0,    ,False,False
+0,43,Reserved,0,,0,0,0,    ,False,False
+0,44,Reserved,0,,0,0,0,    ,False,False
+0,45,Reserved,0,,0,0,0,    ,False,False
+0,46,Reserved,0,,0,0,0,    ,False,False
+0,47,Reserved,0,,0,0,0,    ,False,False
+0,48,Reserved,0,,0,0,0,    ,False,False
+0,49,Reserved,0,,0,0,0,    ,False,False
+0,50,Reserved,0,,0,0,0,    ,False,False
+0,51,Reserved,0,,0,0,0,    ,False,False
+0,52,Reserved,0,,0,0,0,    ,False,False
+0,53,Reserved,0,,0,0,0,    ,False,False
+0,54,Reserved,0,,0,0,0,    ,False,False
+0,55,Reserved,0,,0,0,0,    ,False,False
+0,56,Reserved,0,,0,0,0,    ,False,False
+0,57,Reserved,0,,0,0,0,    ,False,False
+0,58,Reserved,0,,0,0,0,    ,False,False
+0,59,Dig Sw Real Sel,0.00,,159999.15,0.00,0.00,    ,True,False
+0,60,Sw Off Stpt Real,0.000000,,214748000.000000,-214748000.000000,0.000000,    ,True,False
+0,61,Sw On Stpt Real,1.000000,,214748000.000000,-214748000.000000,1.000000,    ,True,False
+0,62,Dig Sw Real Out,0.000000,,214748000.000000,-214748000.000000,0.000000,    ,False,False
+0,63,Dig Sw DInt Sel,0.00,,159999.15,0.00,0.00,    ,True,False
+0,64,Sw Off Stpt DInt,0,,2147483647,-2147483648,0,    ,True,False
+0,65,Sw On Stpt DInt,1,,2147483647,-2147483648,1,    ,True,False
+0,66,Dig Sw DInt Out,0,,65535,-65535,0,    ,False,False
+0,67,PwrBd Pwr Cycles,4,,4294967295,0,0,    ,False,False
+0,68,AT PM Spd Reg Kp,3.00,,100000.00,0.00,3.00,    ,True,False
+0,69,FiberSyncInhibit,0005,,000F,0000,0000,    ,False,False
+0,70,FiberTravInhibit,0005,Sync Ramp   ,007F,0000,0000,    ,False,False
+0,71,Fiber Speed Lmt,0000,SpeedRevZero,0007,0000,0000,    ,False,False
+0,72,Friction State,0,Disabled    ,3,0,0,    ,False,False
+0,73,Static Friction,0.00,,800.00,-800.00,0.00,%   ,False,False
+0,74,Dynamic Friction,0.00,,800.00,-800.00,0.00,%   ,False,False
+0,75,Peak Ctrl Task,2.38,,100.00,0.00,0.00,%   ,False,False
+0,76,Peak Sys Task,2.28,,100.00,0.00,0.00,%   ,False,False
+0,77,Peak 5ms Task,2.97,,100.00,0.00,0.00,%   ,False,False
+0,78,Iqs Cmd,0.0000,,10.0000,-10.0000,0.0000,    ,False,False
+0,79,IdsComp Required,0.0000,,10.0000,-10.0000,0.0000,    ,False,False
+0,80,Reserved,0,,0,0,0,    ,False,False
+0,81,Reserved,0,,0,0,0,    ,False,False
+0,82,Reserved,0,,0,0,0,    ,False,False
+0,83,Reserved,0,,0,0,0,    ,False,False
+0,84,Reserved,0,,0,0,0,    ,False,False
+0,85,Reserved,0,,0,0,0,    ,False,False
+0,86,Reserved,0,,0,0,0,    ,False,False
+0,87,Reserved,0,,0,0,0,    ,False,False
+0,88,Reserved,0,,0,0,0,    ,False,False
+0,89,Reserved,0,,0,0,0,    ,False,False
+0,90,Reserved,0,,0,0,0,    ,False,False
+0,91,Reserved,0,,0,0,0,    ,False,False
+0,92,Reserved,0,,0,0,0,    ,False,False
+0,93,Reserved,0,,0,0,0,    ,False,False
+0,94,Reserved,0,,0,0,0,    ,False,False
+0,95,Reserved,0,,0,0,0,    ,False,False
+0,96,Reserved,0,,0,0,0,    ,False,False
+0,97,Reserved,0,,0,0,0,    ,False,False
+0,98,Reserved,0,,0,0,0,    ,False,False
+0,99,Reserved,0,,0,0,0,    ,False,False
+0,100,CIP Motion Stuff,00000000,AC Contactor,0000007F,00000000,00000000,    ,False,False

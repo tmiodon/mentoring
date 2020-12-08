@@ -125,7 +125,7 @@ def DataframeModifications(dataframe, sheet_name):
                      'Rated_Current': rated_current,
                      'Rated_Amps': rated_amps,
                      'Motor_Poles': motor_poles,
-                     'Rated kW': rated_kw,
+                     'Rated_kW': rated_kw,
                      'sqrt': sqrt}
 
         for idx, name in enumerate(dataframe['Name'].values):
@@ -138,10 +138,26 @@ def DataframeModifications(dataframe, sheet_name):
             if name in ['DC Bus Volts'] and cr == 'MV_CR1':
                 dataframe['Online Maximum'].values[idx] = eval("Rated_Volts*2*sqrt(2)", eval_dict)
 
-            # TODO: This needs to be verified with CR version like above
+            if name in ['Average Power'] and cr == 'CR1':
+                if applicable_to_column_name in ["Applicable to Integrated AFE Drives (PF755TR)?",
+                                                 "Applicable to Low Harmonic Drives (PF755TL)?",
+                                                 "Applicable to AFE Bus Supplies (PF755TM)?",
+                                                 "Applicable to Frame 5-6 Panel Mount Drives (PF755TR and PF755TL)?",
+                                                 "Applicable to Frame 6 Panel Mount Bus Supplies (PF755TM)?"]:
+                    dataframe['Online Maximum'].values[idx] = eval("Rated_kW*2", eval_dict)
+                else:
+                    pass  #TODO: This needs to be verified (in HPC Database - port 10 parameter 10)
 
-            if name in ['Average Power', 'Real Power', 'Reactive Power', 'Avg Reactive Pwr', 'Apparent Power',
-                        'Avg Apparent Pwr', 'Projctd kWDmnd', 'Projctd kVARDmnd', 'Projctd kVADmnd']:
+            if name in ['L Gnd Warn Lvl'] and cr == 'CR1':
+                dataframe['Online Maximum'].values[idx] = eval("0.25*Rated_Amps", eval_dict)
+
+            # TODO: This needs to be verified with CR version like above or/and with applicable drive name
+
+            if name in ['Average Power'] and cr == 'MV_CR1':
+                dataframe['Online Maximum'].values[idx] = eval("2*sqrt(3)*Rated_Volts*Rated_Amps/1000", eval_dict)
+
+            if name in ['Real Power', 'Reactive Power', 'Avg Reactive Pwr', 'Apparent Power', 'Avg Apparent Pwr',
+                        'Projctd kWDmnd', 'Projctd kVARDmnd', 'Projctd kVADmnd']:
                 dataframe['Online Maximum'].values[idx] = eval("2*sqrt(3)*Rated_Volts*Rated_Amps/1000", eval_dict)
 
             if name in ['Emb Enet Ref', 'Port 1 Reference', 'Port 2 Reference', 'Port 3 Reference', 'Port 4 Reference',

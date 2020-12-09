@@ -3,13 +3,13 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,2,Commanded SpdRef,0.00,,480.00,-480.00,0.00,Hz  ,False,False
 0,3,Mtr Vel Fdbk,0.00,,480.00,-480.00,0.00,Hz  ,False,False
 0,4,Commanded Trq,0.00,,800.00,-800.00,0.00,%   ,False,False
-0,5,Torque Cur Fdbk,0.00,,44.00,-44.00,0.00,Amps,False,False
-0,6,Flux Cur Fdbk,0.00,,44.00,-44.00,0.00,Amps,False,False
-0,7,Output Current,0.00,,44.00,0.00,0.00,Amps,False,False
+0,5,Torque Cur Fdbk,0.00,,6.80,-6.80,0.00,Amps,False,False
+0,6,Flux Cur Fdbk,0.00,,6.80,-6.80,0.00,Amps,False,False
+0,7,Output Current,0.00,,6.80,0.00,0.00,Amps,False,False
 0,8,Output Voltage,0.00,,529.00,0.00,0.00,VAC ,False,False
 0,9,Output Power,0.00,,3000.00,0.00,0.00,kW  ,False,False
 0,10,Output Powr Fctr,0.00,,1.00,0.00,0.00,    ,False,False
-0,11,DC Bus Volts,674.80,,920.00,0.00,0.00,VDC ,False,False
+0,11,DC Bus Volts,674.85,,920.00,0.00,0.00,VDC ,False,False
 0,12,DC Bus Memory,674.84,,920.00,0.00,0.00,VDC ,False,False
 0,13,Elapsed MWH,0.000,,4294970000.000,0.000,0.000,MWh ,False,False
 0,14,Elapsed kWH,0.000,,4294970000.000,0.000,0.000,kWh ,False,False
@@ -19,16 +19,16 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,18,Elpsd Mtr kWHrs,0.0000,,220000000.0000,0.0000,0.0000,kWh ,False,False
 0,19,Elpsd Rgn kWHrs,0.0000,,220000000.0000,0.0000,0.0000,kWh ,False,False
 0,20,Rated Volts,480.00,,690.00,0.00,0.00,VAC ,False,False
-0,21,Rated Amps,22.00,,6000.00,0.00,0.00,Amps,False,False
-0,22,Rated kW,11.00,,3500.00,0.00,0.00,kW  ,False,False
+0,21,Rated Amps,3.40,,6000.00,0.00,0.00,Amps,False,False
+0,22,Rated kW,1.50,,3500.00,0.00,0.00,kW  ,False,False
 0,23,Reserved,0,,0,0,0,    ,False,False
 0,24,Reserved,0,,0,0,0,    ,False,False
 0,25,Motor NP Volts,460.00,,529.00,0.10,460.00,VAC ,True,False
-0,26,Motor NP Amps,18.50,,220.00,0.01,18.50,Amps,True,False
+0,26,Motor NP Amps,2.90,,34.00,0.01,2.90,Amps,True,False
 0,27,Motor NP Hertz,60.00,,650.00,2.00,60.00,Hz  ,True,False
-0,28,Motor NP RPM,1765.0,,40000.0,1.0,1765.0,RPM ,True,False
+0,28,Motor NP RPM,1740.0,,40000.0,1.0,1740.0,RPM ,True,False
 0,29,Mtr NP Pwr Units,0,HP          ,1,0,0,    ,True,False
-0,30,Motor NP Power,15.00,,2000.00,0.01,15.00,HP  ,True,False
+0,30,Motor NP Power,2.00,,2000.00,0.01,2.00,HP  ,True,False
 0,31,Motor Poles,4,,200,2,4,Pole,True,False
 0,32,Reserved,0,,0,0,0,    ,False,False
 0,33,Reserved,0,,0,0,0,    ,False,False
@@ -42,7 +42,7 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,41,Common Mode Type,0,CMV         ,1,0,0,    ,True,False
 0,42,Bus Utilization,95.00,,100.00,85.00,95.00,%   ,True,False
 0,43,Flux Up Enable,1,Automatic   ,1,0,1,    ,True,False
-0,44,Flux Up Time,0.1368,,5.0000,0.0000,0.0000,Secs,True,False
+0,44,Flux Up Time,0.1139,,5.0000,0.0000,0.0000,Secs,True,False
 0,45,Flux Down Ki,0.20,,100.00,0.00,0.20,    ,True,False
 0,46,Flux Down Kp,150.0,,10000.0,0.0,150.0,    ,True,False
 0,47,Econ At Ref Ki,305.0,,100000.0,0.0,305.0,    ,True,False
@@ -58,8 +58,8 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,57,Reserved,0,,0,0,0,    ,False,False
 0,58,Reserved,0,,0,0,0,    ,False,False
 0,59,Reserved,0,,0,0,0,    ,False,False
-0,60,Start Acc Boost,8.50,,115.00,0.00,8.50,VAC ,True,False
-0,61,Run Boost,8.50,,115.00,0.00,8.50,VAC ,True,False
+0,60,Start Acc Boost,8.50,,115.00,0.00,19.80,VAC ,True,False
+0,61,Run Boost,8.50,,115.00,0.00,19.80,VAC ,True,False
 0,62,Break Voltage,115.00,,690.00,0.00,115.00,VAC ,True,False
 0,63,Break Frequency,15.00,,60.00,0.00,15.00,Hz  ,True,False
 0,64,SVC Boost Filter,0.1000,,1000.0000,0.0001,0.1000,Secs,True,False
@@ -71,13 +71,13 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,70,Autotune,1,Calculate   ,4,0,1,    ,True,False
 0,71,Autotune Torque,50.00,,200.00,0.00,50.00,%   ,True,False
 0,72,Reserved,0,,0,0,0,    ,False,False
-0,73,IR Voltage Drop,8.70,,115.00,0.00,8.50,Volt,True,False
+0,73,IR Voltage Drop,19.80,,115.00,0.00,19.80,Volt,True,False
 0,74,Ixo Voltage Drop,0.00,,460.00,0.00,115.00,VAC ,True,False
-0,75,Flux Current Ref,5.55,,21.89,0.00,7.70,Amps,True,False
+0,75,Flux Current Ref,1.45,,3.38,0.00,1.19,Amps,True,False
 0,76,Total Inertia,2.00,,600.00,0.01,2.00,Secs,True,False
 0,77,Inertia Test Lmt,0.0,,65535.0,0.0,0.0,Revs,True,False
 0,78,Encdrlss AngComp,0.0000,,6.2831,-6.2831,0.0000,Rad ,True,False
-0,79,Encdrlss VltComp,8.70,,115.00,0.00,3.50,VAC ,True,False
+0,79,Encdrlss VltComp,19.80,,115.00,0.00,3.50,VAC ,True,False
 0,80,PM Cfg,0000,AutoOfstTest,03FF,0000,0000,    ,True,False
 0,81,PM PriEnc Offset,0,,1023,0,0,    ,True,False
 0,82,PM AltEnc Offset,0,,1023,0,0,    ,True,False
@@ -85,13 +85,13 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,84,PM OfstTst CRamp,3.00,,100.00,0.00,3.00,Secs,True,False
 0,85,PM OfstTst FRamp,60.00,,1000.00,0.00,60.00,Secs,True,False
 0,86,PM CEMF Voltage,31.05,,690.00,0.00,31.05,Volt,True,False
-0,87,PM IR Voltage,8.70,,115.00,0.00,3.50,Volt,True,False
+0,87,PM IR Voltage,19.80,,115.00,0.00,3.50,Volt,True,False
 0,88,PM IXq Voltage,20.01,,690.00,0.00,20.01,Volt,True,False
 0,89,PM IXd Voltage,20.01,,690.00,0.00,20.01,Volt,True,False
 0,90,Reserved,0,,0,0,0,    ,False,False
 0,91,PM Vqs Reg Kp,2.50,,1000.00,0.00,2.50,    ,True,False
 0,92,PM Vqs Reg Ki,0.50,,1000.00,0.00,0.50,    ,True,False
-0,93,PM Dir Test Cur,1.85,,18.50,0.00,1.85,Amps,True,False
+0,93,PM Dir Test Cur,0.29,,2.90,0.00,0.29,Amps,True,False
 0,94,Reserved,0,,0,0,0,    ,False,False
 0,95,VCL Cur Reg BW,0.0,,9999.0,0.0,0.0,R/S ,True,False
 0,96,VCL Cur Reg Kp,1250.0,,50000.0,0.0,1250.0,    ,True,False
@@ -363,7 +363,7 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,362,FS Excitation Kp,1200.0,,32767.0,0.0,1200.0,    ,True,False
 0,363,FS Reconnect Dly,50.00,,10000.00,0.10,50.00,mS  ,True,False
 0,364,FS Msrmnt CurLvl,44.97,,4096.00,0.00,44.97,    ,True,False
-0,365,FS Brk Lvl,15.400,,33.000,0.220,15.400,Amps,True,False
+0,365,FS Brk Lvl,2.380,,6.120,0.034,2.380,Amps,True,False
 0,366,FS Brk Time,0.00,,1800.00,0.00,0.00,Secs,True,False
 0,367,FS ZSpd Thresh,200.0,,10000.0,0.0,200.0,    ,True,False
 0,368,Reserved,0,,0,0,0,    ,False,False
@@ -381,7 +381,7 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,380,Bus Reg Ki,100.000,,65535.000,0.000,100.000,    ,True,False
 0,381,Bus Reg Kp,10.000,,65535.000,0.000,10.000,    ,True,False
 0,382,DB Resistor Type,0,Internal    ,1,0,0,    ,True,False
-0,383,DB Ext Ohms,22.20,,10000.00,22.20,22.20,Ohms,True,False
+0,383,DB Ext Ohms,22.20,,10000.00,31.00,31.00,Ohms,True,False
 0,384,DB Ext Watts,100.00,,500000.00,1.00,100.00,Watt,True,False
 0,385,DB ExtPulseWatts,2000.00,,100000000.00,1.00,2000.00,Watt,True,False
 0,386,Reserved,0,,0,0,0,    ,False,False
@@ -392,7 +392,7 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,391,Flux Braking Kp,100.0,,1000000.0,0.0,100.0,V/A ,True,False
 0,392,Stop Dwell Time,0.0,,60.0,0.0,0.0,Secs,True,False
 0,393,DC Brake Lvl Sel,394,,159999,1,394,    ,True,False
-0,394,DC Brake Level,22.000,,33.000,0.220,22.000,Amps,True,False
+0,394,DC Brake Level,3.400,,6.120,0.034,3.400,Amps,True,False
 0,395,DC Brake Time,0.00,,90.00,0.00,0.00,Secs,True,False
 0,396,DC Brake Ki,10.0,,1000.0,0.0,10.0,    ,True,False
 0,397,DC Brake Kp,1000.0,,10000.0,0.0,1000.0,    ,True,False
@@ -420,9 +420,9 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,419,Mtr OL Trip Time,99999,,99999,0,99999,Secs,False,False
 0,420,Drive OL Mode,3,Both PWM 1st,3,0,3,    ,True,False
 0,421,Current Lmt Sel,422,,159999,1,422,    ,True,False
-0,422,Current Limit 1,33.00,,33.00,0.00,33.00,Amps,True,False
-0,423,Current Limit 2,33.00,,33.00,0.00,33.00,Amps,True,False
-0,424,Active Cur Lmt,33.00,,176.00,-176.00,0.00,Amps,False,False
+0,422,Current Limit 1,5.10,,6.12,0.00,6.12,Amps,True,False
+0,423,Current Limit 2,5.10,,6.12,0.00,6.12,Amps,True,False
+0,424,Active Cur Lmt,5.10,,27.20,-27.20,0.00,Amps,False,False
 0,425,Current Rate Lmt,400.00,,800.00,1.00,400.00,%   ,True,False
 0,426,Regen Power Lmt,-50.00,,0.00,-800.00,-50.00,%   ,True,False
 0,427,Motor Power Lmt,200.00,,800.00,0.00,200.00,%   ,True,False
@@ -434,10 +434,10 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,433,Jerk Gain,5200.0,,1000000000.0,0.0,5200.0,    ,True,False
 0,434,Shear Pin Cfg,0000,Shear1NoAcc ,0003,0000,0000,    ,True,False
 0,435,Shear Pin 1 Actn,0,Ignore      ,5,0,0,    ,True,False
-0,436,Shear Pin1 Level,22.00,,33.00,0.00,22.00,Amps,True,False
+0,436,Shear Pin1 Level,3.40,,5.10,0.00,3.40,Amps,True,False
 0,437,Shear Pin 1 Time,0.00,,30.00,0.00,0.00,Secs,True,False
 0,438,Shear Pin 2 Actn,0,Ignore      ,5,0,0,    ,True,False
-0,439,Shear Pin2 Level,22.00,,33.00,0.00,22.00,Amps,True,False
+0,439,Shear Pin2 Level,3.40,,5.10,0.00,3.40,Amps,True,False
 0,440,Shear Pin 2 Time,0.00,,30.00,0.00,0.00,Secs,True,False
 0,441,Load Loss Action,0,Ignore      ,5,0,0,    ,True,False
 0,442,Load Loss Level,200.00,,800.00,0.00,200.00,%   ,True,False
@@ -495,8 +495,8 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,494,HSFan ResetLog,0,,255,0,0,    ,False,False
 0,495,InFan Derate,1.00,,1.00,0.01,1.00,    ,True,False
 0,496,InFan TotalLife,32844.00,,21474836.47,0.00,0.00,Hrs ,False,False
-0,497,InFan ElpsdLife,0.83,,21474836.47,0.00,0.00,Hrs ,False,False
-0,498,InFan RemainLife,32843.17,,21474836.47,-21474836.48,0.00,Hrs ,False,False
+0,497,InFan ElpsdLife,1.40,,21474836.47,0.00,0.00,Hrs ,False,False
+0,498,InFan RemainLife,32842.60,,21474836.47,-21474836.48,0.00,Hrs ,False,False
 0,499,InFan EventLevel,80.000,,100.000,0.000,80.000,%   ,True,False
 0,500,InFan EventActn,0,Ignore      ,5,0,0,    ,True,False
 0,501,InFan ResetLog,0,,255,0,0,    ,False,False
@@ -619,7 +619,7 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,618,Reserved,0,,0,0,0,    ,False,False
 0,619,Reserved,0,,0,0,0,    ,False,False
 0,620,Droop RPM at FLA,0.00,,900.00,0.00,0.00,RPM ,True,False
-0,621,Slip RPM at FLA,35.00,,1200.00,0.00,35.00,RPM ,True,False
+0,621,Slip RPM at FLA,60.00,,1200.00,0.00,60.00,RPM ,True,False
 0,622,Slip Comp BW,10.00,,50.00,1.00,10.00,R/S ,True,False
 0,623,VHzSV SpdTrimReg,0.00,,480.00,-480.00,0.00,Hz  ,False,False
 0,624,Reserved,0,,0,0,0,    ,False,False
@@ -931,9 +931,9 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,930,Speed Ref Source,877,,159999,0,0,    ,False,False
 0,931,Last StartSource,0,Pwr Removed ,20,0,0,    ,False,False
 0,932,Last Stop Source,0,Pwr Removed ,20,0,0,    ,False,False
-0,933,Start Inhibits,00000002,Enable      ,000007FF,00000000,00000000,    ,False,False
+0,933,Start Inhibits,00000000,Faulted     ,000007FF,00000000,00000000,    ,False,False
 0,934,Last StrtInhibit,00000000,Faulted     ,000007FF,00000000,00000000,    ,False,False
-0,935,Drive Status 1,2300044C,,FFFFFFFF,00000000,00000000,    ,False,False
+0,935,Drive Status 1,2300040D,,FFFFFFFF,00000000,00000000,    ,False,False
 0,936,Drive Status 2,00000100,,0000FFFF,00000000,00000000,    ,False,False
 0,937,Condition Sts 1,00000000,Power Loss  ,00007FFF,00000000,00000000,    ,False,False
 0,938,Reserved,0,,0,0,0,    ,False,False
@@ -952,11 +952,11 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,951,Last Fault Code,12,,424648720,0,0,    ,False,False
 0,952,Fault Status A,00000000,Power Loss  ,00003FFF,00000000,00000000,    ,False,False
 0,953,Fault Status B,00000000,Aux InputFlt,007FFFFF,00000000,00000000,    ,False,False
-0,954,Status1 at Fault,0600048D,,FFFFFFFF,00000000,00000000,    ,False,False
+0,954,Status1 at Fault,060004CC,,FFFFFFFF,00000000,00000000,    ,False,False
 0,955,Status2 at Fault,00000100,,00001FFF,00000000,00000000,    ,False,False
 0,956,Fault Frequency,0.00,,650.00,-650.00,0.00,Hz  ,False,False
-0,957,Fault Amps,0.00,,44.00,0.00,0.00,Amps,False,False
-0,958,Fault Bus Volts,674.81,,920.00,0.00,0.00,VDC ,False,False
+0,957,Fault Amps,0.00,,6.80,0.00,0.00,Amps,False,False
+0,958,Fault Bus Volts,674.83,,920.00,0.00,0.00,VDC ,False,False
 0,959,Alarm Status A,00000000,Power Loss  ,0000FFFF,00000000,00000000,    ,False,False
 0,960,Alarm Status B,00000000,IGBT OT     ,0000FFFF,00000000,00000000,    ,False,False
 0,961,Type 2 Alarms,00000000,Sleep Cfg   ,0007FFFF,00000000,00000000,    ,False,False
@@ -1543,9 +1543,9 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,1542,VB Decel Rate,6.00,,327.67,0.01,6.00,V/s ,True,False
 0,1543,VB Frequency,0.8,,10.0,0.5,0.8,Hz  ,True,False
 0,1544,VB Min Freq,0.5,,10.0,0.1,0.5,Hz  ,True,False
-0,1545,VB Flux Thresh,11.0,,22.0,0.0,11.0,Amps,True,False
+0,1545,VB Flux Thresh,1.7,,3.4,0.0,1.7,Amps,True,False
 0,1546,VB Flux Lag Freq,0.60,,100.00,0.01,0.60,R/S ,True,False
-0,1547,VB Filt Flux Cur,0.0,,44.0,0.0,0.0,Amps,False,False
+0,1547,VB Filt Flux Cur,0.0,,6.8,0.0,0.0,Amps,False,False
 0,1548,VB Current Rate,0.0,,1000.0,-1000.0,0.0,A/s ,False,False
 0,1549,VB Current Hyst,0.0,,100.0,-100.0,0.0,    ,True,False
 0,1550,VB Cur Thresh,-25.0,,1000.0,-1000.0,-25.0,    ,True,False
@@ -2103,26 +2103,26 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 7,42,PTC Raw Value,5.00,,10.00,0.00,0.00,Volt,False,False
 7,43,Reserved,0,,0,0,0,    ,False,False
 7,44,Reserved,0,,0,0,0,    ,False,False
-7,45,Anlg In Type,0000,Analog In 0 ,0003,0000,0000,    ,False,False
+7,45,Anlg In Type,0001,Analog In 1 ,0003,0000,0000,    ,False,False
 7,46,Anlg In Sqrt,0000,Analog In 0 ,0003,0000,0000,    ,True,False
 7,47,Anlg In Loss Sts,0007,,0007,0000,0000,    ,False,False
 7,48,Reserved,0,,0,0,0,    ,False,False
 7,49,Reserved,0,,0,0,0,    ,False,False
-7,50,Anlg In0 Value,-0.011,,10.000,-10.000,0.000,Volt,False,False
-7,51,Anlg In0 Hi,10.000,,10.000,-10.000,10.000,Volt,True,False
-7,52,Anlg In0 Lo,0.000,,10.000,-10.000,0.000,Volt,True,False
+7,50,Anlg In0 Value,0.002,,20.000,0.000,0.000,mA  ,False,False
+7,51,Anlg In0 Hi,20.000,,20.000,0.000,20.000,mA  ,True,False
+7,52,Anlg In0 Lo,0.000,,20.000,0.000,0.000,mA  ,True,False
 7,53,Anlg In0 LssActn,0,Ignore      ,8,0,0,    ,True,False
-7,54,Anlg In0 Raw Val,-0.011,,10.000,-10.000,0.000,Volt,False,False
+7,54,Anlg In0 Raw Val,0.002,,20.000,0.000,0.000,mA  ,False,False
 7,55,Anlg In0 Filt Gn,1.00,,5.00,-5.00,1.00,    ,True,False
 7,56,Anlg In0 Filt BW,0.0,,500.0,0.0,0.0,    ,True,False
 7,57,Reserved,0,,0,0,0,    ,False,False
 7,58,Reserved,0,,0,0,0,    ,False,False
 7,59,Reserved,0,,0,0,0,    ,False,False
-7,60,Anlg In1 Value,0.002,,10.000,-10.000,0.000,Volt,False,False
+7,60,Anlg In1 Value,0.000,,10.000,-10.000,0.000,Volt,False,False
 7,61,Anlg In1 Hi,10.000,,10.000,-10.000,10.000,Volt,True,False
 7,62,Anlg In1 Lo,0.000,,10.000,-10.000,0.000,Volt,True,False
 7,63,Anlg In1 LssActn,0,Ignore      ,8,0,0,    ,True,False
-7,64,Anlg In1 Raw Val,0.000,,10.000,-10.000,0.000,Volt,False,False
+7,64,Anlg In1 Raw Val,0.002,,10.000,-10.000,0.000,Volt,False,False
 7,65,Anlg In1 Filt Gn,1.00,,5.00,-5.00,1.00,    ,True,False
 7,66,Anlg In1 Filt BW,0.0,,500.0,0.0,0.0,    ,True,False
 7,67,Reserved,0,,0,0,0,    ,False,False
@@ -2145,9 +2145,9 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 7,84,Reserved,0,,0,0,0,    ,False,False
 7,85,Anlg Out1 Sel,7,,159999,0,7,    ,True,False
 7,86,Anlg Out1 Stpt,0.000,,10.000,0.000,0.000,Volt,True,False
-7,87,Anlg Out1 Data,0.000,,44.000,0.000,0.000,Amps,False,False
-7,88,Anlg Out1 DataHi,22.000,,44.000,0.000,22.000,Amps,True,False
-7,89,Anlg Out1 DataLo,0.000,,44.000,0.000,0.000,Amps,True,False
+7,87,Anlg Out1 Data,0.000,,6.800,0.000,0.000,Amps,False,False
+7,88,Anlg Out1 DataHi,3.400,,6.800,0.000,3.400,Amps,True,False
+7,89,Anlg Out1 DataLo,0.000,,6.800,0.000,0.000,Amps,True,False
 7,90,Anlg Out1 Hi,10.000,,10.000,0.000,10.000,Volt,True,False
 7,91,Anlg Out1 Lo,0.000,,10.000,0.000,0.000,Volt,True,False
 7,92,Anlg Out1 Val,0.000,,10.000,0.000,0.000,Volt,False,False
@@ -2361,8 +2361,8 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 14,103,DLX DINT Out SP2,0,,2147483647,-2147483648,0,    ,True,False
 14,104,DLX DINT Out SP3,0,,2147483647,-2147483648,0,    ,True,False
 14,105,DLX DINT Out SP4,0,,2147483647,-2147483648,0,    ,True,False
-0,1,MCB Pwrup Time,3074.35,,220000000.00,0.00,0.00,Secs,False,False
-0,2,PBLT Pwrup Time,3074.35,,220000000.00,0.00,0.00,Secs,False,False
+0,1,MCB Pwrup Time,5177.09,,220000000.00,0.00,0.00,Secs,False,False
+0,2,PBLT Pwrup Time,5177.09,,220000000.00,0.00,0.00,Secs,False,False
 0,3,PBLT GatesOnTime,0.00,,220000000.00,0.00,0.00,Secs,False,False
 0,4,PBLT Mtr MW Hrs,0.0,,220000000.0,0.0,0.0,    ,False,False
 0,5,PBLT Rgn MW Hrs,0.0,,220000000.0,0.0,0.0,    ,False,False
@@ -2427,7 +2427,7 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,64,Sw Off Stpt DInt,0,,2147483647,-2147483648,0,    ,True,False
 0,65,Sw On Stpt DInt,1,,2147483647,-2147483648,1,    ,True,False
 0,66,Dig Sw DInt Out,0,,65535,-65535,0,    ,False,False
-0,67,PwrBd Pwr Cycles,4,,4294967295,0,0,    ,False,False
+0,67,PwrBd Pwr Cycles,6,,4294967295,0,0,    ,False,False
 0,68,AT PM Spd Reg Kp,3.00,,100000.00,0.00,3.00,    ,True,False
 0,69,FiberSyncInhibit,0005,,000F,0000,0000,    ,False,False
 0,70,FiberTravInhibit,0005,Sync Ramp   ,007F,0000,0000,    ,False,False
@@ -2435,9 +2435,9 @@ Port Number,Parameter Number,Parameter Name,Parameter Value,Parameter Value Enum
 0,72,Friction State,0,Disabled    ,3,0,0,    ,False,False
 0,73,Static Friction,0.00,,800.00,-800.00,0.00,%   ,False,False
 0,74,Dynamic Friction,0.00,,800.00,-800.00,0.00,%   ,False,False
-0,75,Peak Ctrl Task,2.38,,100.00,0.00,0.00,%   ,False,False
-0,76,Peak Sys Task,2.28,,100.00,0.00,0.00,%   ,False,False
-0,77,Peak 5ms Task,2.97,,100.00,0.00,0.00,%   ,False,False
+0,75,Peak Ctrl Task,2.12,,100.00,0.00,0.00,%   ,False,False
+0,76,Peak Sys Task,7.38,,100.00,0.00,0.00,%   ,False,False
+0,77,Peak 5ms Task,2.98,,100.00,0.00,0.00,%   ,False,False
 0,78,Iqs Cmd,0.0000,,10.0000,-10.0000,0.0000,    ,False,False
 0,79,IdsComp Required,0.0000,,10.0000,-10.0000,0.0000,    ,False,False
 0,80,Reserved,0,,0,0,0,    ,False,False

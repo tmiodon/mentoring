@@ -126,4 +126,5 @@ if __name__ == '__main__':
 
     ShowComparison(rhino_params, emulated_rhino_params, compared_df)
 
+    # This function can be used to export results separately to different excel files
     # SaveComparisonInExcelFiles(rhino_params, emulated_rhino_params, compared_df)

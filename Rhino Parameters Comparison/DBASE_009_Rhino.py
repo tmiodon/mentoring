@@ -1,6 +1,5 @@
 import pandas
 import numpy
-import os
 
 
 def CompareDataframes(source_df, target_df, column_names):
@@ -14,12 +13,16 @@ def CompareDataframes(source_df, target_df, column_names):
     Returns:
         result_df: Pandas dataframe object (results from comparison)
     """
-    result_df = pandas.DataFrame(columns=column_names)
+    if len(source_df) == len(target_df):
+        result_df = pandas.DataFrame(columns=column_names)
 
-    for column in result_df.columns.tolist():
-        result_df[column] = numpy.where(source_df[column] != target_df[column], 'True', 'False')
+        for column in result_df.columns.tolist():
+            result_df[column] = numpy.where(source_df[column] != target_df[column], 'True', 'False')
 
-    return result_df
+        return result_df
+    else:
+        print "Tables have different length! Comparison aborted."
+        raise ValueError
 
 
 def ShowComparison(source_df, target_df, result_df, to_file=False):
@@ -37,8 +40,10 @@ def ShowComparison(source_df, target_df, result_df, to_file=False):
                           'Parameter Name',
                           'Expected Value',
                           'Actual Value']
-    if os.path.exists(r'Rhino Parameters Comparison\Results.txt'):
-        os.remove(r'Rhino Parameters Comparison\Results.txt')
+
+    differences_found = False
+
+    results_file = open('Results.txt', 'w')
 
     for column in result_df.columns.tolist():
         df_to_show = pandas.DataFrame(columns=df_to_show_columns)
@@ -51,17 +56,14 @@ def ShowComparison(source_df, target_df, result_df, to_file=False):
                                                 'Actual Value': target_df[column].values[row]}, ignore_index=True)
 
         if df_to_show.empty is False:
+            differences_found = True
             if to_file is True:
-                results_file = open(r'Rhino Parameters Comparison\Results.txt', 'a')
-
                 results_file.write("Differences in {}".format(column))
                 results_file.write('\n')
                 results_file.write("*" * 100)
                 results_file.write('\n')
                 results_file.write(df_to_show.to_string(index=False))
                 results_file.write('\n\n')
-
-                results_file.close()
             else:
                 print "\nDifferences in {}".format(column)
                 print "*" * 100
@@ -69,8 +71,13 @@ def ShowComparison(source_df, target_df, result_df, to_file=False):
         else:
             continue
 
-    if to_file is True:
+    if to_file and differences_found:
         print "File saved successfully!"
+    elif differences_found is False:
+        print "File saved successfully!"
+        results_file.write('Files are the same!')
+
+    results_file.close()
 
 
 def SaveComparisonInExcelFiles(source_df, target_df, result_df):
@@ -105,8 +112,8 @@ def SaveComparisonInExcelFiles(source_df, target_df, result_df):
 
 
 if __name__ == '__main__':
-    rhino_file_name = 'Rhino Parameters Comparison\\Parameter_database_English.csv'
-    emulated_rhino_file_name = 'Rhino Parameters Comparison\\Parameter_database_emulation_1_0_181.csv'
+    rhino_file_name = 'Parameter_database_English.csv'
+    emulated_rhino_file_name = 'Parameter_database_emulation_1_0_181.csv'
 
     columns_to_import = ['Port Number',
                          'Parameter Number',

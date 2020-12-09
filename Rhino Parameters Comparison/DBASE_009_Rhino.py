@@ -25,7 +25,7 @@ def CompareDataframes(source_df, target_df, column_names):
         raise ValueError
 
 
-def ShowComparison(source_df, target_df, result_df, to_file=False):
+def ShowComparison(source_df, target_df, result_df):
     """ This function analyses all true values in result_df and prints ordered differences by column name in console or
     in txt file.
 
@@ -33,7 +33,6 @@ def ShowComparison(source_df, target_df, result_df, to_file=False):
         source_df: Pandas dataframe object (source dataframe)
         target_df: Pandas dataframe object (target dataframe)
         result_df: Pandas dataframe object (results from comparison)
-        to_file: Bool - When True, txt file with results will be created
     """
     df_to_show_columns = ['Port Number',
                           'Parameter Number',
@@ -57,25 +56,21 @@ def ShowComparison(source_df, target_df, result_df, to_file=False):
 
         if df_to_show.empty is False:
             differences_found = True
-            if to_file is True:
-                results_file.write("Differences in {}".format(column))
-                results_file.write('\n')
-                results_file.write("*" * 100)
-                results_file.write('\n')
-                results_file.write(df_to_show.to_string(index=False))
-                results_file.write('\n\n')
-            else:
-                print "\nDifferences in {}".format(column)
-                print "*" * 100
-                print df_to_show.to_string(index=False)
+
+            results_file.write("Differences in {}".format(column))
+            results_file.write('\n')
+            results_file.write("*" * 100)
+            results_file.write('\n')
+            results_file.write(df_to_show.to_string(index=False))
+            results_file.write('\n\n')
         else:
             continue
 
-    if to_file and differences_found:
-        print "File saved successfully!"
-    elif differences_found is False:
-        print "File saved successfully!"
-        results_file.write('Files are the same!')
+    if differences_found:
+        print "File Results.txt saved successfully!"
+    else:
+        print "File Results.txt saved successfully!"
+        results_file.write('Compared files are the same.')
 
     results_file.close()
 
@@ -129,6 +124,6 @@ if __name__ == '__main__':
     emulated_rhino_params = pandas.read_csv(emulated_rhino_file_name, usecols=columns_to_import)
     compared_df = CompareDataframes(rhino_params, emulated_rhino_params, columns_to_import)
 
-    ShowComparison(rhino_params, emulated_rhino_params, compared_df, to_file=True)
+    ShowComparison(rhino_params, emulated_rhino_params, compared_df)
 
     # SaveComparisonInExcelFiles(rhino_params, emulated_rhino_params, compared_df)

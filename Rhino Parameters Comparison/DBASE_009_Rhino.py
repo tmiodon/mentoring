@@ -10,6 +10,10 @@ def ClearFolder(folder_path):
     Arguments:
         folder_path: [str] Path to the folder that will be cleared
     """
+
+    if not os.path.exists('Output'):
+        os.makedirs('Output')
+
     folder = folder_path
     for filename in os.listdir(folder):
         file_path = os.path.join(folder, filename)
@@ -33,18 +37,20 @@ def CompareDataframes(source_df, target_df, column_names):
     Returns:
         result_df: Pandas dataframe object (results from comparison)
     """
+    results_file = open('Output\\Results.txt', 'w')
+
     if len(source_df) == len(target_df):
         result_df = pandas.DataFrame(columns=column_names)
 
         for column in result_df.columns.tolist():
             result_df[column] = numpy.where(source_df[column].astype(str) != target_df[column].astype(str),
                                             'True', 'False')
-
         return result_df
     else:
         print "Tables have different length! Comparison aborted."
-        # if os.path.exists('Output\\Results.txt'):
-        #     os.remove('Output\\Results.txt')
+        results_file.write("Tables have different length! Comparison aborted.")
+        results_file.close()
+        print "File Results.txt saved successfully!"
         raise ValueError
 
 
@@ -167,4 +173,4 @@ if __name__ == '__main__':
     # Print comparison results to the Results.txt file
     ShowComparison(rhino_params, emulated_rhino_params, compared_df)
     # This function can be used to export results separately to different excel files
-    #SaveComparisonInExcelFiles(rhino_params, emulated_rhino_params, compared_df)
+    # SaveComparisonInExcelFiles(rhino_params, emulated_rhino_params, compared_df)

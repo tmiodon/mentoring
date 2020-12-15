@@ -73,8 +73,8 @@ If needed, line 171 can be uncommented. This will allow you to save results sepa
 ```
 
 ### Results
-* If the length of two csv files will be different then all files from Output folder will be deleted and tester will be
-informed about this issue in the pycharm console. 
+* If the length of two csv files is different, then Output folder will be created and in the Result.txt will be 
+information about this and at the same time, the same information will be provided in the pycharm console. 
 
 ```bash
 Traceback (most recent call last):

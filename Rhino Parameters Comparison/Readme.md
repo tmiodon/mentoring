@@ -8,6 +8,7 @@ Before execution, please follow instruction below.
 * Pycharm environment installed and configured
 * Pandas library installed
 * Parameter database downloaded from the DUT and stored in the Input folder
+* Name of the downloaded parameter database changed in the script
 
 ### Pandas library instalation
 Open Pycharm and type in the Terminal tab the following command:
@@ -23,23 +24,23 @@ Based on the image above:
 1) Go to the Upload/Performance tab.
 2) Click on Upload Params button.
 3) When Browse dialog will open, type the name of target file (eg. Parameter_database_emulation_xxx where xxx is 
-the build number.
+the build number.)
 
-### Required changes in project folder
+### Required changes in the Input project folder
 
-First of all target file needs to be changed in the Input folder.
+First of all target file needs to be replaced in the Input folder.
 
-In Input folder which is located in the project folder, there are two csv files.
+In the Input folder (which is located in the project folder), there are two csv files.
 
 ![image](Images/InputFolderImg.png)
 
 **Parameter_database_English.csv** - this file is the source file which is used as a base of parameters to compare with.
 This file shouldn't be edited.
 
-**Parameter_database_emulation_xxx.csv** - this file needs to be replaced with before downloaded parameter database from
-DUT.
+**Parameter_database_emulation_xxx.csv** - this file needs to be replaced with previously downloaded parameter database 
+from DUT.
 
-### Required changes in script
+### Required changes in the script
 
 If new target file is used, line 147 in the DBASE_009_Rhino.py script needs to be changed. Change this line accordingly
 to the name of target file located in the Input folder.
@@ -48,7 +49,7 @@ to the name of target file located in the Input folder.
 emulated_rhino_file_name = 'Input\\Parameter_database_emulation_1_0_181.csv'
 ```
 
-### Optional changes in script
+### Optional changes in the script
 
 Lines from 151 to 160 can be changed when required. You can add or remove columns which will be taken into account in 
 the comparison process. If adding column name then this column must exists in the csv file.
@@ -74,7 +75,7 @@ If needed, line 171 can be uncommented. This will allow you to save results sepa
 
 ### Results
 * If the length of two csv files is different, then Output folder will be created and in the Result.txt will be 
-information about this and at the same time, the same information will be provided in the pycharm console. 
+information about this. At the same time, the same information will be provided in the pycharm console. 
 
 ```bash
 Traceback (most recent call last):

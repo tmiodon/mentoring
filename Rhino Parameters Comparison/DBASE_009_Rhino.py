@@ -152,8 +152,8 @@ if __name__ == '__main__':
     # Path of the target parameter database. This must be edited based on the current file name.
     emulated_rhino_file_name = 'Input\\Parameter_database_emulation_1_0_181.csv'
 
-    # Columns that we want to import from csv files. If needed, cols can be added to the list and it will be taken
-    # into account in the comparison
+    # Columns that we want to import from csv files. If needed, cols can be added to the list and they will be taken
+    # into account in the comparison process
     columns_to_import = ['Port Number',
                          'Parameter Number',
                          'Parameter Name',
